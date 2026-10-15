@@ -1,0 +1,14 @@
+{
+  "versao": 1,
+  "observacao": "Registro de desenhos tecnicos/imagems de peca. 'imagem' e o recurso exibido (peca na tela e na folha de impressao). 'documento' aponta para o documento original completo, quando anexado.",
+  "desenhos": [
+    {
+      "id": "desenho-168-r05",
+      "moldeId": "molde-168",
+      "revisao": "05",
+      "imagem": "assets/images/conexão esferografica.png",
+      "documento": null,
+      "observacao": "Imagem da peca usada como desenho de referencia. O documento tecnico original completo ainda nao foi anexado."
+    }
+  ]
+}

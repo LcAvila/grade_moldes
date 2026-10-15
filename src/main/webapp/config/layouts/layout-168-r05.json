@@ -1,0 +1,38 @@
+{
+  "id": "layout-168-r05",
+  "moldeId": "molde-168",
+  "revisao": "05",
+  "tipo": "parametrizado",
+  "gerador": "radial-zonas",
+  "viewBox": "0 0 1300 1350",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Extraido fielmente da implementacao original do Prototipo 168 (4 zonas de 16 cavidades). Os identificadores vem de moldes.json pelo inicioIndice.",
+  "parametros": {
+    "moldura": { "x": 4, "y": 4, "width": 1292, "height": 1342 },
+    "hub": { "x": 300, "y": 300 },
+    "posicoes": [
+      { "x": 260.88, "y": 98.77 },  { "x": 185.37, "y": 130.05 }, { "x": 130.05, "y": 185.37 }, { "x": 98.77,  "y": 260.88 },
+      { "x": 98.77,  "y": 339.12 }, { "x": 130.05, "y": 414.63 }, { "x": 185.37, "y": 469.95 }, { "x": 260.88, "y": 501.23 },
+      { "x": 339.12, "y": 501.23 }, { "x": 414.63, "y": 469.95 }, { "x": 469.95, "y": 414.63 }, { "x": 501.23, "y": 339.12 },
+      { "x": 501.23, "y": 260.88 }, { "x": 469.95, "y": 185.37 }, { "x": 414.63, "y": 130.05 }, { "x": 339.12, "y": 98.77 }
+    ],
+    "interms": [
+      { "x": 300,    "y": 190,    "cavs": [0, 15] },
+      { "x": 377.78, "y": 222.22, "cavs": [14, 13] },
+      { "x": 410,    "y": 300,    "cavs": [12, 11] },
+      { "x": 377.78, "y": 377.78, "cavs": [10, 9] },
+      { "x": 300,    "y": 410,    "cavs": [8, 7] },
+      { "x": 222.22, "y": 377.78, "cavs": [6, 5] },
+      { "x": 190,    "y": 300,    "cavs": [4, 3] },
+      { "x": 222.22, "y": 222.22, "cavs": [2, 1] }
+    ],
+    "zonas": [
+      { "label": "1", "offX": 0,   "offY": 0,   "inicioIndice": 0 },
+      { "label": "3", "offX": 650, "offY": 0,   "inicioIndice": 32 },
+      { "label": "2", "offX": 0,   "offY": 650, "inicioIndice": 16 },
+      { "label": "4", "offX": 650, "offY": 650, "inicioIndice": 48 }
+    ]
+  },
+  "tabela": { "blocos": 2 },
+  "impressao": { "tamanhosBlocos": [55, 9] }
+}

@@ -1,0 +1,11 @@
+BICO PARA FRASCO DE COLA 40G E 90G					
+Molde 11A - Schneider					
+
+
+Cota		Nomenclatura					
+A		FURO MENOR					
+A1		TOPO					
+B		FURO MAIOR					
+B1		DIÂMETRO DO FURO MAIOR					
+C		DIÂMETRO MAIOR					
+D		ANEL DE VEDAÇÃO					

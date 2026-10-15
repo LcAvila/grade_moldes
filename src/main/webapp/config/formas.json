@@ -1,0 +1,15 @@
+{
+  "versao": 1,
+  "observacao": "Biblioteca de formas SVG reutilizaveis. Cada forma e descrita como DADOS (tag + atributos + classes), nunca como SVG bruto, para evitar injecao. Somente tags/atributos da whitelist do renderizador sao aceitos.",
+  "formas": [
+    {
+      "id": "forma-circulo-28",
+      "revisao": "1",
+      "descricao": "Pino circular de raio 28 (usado no Molde 168).",
+      "elementos": [
+        { "tag": "circle", "attrs": { "r": "28" }, "classes": ["cav-circle"] }
+      ],
+      "rotulo": { "classes": ["cav-text"] }
+    }
+  ]
+}

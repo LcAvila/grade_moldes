@@ -1,0 +1,8 @@
+Arruela de vedação					
+Molde 202                                                           					
+
+Legenda															
+															
+		Cota		Nomenclatura											
+		A		DIÂMETRO MAIOR											
+		B		DIÂMETRO MENOR											
