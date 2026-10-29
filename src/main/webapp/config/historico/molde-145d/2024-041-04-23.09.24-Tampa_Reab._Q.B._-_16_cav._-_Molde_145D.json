@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-145d",
+ "codigo": "145D",
+ "nomePeca": "TAMPA REAB. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Reabastecedores\\Tampas\\Tampa p- Reabastecedor Q.B.- 16 Cav-Molde 145D\\2024\\04-23.09.24-Tampa Reab. Q.B. - 16 cav. - Molde 145D.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:28",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "BUCHA DEFORMADA",
+   "data": "2024-09-23",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "8": {
+   "desvio": "BUCHA DEFORMADA",
+   "data": "2024-09-23",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "BUCHA DEFORMADA",
+   "data": "2024-09-23",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ROMI 30",
+  "controlador": "MARLON",
+  "dataEntrada": "2024-09-23"
+ }
+}

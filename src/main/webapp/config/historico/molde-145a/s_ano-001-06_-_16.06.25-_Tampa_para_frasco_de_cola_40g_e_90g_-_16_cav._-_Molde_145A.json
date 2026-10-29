@@ -1,0 +1,129 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-145a",
+ "codigo": "145A",
+ "nomePeca": "TAMPA PARA FRASCO DE COLA 40G E 90G",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Colas\\Tampas\\Tampa para Cola 40 e 90g - Molde 145A\\06 - 16.06.25- Tampa para frasco de cola 40g e 90g - 16 cav. - Molde 145A.xlsx",
+ "dataOrigem": "",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO (PP)"
+ }
+}

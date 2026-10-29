@@ -30,6 +30,8 @@
         id: String(c.id),
         x: c.x,
         y: c.y,
+        r: c.r,
+        fontSize: c.fontSize,
         formaId: c.formaId || layout.formaPadrao,
         rotacao: c.rotacao,
         escala: c.escala
@@ -66,12 +68,13 @@
     });
 
     (modelo.interms || []).forEach((im) => {
-      svg.appendChild(criarEl("circle", { cx: im.x, cy: im.y, r: 18 }, ["interm-circle"]));
+      svg.appendChild(criarEl("circle", { cx: im.x, cy: im.y, r: im.r || 18 }, ["interm-circle"]));
     });
 
     (modelo.hubs || []).forEach((h) => {
-      const circulo = criarEl("circle", { cx: h.x, cy: h.y, r: 40 }, ["hub-circle"]);
+      const circulo = criarEl("circle", { cx: h.x, cy: h.y, r: h.r || 40 }, ["hub-circle"]);
       const texto = criarEl("text", { x: h.x, y: h.y }, ["hub-text"]);
+      if (h.fontSize) texto.style.fontSize = h.fontSize + "px";
       texto.textContent = h.label == null ? "" : String(h.label);
       const aoClicar = (e) => clicarZona(h, e);
       circulo.addEventListener("click", aoClicar);
@@ -87,6 +90,7 @@
       if (forma && Array.isArray(forma.elementos)) {
         forma.elementos.forEach((spec) => {
           const attrs = Object.assign({}, posicao(spec.tag, cav), spec.attrs || {});
+          if (cav.r != null && (spec.tag === "circle" || spec.tag === "ellipse")) attrs.r = cav.r;
           if (cav.rotacao || cav.escala) attrs.transform = transformacao(cav);
           const el = criarEl(spec.tag, attrs, (spec.classes || []).slice());
           el.dataset.cav = cav.id;
@@ -99,6 +103,7 @@
 
       const rotulo = (forma && forma.rotulo) || {};
       const texto = criarEl("text", posicao("text", cav), (rotulo.classes || ["cav-text"]).slice());
+      if (cav.fontSize) texto.style.fontSize = cav.fontSize + "px";
       texto.dataset.cav = cav.id;
       texto.textContent = cav.id;
       svg.appendChild(texto);

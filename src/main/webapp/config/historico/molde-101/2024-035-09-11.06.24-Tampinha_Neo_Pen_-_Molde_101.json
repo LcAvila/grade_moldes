@@ -1,0 +1,468 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-101",
+ "codigo": "101",
+ "nomePeca": "TAMPINHA NEO PEN",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Neo Pen - 64 Cav - Mol.101\\2024\\09-11.06.24-Tampinha Neo Pen - Molde 101.xls",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "DESLOCAMENTO",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "2": {
+   "desvio": "DESLOCAMENTO C/ REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "3": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2024-06-12",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "4": {
+   "desvio": "DESLOCAMENTO C/ REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "DESLOCAMENTO",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "7": {
+   "desvio": "DESLOCAMENTO C/ REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "DESLOCAMENTO",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "DESLOCAMENTO C/ REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "20": {
+   "desvio": "FURADA",
+   "data": "2024-06-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "FURADA",
+   "data": "2024-06-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "24": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2024-06-12",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "25": {
+   "desvio": "DESLOCAMENTO C/ REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "26": {
+   "desvio": "REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "DESLOCAMENTO",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "30": {
+   "desvio": "REB. NO Ø5,34 mm",
+   "data": "2024-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "31": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "32": {
+   "desvio": "DESLOCAMENTO",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "33": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "36": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "37": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "38": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "42": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "44": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "45": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "46": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "V.P.F.",
+   "data": "2024-05-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "51": {
+   "desvio": "REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "52": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2024-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "55": {
+   "desvio": "REB. NO Ø5,34 mm",
+   "data": "2024-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "56": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "57": {
+   "desvio": "REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "58": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "59": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "60": {
+   "desvio": "REBARBA",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "61": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2024-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ROMI 39",
+  "controlador": "MARLON",
+  "dataEntrada": "2024-06-11"
+ }
+}

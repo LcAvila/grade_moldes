@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-145b",
+ "codigo": "145B",
+ "nomePeca": "TAMPA MARC. PINCEL",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Pincel - 16 Cav - Molde 145B\\2020\\03-04.08.20-Tampa Pincel - 16 cav. - Molde 145B.xlsx",
+ "dataOrigem": "2020",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "COPINHO RECUADO",
+   "data": "2020-08-04",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "V.P.F (PROBLEMA NA RESIST.)",
+   "data": "2020-08-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCIO"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "\"COPINHO AVANÇADO\" (QUEBRA DA ANILHA DO PINO DO FORMATO)",
+   "data": "2020-08-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "\"COPINHO AVANÇADO\" (QUEBRA DA ANILHA DO PINO DO FORMATO)",
+   "data": "2020-08-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "V.P.F (PROBLEMA NA RESIST.)",
+   "data": "2020-08-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCIO"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 33",
+  "controlador": "VICTOR",
+  "dataEntrada": "2020-08-03"
+ }
+}

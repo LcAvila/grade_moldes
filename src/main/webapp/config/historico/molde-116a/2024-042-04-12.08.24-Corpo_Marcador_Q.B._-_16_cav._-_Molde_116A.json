@@ -1,0 +1,133 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-116a",
+ "codigo": "116A",
+ "nomePeca": "CORPO MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Q.B. - 16 Cav - Molde 116A\\2024\\04-12.08.24-Corpo Marcador Q.B. - 16 cav. - Molde 116A.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-02-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2024-08-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2024-07-04",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "15": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-24",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ENGEL 07",
+  "controlador": "MÁRCIO",
+  "dataEntrada": "2024-08-12",
+  "observacoes": "Transferido para ROMI 9 em 05/09/2024 (Sérgio Zago)"
+ }
+}

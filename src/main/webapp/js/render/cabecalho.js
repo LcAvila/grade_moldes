@@ -6,7 +6,9 @@
   const { persistirAtual } = CF.persistencia;
 
   function aplicarGrade() {
-    document.querySelectorAll(".editable[data-field]").forEach((el) => {
+    // Todos os `[data-field]` são preenchidos (inclusive os fixos, como a
+    // revisão, que não têm a classe `.editable`).
+    document.querySelectorAll("[data-field]").forEach((el) => {
       const campo = el.dataset.field;
       const valor = campo === "moldeNum"
         ? (estado.molde ? estado.molde.codigo : "")

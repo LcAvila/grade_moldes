@@ -54,11 +54,27 @@
     return listarGrades().find((g) => g.id === gradeId) || null;
   }
 
-  function criarGrade(moldeId) {
-    const grade = { id: novoId(), moldeId: moldeId, abertaEm: new Date().toISOString() };
+  function criarGrade(moldeId, config) {
+    const cfg = config || {};
+    const grade = {
+      id: novoId(),
+      moldeId: moldeId,
+      abertaEm: new Date().toISOString(),
+      maquina: cfg.maquina || "",
+      dataEntrada: cfg.dataEntrada || ""
+    };
     const lista = listarGrades();
     lista.push(grade);
     salvarGrades(lista);
+
+    // Dados iniciais da grade (máquina / data de entrada escolhidos na abertura).
+    const dadosGrade = {};
+    if (grade.maquina) dadosGrade.maquina = grade.maquina;
+    if (grade.dataEntrada) dadosGrade.dataEntrada = grade.dataEntrada;
+    if (Object.keys(dadosGrade).length) {
+      salvarGrade(grade.id, grade.moldeId, {}, dadosGrade);
+    }
+
     return grade;
   }
 

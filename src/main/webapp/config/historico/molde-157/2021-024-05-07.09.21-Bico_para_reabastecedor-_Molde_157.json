@@ -1,0 +1,133 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-157",
+ "codigo": "157",
+ "nomePeca": "BICO REABASTECEDOR PINCEL/Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Reabastecedores\\Bico\\Bico p- Reabastecedor - 16 Cav - Molde 157\\2021\\05-07.09.21-Bico para reabastecedor- Molde 157.xlsx",
+ "dataOrigem": "2021",
+ "exportadoEm": "2026-10-21T21:41:28",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REB. TOPO/BASE",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "2": {
+   "desvio": "REB. TOPO/BASE",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "3": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "4": {
+   "desvio": "REB. TOPO/BASE",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "5": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "6": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "7": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "8": {
+   "desvio": "VPF",
+   "data": "2021-09-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "9": {
+   "desvio": "VPF",
+   "data": "2021-09-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "10": {
+   "desvio": "VPF",
+   "data": "2021-09-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "11": {
+   "desvio": "REB. TOPO/BASE",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "12": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "13": {
+   "desvio": "VPF",
+   "data": "2021-09-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "14": {
+   "desvio": "VPF",
+   "data": "2021-09-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "15": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  },
+  "16": {
+   "desvio": "REB. TOPO",
+   "data": "2021-09-13",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARCO"
+  }
+ },
+ "dadosGrade": {
+  "material": "PP FT120 WV",
+  "maquina": "ENGEL 33",
+  "controlador": "DOUGLAS",
+  "dataEntrada": "2021-09-07",
+  "observacoes": "Molde retirado para ferramentaria"
+ }
+}

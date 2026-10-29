@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-162",
+ "codigo": "162",
+ "nomePeca": "TAMPA MARC. DESTAQ",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Destaq - 16 Cav - Molde 162\\2023\\05-18.5.23- Tampa Marc. Destaq - 16 cav. - Molde 162.xlsx",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "FURO PARA GIRAR A PONTA DEFORMADO",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "2": {
+   "desvio": "CONTRAÇÃO NO TOPO",
+   "data": "2023-05-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "CLIP QUEIMANDO/CLIP DEFORMANDO",
+   "data": "2023-05-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DOUGLAS"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 32",
+  "controlador": "MARLON",
+  "dataEntrada": "2023-05-18"
+ }
+}

@@ -1,0 +1,462 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-98",
+ "codigo": "98",
+ "nomePeca": "CONEXÃO ESFEROGRÁFICAS",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Conexão\\Conexão Esf. - 64 Cav-Molde 98\\2022\\05-21.09.22-Conexão Esf. - 64 cav. - Molde 98.xls",
+ "dataOrigem": "2022",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "ENTUPIDA",
+   "data": "2022-08-09",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "V.P.F",
+   "data": "2022-09-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "25": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "26": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "ENTUPIDA",
+   "data": "2022-08-09",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "29": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "30": {
+   "desvio": "ENTUPIDA",
+   "data": "2022-08-09",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "31": {
+   "desvio": "C.P.Q",
+   "data": "2022-10-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "32": {
+   "desvio": "C.P.Q",
+   "data": "2022-10-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "33": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "Ø INTERNO DA ESPIGA MENOR",
+   "data": "2022-09-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "35": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "36": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "37": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "38": {
+   "desvio": "ENTUPIDA",
+   "data": "2022-08-09",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "44": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "45": {
+   "desvio": "C.P.Q",
+   "data": "2022-10-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "52": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "53": {
+   "desvio": "C.P.Q",
+   "data": "2022-10-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "54": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "55": {
+   "desvio": "REBARBA NO Ø MAIOR",
+   "data": "2022-10-21",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "56": {
+   "desvio": "B.V",
+   "data": "2022-09-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "57": {
+   "desvio": "B.V",
+   "data": "2022-09-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "58": {
+   "desvio": "B.V",
+   "data": "2022-09-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "59": {
+   "desvio": "REBARBA NO Ø MAIOR",
+   "data": "2022-10-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "60": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 06",
+  "controlador": "MÁRCIO",
+  "dataEntrada": "2022-09-21",
+  "observacoes": "MOLDE TRANSFERIDO PARA ENGEL - 35 25/10/2022"
+ }
+}

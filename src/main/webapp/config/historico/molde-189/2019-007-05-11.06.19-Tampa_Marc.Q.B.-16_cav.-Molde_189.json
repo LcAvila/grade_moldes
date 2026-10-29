@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-189",
+ "codigo": "189",
+ "nomePeca": "TAMPA MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Q.B. - 16 Cav. - Molde 189\\2019\\05-11.06.19-Tampa Marc.Q.B.-16 cav.-Molde 189.xlsx",
+ "dataOrigem": "2019",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "COPINHO FALHADO",
+   "data": "2019-06-27",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "PEÇA AGARRANDO NO PINO",
+   "data": "2019-06-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "7": {
+   "desvio": "CONTRAÇÃO INTERNA",
+   "data": "2019-06-28",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "REB. NO CLIPER",
+   "data": "2019-06-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "FURANDO",
+   "data": "2019-06-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIETILENO",
+  "maquina": "ROMI 38",
+  "controlador": "DAVID",
+  "dataEntrada": "2019-06-11"
+ }
+}

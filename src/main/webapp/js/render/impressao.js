@@ -8,6 +8,13 @@
   function montarFolhaImpressao() {
     coletarGrade();
 
+    // Altura das linhas da tabela no papel: 4,5mm por padrão; moldes com muitas
+    // cavidades (ex.: 200, 96 cavidades) comprimem via `impressao.linhaMm` para
+    // caber tudo — tabela à esquerda cheia, diagrama/legenda/infos à direita.
+    const linhaMm = (estado.layout && estado.layout.impressao && estado.layout.impressao.linhaMm) || 4.5;
+    const folha = document.getElementById("folhaImpressao");
+    if (folha) folha.style.setProperty("--folha-linha-tabela", linhaMm + "mm");
+
     const tbE = document.getElementById("folhaTbodyEsquerda");
     const tbD = document.getElementById("folhaTbodyDireita");
     tbE.innerHTML = "";

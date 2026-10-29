@@ -1,0 +1,256 @@
+{
+  "id": "layout-156-grade",
+  "moldeId": "molde-156",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 444 1592",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Esferográficas/Conexão/Conexão Esf. - 16 Cav.-Molde 156/molde-156.svg). Molde 156 com 16 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 436,
+        "height": 1584
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 222,
+        "y1": 76,
+        "x2": 222,
+        "y2": 1543
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 76,
+        "x2": 366,
+        "y2": 76
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 248,
+        "x2": 366,
+        "y2": 248
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 414,
+        "x2": 366,
+        "y2": 414
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 571,
+        "x2": 366,
+        "y2": 571
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 1028,
+        "x2": 366,
+        "y2": 1028
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 1185,
+        "x2": 366,
+        "y2": 1185
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 1349,
+        "x2": 366,
+        "y2": 1349
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 77,
+        "y1": 1516,
+        "x2": 366,
+        "y2": 1516
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    }
+  ],
+  "interms": [
+    {
+      "x": 222,
+      "y": 76,
+      "r": 16
+    }
+  ],
+  "hubs": [
+    {
+      "x": 222,
+      "y": 796,
+      "r": 40,
+      "label": null,
+      "cavidades": []
+    }
+  ],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 77,
+      "y": 76,
+      "r": 55
+    },
+    {
+      "id": "2",
+      "x": 77,
+      "y": 248,
+      "r": 55
+    },
+    {
+      "id": "3",
+      "x": 77,
+      "y": 414,
+      "r": 55
+    },
+    {
+      "id": "4",
+      "x": 77,
+      "y": 571,
+      "r": 55
+    },
+    {
+      "id": "5",
+      "x": 77,
+      "y": 1028,
+      "r": 55
+    },
+    {
+      "id": "6",
+      "x": 77,
+      "y": 1185,
+      "r": 55
+    },
+    {
+      "id": "7",
+      "x": 77,
+      "y": 1349,
+      "r": 55
+    },
+    {
+      "id": "8",
+      "x": 77,
+      "y": 1516,
+      "r": 55
+    },
+    {
+      "id": "9",
+      "x": 366,
+      "y": 76,
+      "r": 55
+    },
+    {
+      "id": "10",
+      "x": 366,
+      "y": 248,
+      "r": 55
+    },
+    {
+      "id": "11",
+      "x": 366,
+      "y": 414,
+      "r": 55
+    },
+    {
+      "id": "12",
+      "x": 366,
+      "y": 571,
+      "r": 55
+    },
+    {
+      "id": "13",
+      "x": 366,
+      "y": 1028,
+      "r": 55
+    },
+    {
+      "id": "14",
+      "x": 366,
+      "y": 1185,
+      "r": 55
+    },
+    {
+      "id": "15",
+      "x": 366,
+      "y": 1349,
+      "r": 55
+    },
+    {
+      "id": "16",
+      "x": 366,
+      "y": 1516,
+      "r": 55
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      8,
+      8
+    ]
+  }
+}

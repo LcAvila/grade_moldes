@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-189",
+ "codigo": "189",
+ "nomePeca": "TAMPA MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Q.B. - 16 Cav. - Molde 189\\2020\\02-07.04.20-Tampa Marc. Q.B. - 16 cav. - Molde 189.xlsx",
+ "dataOrigem": "2020",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "CAMISA QUEBRADA",
+   "data": "2020-03-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "REBARBA Ø MAIOR",
+   "data": "2020-03-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "RESISTÊNCIA QUEIMADA",
+   "data": "2020-03-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "VAZANDO NO TESTE DE ESTANQUEIDADE",
+   "data": "2020-04-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 33",
+  "controlador": "VAGNER P",
+  "dataEntrada": "2020-04-07"
+ }
+}

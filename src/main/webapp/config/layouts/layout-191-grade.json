@@ -1,0 +1,496 @@
+{
+  "id": "layout-191-grade",
+  "moldeId": "molde-191",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 719 1423",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Marcadores/Corpos Marcadores/Corpo Marcador Pincel - 16 Cav - Molde 191/molde-191.svg). Molde 191 com 16 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 711,
+        "height": 1415
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 321.5,
+        "x2": 344,
+        "y2": 137.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344,
+        "y1": 137.5,
+        "x2": 256.5,
+        "y2": 68.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344,
+        "y1": 137.5,
+        "x2": 439.5,
+        "y2": 68.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 321.5,
+        "x2": 144.5,
+        "y2": 321
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 144.5,
+        "y1": 321,
+        "x2": 72.5,
+        "y2": 242
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 144.5,
+        "y1": 321,
+        "x2": 72,
+        "y2": 405
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 321.5,
+        "x2": 541.5,
+        "y2": 321
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 541.5,
+        "y1": 321,
+        "x2": 637.5,
+        "y2": 246
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 541.5,
+        "y1": 321,
+        "x2": 638.5,
+        "y2": 398
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 321.5,
+        "x2": 343.5,
+        "y2": 506.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 343.5,
+        "y1": 506.5,
+        "x2": 260.5,
+        "y2": 593.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 343.5,
+        "y1": 506.5,
+        "x2": 427.5,
+        "y2": 593.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 1081.5,
+        "x2": 344,
+        "y2": 893.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344,
+        "y1": 893.5,
+        "x2": 256.5,
+        "y2": 824
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344,
+        "y1": 893.5,
+        "x2": 431.5,
+        "y2": 824
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 1081.5,
+        "x2": 144.5,
+        "y2": 1077
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 144.5,
+        "y1": 1077,
+        "x2": 76.5,
+        "y2": 990
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 144.5,
+        "y1": 1077,
+        "x2": 80.5,
+        "y2": 1160.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 1081.5,
+        "x2": 541.5,
+        "y2": 1077
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 541.5,
+        "y1": 1077,
+        "x2": 645.5,
+        "y2": 994
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 541.5,
+        "y1": 1077,
+        "x2": 642.5,
+        "y2": 1161.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 344.5,
+        "y1": 1081.5,
+        "x2": 343.5,
+        "y2": 1262.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 343.5,
+        "y1": 1262.5,
+        "x2": 427.5,
+        "y2": 1349
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 343.5,
+        "y1": 1262.5,
+        "x2": 260.5,
+        "y2": 1353
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    }
+  ],
+  "interms": [
+    {
+      "x": 344,
+      "y": 137.5,
+      "r": 6
+    },
+    {
+      "x": 144.5,
+      "y": 321,
+      "r": 6
+    },
+    {
+      "x": 541.5,
+      "y": 321,
+      "r": 6
+    },
+    {
+      "x": 343.5,
+      "y": 506.5,
+      "r": 6
+    },
+    {
+      "x": 344,
+      "y": 893.5,
+      "r": 6
+    },
+    {
+      "x": 144.5,
+      "y": 1077,
+      "r": 6
+    },
+    {
+      "x": 541.5,
+      "y": 1077,
+      "r": 6
+    },
+    {
+      "x": 343.5,
+      "y": 1262.5,
+      "r": 6
+    }
+  ],
+  "hubs": [
+    {
+      "x": 344.5,
+      "y": 321.5,
+      "r": 39,
+      "label": "1",
+      "fontSize": 25.0,
+      "cavidades": []
+    },
+    {
+      "x": 344.5,
+      "y": 1081.5,
+      "r": 39,
+      "label": "2",
+      "fontSize": 25.0,
+      "cavidades": []
+    }
+  ],
+  "cavidades": [
+    {
+      "id": "9",
+      "x": 256.5,
+      "y": 824,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "16",
+      "x": 431.5,
+      "y": 824,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "10",
+      "x": 76.5,
+      "y": 990,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "11",
+      "x": 80.5,
+      "y": 1160.5,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "12",
+      "x": 260.5,
+      "y": 1353,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "13",
+      "x": 427.5,
+      "y": 1349,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "14",
+      "x": 642.5,
+      "y": 1161.5,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "15",
+      "x": 645.5,
+      "y": 994,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "1",
+      "x": 256.5,
+      "y": 68.5,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "8",
+      "x": 439.5,
+      "y": 68.5,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "2",
+      "x": 72.5,
+      "y": 242,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "3",
+      "x": 72,
+      "y": 405,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "4",
+      "x": 260.5,
+      "y": 593.5,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "5",
+      "x": 427.5,
+      "y": 593.5,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "6",
+      "x": 638.5,
+      "y": 398,
+      "r": 50,
+      "fontSize": 38
+    },
+    {
+      "id": "7",
+      "x": 637.5,
+      "y": 246,
+      "r": 50,
+      "fontSize": 38
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      8,
+      8
+    ]
+  }
+}

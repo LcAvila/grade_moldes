@@ -1,0 +1,468 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-194",
+ "codigo": "194",
+ "nomePeca": "CORPO NEO PEN GIGANTE",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Corpo\\Corpo Hidrog. HNG - 64 Cav - Molde 194\\2024\\02-10.01.24- Corpo Hid. Neo Pen Gigante - 64 cav. - Molde 194.xls",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:26",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "SEM BUCHA",
+   "data": "2023-08-25",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "24": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "25": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "26": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "27": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "28": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "29": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "30": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "31": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "36": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "37": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "38": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "SEM BUCHA",
+   "data": "2024-01-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "44": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "45": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "51": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "52": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "F.P.F.Q",
+   "data": "2024-01-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "55": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "56": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "57": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "58": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "59": {
+   "desvio": "PINO QUENTE",
+   "data": "2024-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "60": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ARBURG 48",
+  "controlador": "VAGNER",
+  "dataEntrada": "2024-01-10"
+ }
+}

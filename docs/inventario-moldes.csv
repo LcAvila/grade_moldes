@@ -1,0 +1,74 @@
+﻿Codigo;Peca;Familia;Cavidades;Layout;Arquivos;Com registros;Anos;Maquina padrao;Material padrao
+11A;Bico Para Frasco De Cola 40G E 90G;Colas;16;layout-generico-16;1;1;;ROMI 29;PEBD 80% PEAD 20%
+69;Botao Lap. Turbo Plus;Lapiseiras;8;layout-generico-8;1;0;2018;ENGEL 1;ABS
+81;Anel Para Reabastecedor;Reabastecedores;16;layout-generico-16;5;0;2016 - 2017;ENGEL 2;PEAD
+89;Corpo Lap. Aluno;Lapiseiras;16;layout-generico-16;26;3;2014 - 2015 - 2016 - 2017 - 2018 - 2019;ROMI 40;ABS
+97;Tampinha Esferograficas;Esferográficas;64;layout-generico-64;51;33;2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ROMI 37;POLIEITLENO
+98;Conexao Esferograficas;Esferográficas;64;layout-generico-64;51;34;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 33;POLIPROPILENO
+101;Tampinha Neo Pen;Hidrográficas;64;layout-generico-64;62;47;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 6;PP
+107;Tampa Esf. Top/Economic;Esferográficas;64;layout-generico-64;90;75;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 50;POLIPROPILENO (PP)
+108;Corpo Esferografica 07/Economic;Esferográficas;64;layout-generico-64;33;11;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020;ENGEL 31;POLIESTIRENO
+109;Tampinha Hidr. Color (Pp);Hidrográficas;48;layout-generico-48;77;55;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 30;PP
+110;Tampa Hidr. Color (Pp);Hidrográficas;48;layout-generico-48;74;60;2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 32;PP
+115;Corpo Esferografica 07;Esferográficas;64;layout-generico-64;21;0;2014 - 2015 - 2016 - 2017 - 2018;ROMI 29;POLIESTIRENO
+116;Corpo Pincel;Marcadores;16;layout-generico-16;40;11;2014 - 2015 - 2016 - 2017 - 2018 - 2019;ROMI 44;POLIPROPILENO
+116A;Corpo Marc. Q.B.;Marcadores;16;layout-generico-16;81;49;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 9;Polipropileno (PP)
+117;Tampa Esf. 07;Esferográficas;64;layout-generico-64;44;28;2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ENGEL 8;POLIPROPILENO
+120;Corpo Neo Pen Gigante;Hidrográficas;64;layout-generico-64;46;32;2016 - 2017 - 2018 - 2019 - 2020 - 2021;ENGEL 31;POLIESTIRENO
+121;Corpo Hidrografica Neo Pen Mirim;Hidrográficas;64;layout-generico-64;58;38;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 32;POLIPROPILENO
+122;Tampa Neo Pen;Hidrográficas;48;layout-generico-48;47;30;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2022 - 2023 - 2024 - 2025;ROMI 44;PP
+128;Apagador Para Q.B.;Diversos;1;layout-generico-1;9;9;2019 - 2020 - 2021 - 2022 - 2023;ROMI 43;POLIPROPILENO
+129;Tampa Para Frasco De Cola 500G E 1000G;Colas;4;layout-generico-4;1;1;2025;ROMI 45;PP
+137;Corpo Lapiseira Turbo Plus;Lapiseiras;8;layout-generico-8;16;0;2015 - 2016 - 2017 - 2018;ROMI 40;ABS
+138;Corpo Esferografica Top/Jet Lux;Esferográficas;64;layout-generico-64;31;1;2014 - 2015 - 2016 - 2017 - 2018;ARBURG 36;POLIESTIRENO
+139;Tampa Esf. Top/Economic;Esferográficas;64;layout-generico-64;56;36;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 45;POLIPROPILENO
+140;Tampinha Esferograficas;Esferográficas;64;layout-generico-64;34;19;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ENGEL 3;PP
+143;Corpo Esferografica 07/Economic;Esferográficas;64;layout-generico-64;52;27;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022;ROMI 40;POLIESTILENO
+144;Corpo Neo Pen Gigante;Hidrográficas;64;layout-generico-64;13;0;2014 - 2015 - 2016;ENGEL 31;POLIESTIRENO
+145A;Tampa Para Frasco De Cola 40G E 90G;Colas;16;layout-generico-16;1;1;;;POLIPROPILENO (PP)
+145B;Tampa Marc. Pincel;Marcadores;16;layout-generico-16;68;45;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 29;POLIPROPILENO (PP)
+145C;Tampinha Marc. Q.B.;Marcadores;16;layout-generico-16;45;28;2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 6;POLIETILENO
+145D;Tampa Reab. Q.B.;Reabastecedores;16;layout-generico-16;74;42;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ROMI 30;PP
+145E;Tampa Reab. Pincel;Reabastecedores;16;layout-generico-16;40;27;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 30;POLIPROPILENO
+146;Tampinha Neo Pen;Hidrográficas;64;layout-generico-64;41;27;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ROMI 43;POLIPROPILENO
+147A;Tampa Hidr. Color;Hidrográficas;32;layout-generico-32;29;5;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2024;ROMI 44;PEAD
+147B;Tampinha Hidr. Color;Hidrográficas;32;layout-generico-32;20;11;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2022 - 2025;ENGEL 32;POLIESTIRENO
+148;Corpo Color (Pp);Hidrográficas;64;layout-generico-64;71;54;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 40;Polipropileno (PP)
+150;Conexao Microline;Hidrográficas;16;layout-generico-16;92;46;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 30;POLIPROPILENO
+151;Tampinha Microline;Hidrográficas;16;layout-generico-16;67;43;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 36;PP 400
+152;Tampa Microline;Hidrográficas;16;layout-generico-16;47;18;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020;ROMI 38;POLIPROPILENO
+153;Corpo Esf. 07 Plus;Esferográficas;16;layout-generico-16;10;3;2014 - 2015 - 2016 - 2017 - 2018 - 2019;ROMI 40;POLIESTIRENO
+154;Tampa Esf. 07 Plus;Esferográficas;16;layout-generico-16;15;2;2014 - 2015 - 2016 - 2017 - 2018 - 2019;ROMI 29;POLIPROPILENO
+156;Tampinha Esf.;Esferográficas;16;layout-generico-16;3;2;2017 - 2020;ENGEL 1;POLIETILENO
+157;Bico Reabastecedor Pincel/Q.B.;Reabastecedores;16;layout-generico-16;67;44;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 29;PP
+158;Botao Lapiseira Tecnico;Lapiseiras;16;layout-generico-16;25;14;2015 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ROMI 38;ABS
+159;Corpo Lap. Tecnico;Lapiseiras;16;layout-generico-16;30;16;2014 - 2015 - 2016 - 2017 - 2018 - 2020 - 2022 - 2023 - 2024;ENGEL 31;ABS
+160;Dianteira Lap. Tecnico;Lapiseiras;16;layout-generico-16;26;20;2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ENGEL 5;PP
+161;Tampa Marcador Q.B.;Marcadores;12;layout-generico-12;21;0;2014 - 2015 - 2016 - 2017;ROMI 29;POLIETILENO
+162;Tampa Marc. Destaq;Marcadores;16;layout-generico-16;69;42;2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 50;PP
+163;Tampinha Marc. Destaq;Marcadores;16;layout-generico-16;56;33;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 6;POLIPROPILENO (PP)
+164;Corpo Marc. Destaq;Marcadores;16;layout-generico-16;75;46;2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 40;PP
+165;Corpo Esferografica 07/Economic;Esferográficas;64;layout-generico-64;54;49;2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 51;POLIESTIRENO (PS)
+167;Tampinha Esferograficas;Esferográficas;64;layout-generico-64;1;0;2014;ROMI 43;Polietileno
+167A;Conexao Esferograficas;Esferográficas;64;layout-generico-64;45;28;2012 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ENGEL 33;POLIPROPILENO
+168;Conexao Esferograficas;Esferográficas;64;layout-168-r05;28;23;2014 - 2015 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024;ROMI 43;POLIPROPILENO
+169;Tampa Neo Pen;Hidrográficas;64;layout-generico-64;62;41;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 50;PP 120
+173;Tampa Para Tinteiro;Esferográficas;8;layout-generico-8;4;2;2022;ARBURG 36;ABS
+181;Tampa Esf. 07;Esferográficas;64;layout-generico-64;55;36;2014 - 2015 - 2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 7;PP
+183;Corpo 07 Vip Retratil;Esferográficas;24;layout-generico-24;52;38;2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 44;P S
+184;Clip 07 Vip Retratil;Esferográficas;24;layout-generico-24;57;34;2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 39;ABS
+185;Botao 07 Vip Retratil;Esferográficas;24;layout-generico-24;52;37;2016 - 2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 40;POM
+186;Corpo De Estojo Magister;Esferográficas;8;layout-generico-8;10;10;;ROMI 45;P S
+187;Conector Para Tubo De Esferografica Brinde;Esferográficas;4;layout-generico-4;15;15;;ROMI 45;TPE
+188;Bico Para Frasco De Cola 40G E 90G;Colas;16;layout-generico-16;1;1;;ENGEL 6;POLIPROPILENO (PP)
+189;Tampa Marc. Q.B.;Marcadores;16;layout-generico-16;83;67;2017 - 2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 35;POLIPROPILENO
+190;Corpo Esferografica Top/Jet Lux;Esferográficas;64;layout-generico-64;62;62;2018 - 2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 52;POLIESTIRENO (PS)
+191;Corpo Pincel;Marcadores;16;layout-generico-16;40;40;2020 - 2021 - 2022 - 2023 - 2024 - 2025;ROMI 9;POLIPROPILENO
+192;Corpo Esferografica 07;Esferográficas;64;layout-generico-64;45;45;2019 - 2020 - 2021 - 2022 - 2023 - 2024 - 2025;ARBURG 52;POLIESTIRENO
+193;Tampa Microline;Hidrográficas;32;layout-generico-32;38;38;2020 - 2021 - 2022 - 2023 - 2024 - 2025;ENGEL 32;PP
+194;Corpo Neo Pen Gigante;Hidrográficas;64;layout-generico-64;46;46;2021 - 2022 - 2023 - 2024 - 2025;ARBURG 49;PP
+195;Corpo Neo Pen Mirim;Hidrográficas;64;layout-generico-64;10;10;2021 - 2022;ENGEL 32;Polipropileno (PP)
+197;Corpo Esferografica 07/Economic;Esferográficas;64;layout-generico-64;23;23;2022 - 2023 - 2024 - 2025;ARBURG 49;PS
+199;Corpo Neo Pen Gigante;Hidrográficas;64;layout-generico-64;30;30;2023 - 2024 - 2025;ARBURG 49;PP
+200;Conexao Esferograficas;Esferográficas;96;layout-generico-96;4;4;2025;ENGEL 33;PP
+202;Arruela De Vedacao;Colas;2;layout-generico-2;1;1;;ROMI 39;TPE

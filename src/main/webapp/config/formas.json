@@ -10,6 +10,33 @@
         { "tag": "circle", "attrs": { "r": "28" }, "classes": ["cav-circle"] }
       ],
       "rotulo": { "classes": ["cav-text"] }
+    },
+    {
+      "id": "forma-circulo-22",
+      "revisao": "1",
+      "descricao": "Pino circular de raio 22 (layouts genericos com ate 32 cavidades).",
+      "elementos": [
+        { "tag": "circle", "attrs": { "r": "22" }, "classes": ["cav-circle"] }
+      ],
+      "rotulo": { "classes": ["cav-text"] }
+    },
+    {
+      "id": "forma-circulo-16",
+      "revisao": "1",
+      "descricao": "Pino circular de raio 16 (layouts genericos com ate 64 cavidades).",
+      "elementos": [
+        { "tag": "circle", "attrs": { "r": "16" }, "classes": ["cav-circle"] }
+      ],
+      "rotulo": { "classes": ["cav-text"] }
+    },
+    {
+      "id": "forma-circulo-14",
+      "revisao": "1",
+      "descricao": "Pino circular de raio 14 com rotulo menor (layouts genericos densos, ex.: 96 cavidades).",
+      "elementos": [
+        { "tag": "circle", "attrs": { "r": "14" }, "classes": ["cav-circle"] }
+      ],
+      "rotulo": { "classes": ["cav-text", "cav-text-sm"] }
     }
   ]
 }

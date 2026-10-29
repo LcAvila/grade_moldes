@@ -1,0 +1,244 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-147b",
+ "codigo": "147B",
+ "nomePeca": "TAMPINHA HIDR. COLOR",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Color - 32 Cav - Molde 147B\\2025\\01-29.10.22-Tampinha Hidr. Color - 32 cav. - Molde 147B.xls",
+ "dataOrigem": "2025",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "REB NO FURO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "QUEIMANDO NO Ø MAIOR",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "QUEIMANDO NO Ø MAIOR",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "15": {
+   "desvio": "ENTUPIDA",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "V.P.F",
+   "data": "2025-01-28",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "REB NO FURO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "24": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "25": {
+   "desvio": "REB NO FURO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "26": {
+   "desvio": "REB NO FURO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "27": {
+   "desvio": "REB NO FURO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "28": {
+   "desvio": "ENTUPIDA",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "29": {
+   "desvio": "CONTRAÇÃO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  },
+  "30": {
+   "desvio": "ENTUPIDA",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "31": {
+   "desvio": "ENTUPIDA",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "32": {
+   "desvio": "REB NO FURO",
+   "data": "2025-01-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I."
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIESTIRENO",
+  "maquina": "ENGEL 32",
+  "controlador": "VAGNER",
+  "dataEntrada": "2025-01-28"
+ }
+}

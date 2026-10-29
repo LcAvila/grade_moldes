@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-116a",
+ "codigo": "116A",
+ "nomePeca": "CORPO MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Q.B. - 16 Cav - Molde 116A\\2024\\03-20.06.24-Corpo Marcador Q.B. - 16 cav. - Molde 116A.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "REB. NO Ø 19,29mm",
+   "data": "2024-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-02-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "REB. NO Ø 19,29mm",
+   "data": "2024-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "12": {
+   "desvio": "REB. NO Ø 19,29mm",
+   "data": "2024-06-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "13": {
+   "desvio": "REB. NO Ø 19,29mm",
+   "data": "2024-06-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "14": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2024-07-04",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "15": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-24",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ROMI 9",
+  "controlador": "MATHEUS",
+  "dataEntrada": "2024-06-20"
+ }
+}

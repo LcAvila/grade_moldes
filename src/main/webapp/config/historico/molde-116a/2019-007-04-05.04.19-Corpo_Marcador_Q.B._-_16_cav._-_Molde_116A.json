@@ -1,0 +1,125 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-116a",
+ "codigo": "116A",
+ "nomePeca": "CORPO MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Q.B. - 16 Cav - Molde 116A\\2019\\04-05.04.19-Corpo Marcador Q.B. - 16 cav. - Molde 116A.xlsx",
+ "dataOrigem": "2019",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REBARBA NO Ø8,35",
+   "data": "2019-04-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "RAFAEL"
+  },
+  "2": {
+   "desvio": "REB. NA SAÍDA DE AR",
+   "data": "2019-04-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "REBARBA NO Ø8,35mm",
+   "data": "2019-04-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "12": {
+   "desvio": "REB. NA SAÍDA DE AR",
+   "data": "2019-04-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "REBARBA NA SAIDA DE AR",
+   "data": "2019-04-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "RAFAEL"
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ROMI 9",
+  "controlador": "DIOGO",
+  "dataEntrada": "2019-04-05"
+ }
+}

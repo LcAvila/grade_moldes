@@ -1,0 +1,468 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-167a",
+ "codigo": "167A",
+ "nomePeca": "CONEXÃO ESFEROGRÁFICAS",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Conexão\\Conexão Esf. - 64 Cav. Molde 167A\\2024\\04 - 03.10.24 - Conexão Esf. - 64 cav. - Molde 167A -.xls",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA",
+   "data": "2024-10-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2024-10-04",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "6": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA E NO DIÂMETRO MAIOR",
+   "data": "2024-06-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "7": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA E NO DIÂMETRO MAIOR",
+   "data": "2024-06-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA",
+   "data": "2024-06-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "11": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA",
+   "data": "2024-06-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "C.P.Q",
+   "data": "2024-10-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA",
+   "data": "2024-10-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2024-03-23",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "25": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "26": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "30": {
+   "desvio": "C.P.Q",
+   "data": "2024-10-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VICTOR"
+  },
+  "31": {
+   "desvio": "C.P.Q",
+   "data": "2024-10-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VICTOR"
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "36": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "37": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "38": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "V.P.F",
+   "data": "2024-08-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "44": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "45": {
+   "desvio": "ARRANHÃO NO Ø EXTERNO",
+   "data": "2024-03-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "SUPERFÍCIE EXTERNA COM RESSALTO",
+   "data": "2024-10-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA",
+   "data": "2024-10-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "52": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "53": {
+   "desvio": "REB. NO FURO DE ENCAIXE DA PONTEIRA",
+   "data": "2024-10-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SÉRGIO"
+  },
+  "54": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "55": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "56": {
+   "desvio": "REBARBA NO Ø MENOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "57": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "58": {
+   "desvio": "C.P.Q",
+   "data": "2024-10-04",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "59": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "60": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2024-06-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "REB. NO TOPO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 33",
+  "controlador": "VICTOR HUGO",
+  "dataEntrada": "2024-10-03"
+ }
+}

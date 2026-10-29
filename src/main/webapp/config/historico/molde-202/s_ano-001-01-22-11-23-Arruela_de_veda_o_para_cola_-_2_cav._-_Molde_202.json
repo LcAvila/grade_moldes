@@ -1,0 +1,32 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-202",
+ "codigo": "202",
+ "nomePeca": "Arruela de vedação",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Colas\\Arruela\\01-22-11-23-Arruela de vedação para cola - 2 cav. - Molde 202.xlsx",
+ "dataOrigem": "",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "TPE",
+  "maquina": "ROMI 39"
+ }
+}

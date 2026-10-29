@@ -1,0 +1,133 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-116a",
+ "codigo": "116A",
+ "nomePeca": "CORPO MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Q.B. - 16 Cav - Molde 116A\\2024\\05-06.09.24-Corpo Marcador Q.B. - 16 cav. - Molde 116A.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "FORA DA MEDIDA",
+   "data": "2024-09-09",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "2": {
+   "desvio": "FORA DA MEDIDA",
+   "data": "2024-09-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "3": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-09-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "4": {
+   "desvio": "ARRANJÃO EXTERNO",
+   "data": "2024-09-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-02-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "FALHANDO (VAZANDO ÁGUA PELO PINO)",
+   "data": "2024-09-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "14": {
+   "desvio": "ARRANJÃO EXTERNO",
+   "data": "2024-09-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-09-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ENGEL 07",
+  "controlador": "MÁRCIO",
+  "dataEntrada": "2024-08-12",
+  "observacoes": "Transferido para ROMI 9 em 05/09/2024 (Sérgio Zago)"
+ }
+}

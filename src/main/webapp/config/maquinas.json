@@ -1,0 +1,206 @@
+{
+  "versao": 1,
+  "observacao": "Cadastro de maquinas da Compactor extraido das planilhas de grade do repositorio 'pastas'. Edite para adicionar/remover maquinas. Maquinas citadas em config/moldes.json entram na lista automaticamente.",
+  "maquinas": [
+    {
+      "id": "arburg-8",
+      "nome": "ARBURG 8",
+      "ocorrencias": 1
+    },
+    {
+      "id": "arburg-36",
+      "nome": "ARBURG 36",
+      "ocorrencias": 167
+    },
+    {
+      "id": "arburg-40",
+      "nome": "ARBURG 40",
+      "ocorrencias": 1
+    },
+    {
+      "id": "arburg-48",
+      "nome": "ARBURG 48",
+      "ocorrencias": 101
+    },
+    {
+      "id": "arburg-49",
+      "nome": "ARBURG 49",
+      "ocorrencias": 63
+    },
+    {
+      "id": "arburg-50",
+      "nome": "ARBURG 50",
+      "ocorrencias": 38
+    },
+    {
+      "id": "arburg-51",
+      "nome": "ARBURG 51",
+      "ocorrencias": 24
+    },
+    {
+      "id": "arburg-52",
+      "nome": "ARBURG 52",
+      "ocorrencias": 21
+    },
+    {
+      "id": "engel-1",
+      "nome": "ENGEL 1",
+      "ocorrencias": 9
+    },
+    {
+      "id": "engel-2",
+      "nome": "ENGEL 2",
+      "ocorrencias": 5
+    },
+    {
+      "id": "engel-3",
+      "nome": "ENGEL 3",
+      "ocorrencias": 80
+    },
+    {
+      "id": "engel-4",
+      "nome": "ENGEL 4",
+      "ocorrencias": 36
+    },
+    {
+      "id": "engel-5",
+      "nome": "ENGEL 5",
+      "ocorrencias": 78
+    },
+    {
+      "id": "engel-6",
+      "nome": "ENGEL 6",
+      "ocorrencias": 115
+    },
+    {
+      "id": "engel-7",
+      "nome": "ENGEL 7",
+      "ocorrencias": 112
+    },
+    {
+      "id": "engel-8",
+      "nome": "ENGEL 8",
+      "ocorrencias": 93
+    },
+    {
+      "id": "engel-31",
+      "nome": "ENGEL 31",
+      "ocorrencias": 122
+    },
+    {
+      "id": "engel-32",
+      "nome": "ENGEL 32",
+      "ocorrencias": 112
+    },
+    {
+      "id": "engel-33",
+      "nome": "ENGEL 33",
+      "ocorrencias": 144
+    },
+    {
+      "id": "engel-34",
+      "nome": "ENGEL 34",
+      "ocorrencias": 76
+    },
+    {
+      "id": "engel-35",
+      "nome": "ENGEL 35",
+      "ocorrencias": 72
+    },
+    {
+      "id": "engel-36",
+      "nome": "ENGEL 36",
+      "ocorrencias": 1
+    },
+    {
+      "id": "engel-50",
+      "nome": "ENGEL 50",
+      "ocorrencias": 1
+    },
+    {
+      "id": "engel-51",
+      "nome": "ENGEL 51",
+      "ocorrencias": 7
+    },
+    {
+      "id": "engel-52",
+      "nome": "ENGEL 52",
+      "ocorrencias": 2
+    },
+    {
+      "id": "oriente-11",
+      "nome": "ORIENTE 11",
+      "ocorrencias": 34
+    },
+    {
+      "id": "oriente-22",
+      "nome": "ORIENTE 22",
+      "ocorrencias": 3
+    },
+    {
+      "id": "romi-9",
+      "nome": "ROMI 9",
+      "ocorrencias": 125
+    },
+    {
+      "id": "romi-29",
+      "nome": "ROMI 29",
+      "ocorrencias": 91
+    },
+    {
+      "id": "romi-30",
+      "nome": "ROMI 30",
+      "ocorrencias": 147
+    },
+    {
+      "id": "romi-31",
+      "nome": "ROMI 31",
+      "ocorrencias": 1
+    },
+    {
+      "id": "romi-36",
+      "nome": "ROMI 36",
+      "ocorrencias": 3
+    },
+    {
+      "id": "romi-37",
+      "nome": "ROMI 37",
+      "ocorrencias": 41
+    },
+    {
+      "id": "romi-38",
+      "nome": "ROMI 38",
+      "ocorrencias": 103
+    },
+    {
+      "id": "romi-39",
+      "nome": "ROMI 39",
+      "ocorrencias": 178
+    },
+    {
+      "id": "romi-40",
+      "nome": "ROMI 40",
+      "ocorrencias": 159
+    },
+    {
+      "id": "romi-42",
+      "nome": "ROMI 42",
+      "ocorrencias": 74
+    },
+    {
+      "id": "romi-43",
+      "nome": "ROMI 43",
+      "ocorrencias": 61
+    },
+    {
+      "id": "romi-44",
+      "nome": "ROMI 44",
+      "ocorrencias": 180
+    },
+    {
+      "id": "romi-45",
+      "nome": "ROMI 45",
+      "ocorrencias": 127
+    }
+  ]
+}

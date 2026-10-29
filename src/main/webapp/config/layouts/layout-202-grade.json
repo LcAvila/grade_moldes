@@ -1,0 +1,51 @@
+{
+  "id": "layout-202-grade",
+  "moldeId": "molde-202",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 751 245",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Colas/Arruela/molde-202.svg). Molde 202 com 2 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 743,
+        "height": 237
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [],
+  "interms": [],
+  "hubs": [],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 116,
+      "y": 122,
+      "r": 99,
+      "fontSize": 75
+    },
+    {
+      "id": "2",
+      "x": 633.5,
+      "y": 122,
+      "r": 99,
+      "fontSize": 75
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      1,
+      1
+    ]
+  }
+}

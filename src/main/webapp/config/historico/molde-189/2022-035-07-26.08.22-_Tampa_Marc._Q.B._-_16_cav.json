@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-189",
+ "codigo": "189",
+ "nomePeca": "TAMPA MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Q.B. - 16 Cav. - Molde 189\\2022\\07-26.08.22- Tampa Marc. Q.B. - 16 cav.xlsx",
+ "dataOrigem": "2022",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "ENTUPIDA (V.P.I)",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "RESITÊNCIA NÃO AQUEÇE",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "6": {
+   "desvio": "COPINHO QUEBRADO",
+   "data": "2022-08-28",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "RESITÊNCIA NÃO AQUEÇE",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "RESITÊNCIA NÃO AQUEÇE",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "11": {
+   "desvio": "RESITÊNCIA NÃO AQUEÇE",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "12": {
+   "desvio": "RESITÊNCIA NÃO AQUEÇE",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "RESITÊNCIA NÃO AQUEÇE",
+   "data": "2022-08-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ARBURG 36",
+  "controlador": "PATRICK",
+  "dataEntrada": "2022-08-26"
+ }
+}

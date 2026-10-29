@@ -1,0 +1,469 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-199",
+ "codigo": "199",
+ "nomePeca": "CORPO NEO PEN GIGANTE",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Corpo\\Corpo Hidrog. HNG - 64 Cav - Molde 199\\2023\\05-18.05.2023-Corpo Hid. Neo Pen Gigante - 64 cav. - Molde 199.xls",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:26",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REB. NA ALÇA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "7": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "10": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "11": {
+   "desvio": "REB. NA ALÇA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "12": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "19": {
+   "desvio": "REB. NA ALÇA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "20": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "25": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "26": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "27": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "30": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "31": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "32": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "33": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "34": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "36": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "37": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "38": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "44": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "45": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "52": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "55": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "56": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "57": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "58": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "59": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "60": {
+   "desvio": "REB. NA ALÇA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "63": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "Polipropileno (PP)",
+  "maquina": "ENGEL 31",
+  "controlador": "DAVID",
+  "dataEntrada": "2023-05-18",
+  "observacoes": "TROCA DE 3 INSERTOS DO PINO DO FORMATO CAVIDADES: 01, 44 E 59"
+ }
+}

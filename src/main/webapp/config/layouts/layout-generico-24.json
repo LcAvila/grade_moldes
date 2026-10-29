@@ -1,0 +1,137 @@
+{
+  "id": "layout-generico-24",
+  "revisao": "1",
+  "tipo": "parametrizado",
+  "gerador": "radial-zonas",
+  "viewBox": "0 0 1300 1350",
+  "formaPadrao": "forma-circulo-22",
+  "observacao": "Layout generico (anel radial) para moldes com 24 cavidades. Posicoes calculadas em circulo; clique no hub central seleciona a zona inteira.",
+  "parametros": {
+    "moldura": {
+      "x": 4,
+      "y": 4,
+      "width": 1292,
+      "height": 1342
+    },
+    "hub": {
+      "x": 650.0,
+      "y": 675.0
+    },
+    "posicoes": [
+      {
+        "x": 650.0,
+        "y": 225.0
+      },
+      {
+        "x": 766.47,
+        "y": 240.33
+      },
+      {
+        "x": 875.0,
+        "y": 285.29
+      },
+      {
+        "x": 968.2,
+        "y": 356.8
+      },
+      {
+        "x": 1039.71,
+        "y": 450.0
+      },
+      {
+        "x": 1084.67,
+        "y": 558.53
+      },
+      {
+        "x": 1100.0,
+        "y": 675.0
+      },
+      {
+        "x": 1084.67,
+        "y": 791.47
+      },
+      {
+        "x": 1039.71,
+        "y": 900.0
+      },
+      {
+        "x": 968.2,
+        "y": 993.2
+      },
+      {
+        "x": 875.0,
+        "y": 1064.71
+      },
+      {
+        "x": 766.47,
+        "y": 1109.67
+      },
+      {
+        "x": 650.0,
+        "y": 1125.0
+      },
+      {
+        "x": 533.53,
+        "y": 1109.67
+      },
+      {
+        "x": 425.0,
+        "y": 1064.71
+      },
+      {
+        "x": 331.8,
+        "y": 993.2
+      },
+      {
+        "x": 260.29,
+        "y": 900.0
+      },
+      {
+        "x": 215.33,
+        "y": 791.47
+      },
+      {
+        "x": 200.0,
+        "y": 675.0
+      },
+      {
+        "x": 215.33,
+        "y": 558.53
+      },
+      {
+        "x": 260.29,
+        "y": 450.0
+      },
+      {
+        "x": 331.8,
+        "y": 356.8
+      },
+      {
+        "x": 425.0,
+        "y": 285.29
+      },
+      {
+        "x": 533.53,
+        "y": 240.33
+      }
+    ],
+    "interms": [],
+    "zonas": [
+      {
+        "label": "24",
+        "offX": 0,
+        "offY": 0,
+        "inicioIndice": 0
+      }
+    ]
+  },
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      15,
+      9
+    ]
+  }
+}

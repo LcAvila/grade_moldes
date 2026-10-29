@@ -1,0 +1,469 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-197",
+ "codigo": "197",
+ "nomePeca": "CORPO ESFEROGRÁFICA 07/ECONOMIC",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Corpos\\Corpo 07 - 64 cav - Molde 197\\2023\\08-16.06.23-Corpo Esf. 07-Econ. - Molde 197.xls",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "2": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "3": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "4": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "5": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "ARRANHÃO EXT. 'NO SEXTAVADO'",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "ARRANHÃO INTERNO",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "25": {
+   "desvio": "ZONA VEDADA PELOS ARRANHÕES",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "26": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "27": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "30": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "31": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "32": {
+   "desvio": "ZONA VEDADA PELOS ARRANHÕES",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "ARRANHÃO INT. 'NO SEXTAVADO'",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "35": {
+   "desvio": "ARRANHÃO EXT. 'NO SEXTAVADO'",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "36": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "37": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "38": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "ARRANHÃO EXT Ø MAIOR",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "44": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "45": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "52": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "ARRANHÃO INT. 'NO SEXTAVADO'",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "55": {
+   "desvio": "ARRANHÃO INTERNO",
+   "data": "2023-06-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "56": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "57": {
+   "desvio": "ARRANHÃO EXT 'NA PEGA'*",
+   "data": "2023-06-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "58": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "59": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "60": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PS",
+  "maquina": "ARB 52",
+  "controlador": "PATRICK PAIVA",
+  "dataEntrada": "2023-06-16",
+  "observacoes": "16/06/2023 - Foi solicitado o polimento das cavidades 35 e 55."
+ }
+}

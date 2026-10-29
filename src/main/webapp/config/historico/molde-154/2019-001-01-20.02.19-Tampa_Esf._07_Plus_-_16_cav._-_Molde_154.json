@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-154",
+ "codigo": "154",
+ "nomePeca": "TAMPA ESF. 07 PLUS",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Tampas\\Tampa Esf. 07 Plus- 16 Cav- Molde 154\\2019\\01-20.02.19-Tampa Esf. 07 Plus - 16 cav. - Molde 154.xlsx",
+ "dataOrigem": "2019",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "ENTUPIDA",
+   "data": "2018-06-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "RAFAEL"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "MANCHADA",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "SEM SNAP",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "6": {
+   "desvio": "MANCHADA",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "JANELA QUEBRADA",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "MANCHADA",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "11": {
+   "desvio": "REBARBA NA JANELA",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "12": {
+   "desvio": "MANCHADA",
+   "data": "2019-02-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ROMI 29",
+  "controlador": "DAVID",
+  "dataEntrada": "2019-02-20"
+ }
+}

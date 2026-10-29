@@ -6,6 +6,7 @@
     contextPath: "",
     hoje: new Date().toISOString().split("T")[0],
     moldes: [],
+    maquinas: [],
     formas: {},
     desenhos: {},
     molde: null,
@@ -22,6 +23,10 @@
     onDetalhes: null,
     refs: { diagrama: {}, tabela: {} }
   };
+
+  // Revisão de todas as grades do projeto: valor fixo e não editável em tela.
+  // Fonte única — `app.js` força estes campos e `index.jsp` só precisa exibir.
+  const revisaoFixa = { num: "07", data: "02/01/2027" };
 
   function esc(v) {
     return String(v == null ? "" : v)
@@ -84,6 +89,7 @@
 
   CF.estado = {
     estado: estado,
+    revisaoFixa: revisaoFixa,
     esc: esc,
     br: br,
     compararId: compararId,

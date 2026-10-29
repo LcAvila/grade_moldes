@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-191",
+ "codigo": "191",
+ "nomePeca": "CORPO PINCEL",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Pincel - 16 Cav - Molde 191\\2024\\01-22.01.24- Corpo Pincel Permanente. - 16 cav. - Molde 191.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REBARBA NO FURO",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "2": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "3": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "4": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "7": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "8": {
+   "desvio": "REBARBA NO FURO",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "9": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "10": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "11": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "12": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-01-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ROMI 9",
+  "controlador": "DIOGO",
+  "dataEntrada": "2024-01-22"
+ }
+}

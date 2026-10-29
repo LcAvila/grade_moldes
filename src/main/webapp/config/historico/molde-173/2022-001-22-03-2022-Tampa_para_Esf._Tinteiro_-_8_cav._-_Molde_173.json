@@ -1,0 +1,48 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-173",
+ "codigo": "173",
+ "nomePeca": "TAMPA PARA TINTEIRO",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Esferográficas Especiais\\Tampa Tinteiro- 8 Cav - Molde 173\\22-03-2022-Tampa para Esf. Tinteiro - 8 cav. - Molde 173.xlsx",
+ "dataOrigem": "2022",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "ABS",
+  "maquina": "ARB 36",
+  "controlador": "DIOGO DE PAULA",
+  "dataEntrada": "2022-03-23"
+ }
+}

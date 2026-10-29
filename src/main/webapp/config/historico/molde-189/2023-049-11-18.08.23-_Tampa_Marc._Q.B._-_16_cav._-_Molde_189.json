@@ -1,0 +1,133 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-189",
+ "codigo": "189",
+ "nomePeca": "TAMPA MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Q.B. - 16 Cav. - Molde 189\\2023\\11-18.08.23- Tampa Marc. Q.B. - 16 cav. - Molde 189.xlsx",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "VAZANDO NO TESTE DE ESTANQUEIDADE",
+   "data": "2021-08-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "3": {
+   "desvio": "REBARBA NO CLIP E NO Ø MAIOR",
+   "data": "2023-08-21",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "COPINHO AMASSADO",
+   "data": "2023-08-18",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "VAZANDO NO TESTE DE ESTANQUEIDADE",
+   "data": "2023-08-24",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VICTOR"
+  },
+  "14": {
+   "desvio": "PEÇA AMASSADA",
+   "data": "2023-08-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ROMI 39",
+  "controlador": "VAGNER",
+  "dataEntrada": "2023-08-18",
+  "observacoes": "GRAVAÇÃO DO NÚMERO FEITA NO FUNDO DA TAMPA PELA FERRAMENTARIA."
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-151",
+ "codigo": "151",
+ "nomePeca": "TAMPINHA MICROLINE",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Microline\\Tampinha Microline - 16 Cav - Molde 151\\2023\\05 - 11.07.23-Tampinha Microline - 16 cav. - Molde 151.xlsx",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-24",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-24",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "16": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-05-24",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  }
+ },
+ "dadosGrade": {
+  "material": "PP 400",
+  "maquina": "ROMI 44",
+  "controlador": "VICTOR",
+  "dataEntrada": "2023-07-11",
+  "observacoes": "TROCA DA BUCHA DE ALIMENTAÇÃO.TROCA DA BUCHA DA PLACA DO GALHO(PARA SOLUCIONAR O PROBLEMA DE GALHO AGARRANDO)"
+ }
+}

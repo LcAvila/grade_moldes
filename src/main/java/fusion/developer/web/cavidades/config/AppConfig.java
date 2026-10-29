@@ -17,7 +17,8 @@ public final class AppConfig {
     private AppConfig() {}
 
     public static String get(String key) {
-        String env = System.getenv(key.toUpperCase().replace('.', '_'));
+        // app.fusion.base-url -> APP_FUSION_BASE_URL (pontos E hifens viram underscore)
+        String env = System.getenv(key.toUpperCase().replace('.', '_').replace('-', '_'));
         return env != null && !env.isBlank() ? env : P.getProperty(key);
     }
 

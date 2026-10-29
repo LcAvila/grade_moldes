@@ -1,0 +1,470 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-101",
+ "codigo": "101",
+ "nomePeca": "TAMPINHA NEO PEN",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Neo Pen - 64 Cav - Mol.101\\2022\\07-09.11.22-Tampinha Neo Pen - cav. 64 - Molde 101.xls",
+ "dataOrigem": "2022",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "2": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "3": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "4": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "5": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "10": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "11": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "12": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "13": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "14": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "15": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "16": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "25": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "26": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "30": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "31": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "36": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "37": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "38": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "41": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "44": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "45": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "52": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "55": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "56": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "57": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "58": {
+   "desvio": "FURADA",
+   "data": "2022-10-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "59": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "60": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "61": {
+   "desvio": "REB. NO Ø MAIOR",
+   "data": "2023-07-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ROMI 38",
+  "controlador": "DOUGLAS",
+  "dataEntrada": "2022-10-05",
+  "dataAtualizacao": "2023-07-05",
+  "observacoes": "Todas as peças possuem deslocamento no topo"
+ }
+}

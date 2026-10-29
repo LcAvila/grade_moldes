@@ -1,0 +1,519 @@
+{
+  "id": "layout-89-grade",
+  "moldeId": "molde-89",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 489 1846",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Lapiseiras/Corpos/Corpo Lapiseira Aluno - 16 Cav - Molde 89/molde-89.svg). Molde 89 com 16 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 481,
+        "height": 1838
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 74.5,
+        "y1": 193,
+        "x2": 244,
+        "y2": 193
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 244,
+        "y1": 193,
+        "x2": 412.5,
+        "y2": 193
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 74.5,
+        "y1": 679,
+        "x2": 244,
+        "y2": 679
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 244,
+        "y1": 679,
+        "x2": 412.5,
+        "y2": 679
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 72,
+        "y1": 1147,
+        "x2": 244,
+        "y2": 1147
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 244,
+        "y1": 1147,
+        "x2": 410,
+        "y2": 1147
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 72,
+        "y1": 1633,
+        "x2": 244,
+        "y2": 1633
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 244,
+        "y1": 1633,
+        "x2": 410,
+        "y2": 1633
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 74,
+        "y1": 130.5,
+        "x2": 74,
+        "y2": 178.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 411.5,
+        "y1": 130.5,
+        "x2": 411.5,
+        "y2": 176.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 411.5,
+        "y1": 208.5,
+        "x2": 411.5,
+        "y2": 270.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 74,
+        "y1": 211.5,
+        "x2": 74,
+        "y2": 270.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 74,
+        "y1": 618.5,
+        "x2": 74,
+        "y2": 663.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 411.5,
+        "y1": 618.5,
+        "x2": 411.5,
+        "y2": 662.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 411.5,
+        "y1": 694.5,
+        "x2": 411.5,
+        "y2": 758.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 74,
+        "y1": 697.5,
+        "x2": 74,
+        "y2": 758.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 72,
+        "y1": 1092.5,
+        "x2": 72,
+        "y2": 1132.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 409,
+        "y1": 1092.5,
+        "x2": 409,
+        "y2": 1131.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 409,
+        "y1": 1162.5,
+        "x2": 409,
+        "y2": 1226.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 72,
+        "y1": 1166.5,
+        "x2": 72,
+        "y2": 1226.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 72,
+        "y1": 1581.5,
+        "x2": 72,
+        "y2": 1618.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 409,
+        "y1": 1581.5,
+        "x2": 409,
+        "y2": 1616.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 409,
+        "y1": 1648.5,
+        "x2": 409,
+        "y2": 1714.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 72,
+        "y1": 1651.5,
+        "x2": 72,
+        "y2": 1714.5
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 244.5,
+        "y1": 164,
+        "x2": 244.5,
+        "y2": 1666
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    }
+  ],
+  "interms": [
+    {
+      "x": 244,
+      "y": 192.5,
+      "r": 15
+    },
+    {
+      "x": 412.5,
+      "y": 192.5,
+      "r": 14
+    },
+    {
+      "x": 74.5,
+      "y": 195,
+      "r": 14
+    },
+    {
+      "x": 244,
+      "y": 678.5,
+      "r": 15
+    },
+    {
+      "x": 412.5,
+      "y": 678.5,
+      "r": 14
+    },
+    {
+      "x": 74.5,
+      "y": 680.5,
+      "r": 14
+    },
+    {
+      "x": 244,
+      "y": 1147,
+      "r": 14.5
+    },
+    {
+      "x": 410,
+      "y": 1147,
+      "r": 14.5
+    },
+    {
+      "x": 72,
+      "y": 1149.5,
+      "r": 14.5
+    },
+    {
+      "x": 410,
+      "y": 1632.5,
+      "r": 14.5
+    },
+    {
+      "x": 72,
+      "y": 1635,
+      "r": 14.5
+    },
+    {
+      "x": 244,
+      "y": 1635,
+      "r": 14.5
+    }
+  ],
+  "hubs": [
+    {
+      "x": 243,
+      "y": 915,
+      "r": 40,
+      "label": null,
+      "cavidades": []
+    }
+  ],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 77,
+      "y": 73.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "2",
+      "x": 77,
+      "y": 327.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "3",
+      "x": 77,
+      "y": 561.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "4",
+      "x": 77,
+      "y": 815.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "5",
+      "x": 73.5,
+      "y": 1035.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "6",
+      "x": 73.5,
+      "y": 1283.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "7",
+      "x": 73.5,
+      "y": 1524,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "8",
+      "x": 73.5,
+      "y": 1771.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "9",
+      "x": 414,
+      "y": 73.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "10",
+      "x": 414,
+      "y": 327.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "11",
+      "x": 414,
+      "y": 561.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "12",
+      "x": 414,
+      "y": 815.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "13",
+      "x": 410.5,
+      "y": 1035.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "14",
+      "x": 410.5,
+      "y": 1283.5,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "15",
+      "x": 410.5,
+      "y": 1524,
+      "r": 55,
+      "fontSize": 42
+    },
+    {
+      "id": "16",
+      "x": 410.5,
+      "y": 1771.5,
+      "r": 55,
+      "fontSize": 42
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      8,
+      8
+    ]
+  }
+}

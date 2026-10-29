@@ -1,0 +1,467 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-146",
+ "codigo": "146",
+ "nomePeca": "TAMPINHA NEO PEN",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Neo Pen - 64 Cav - Mol.146\\2020\\01-30.09.2020-Tampinha Neo Pen - 64 Cav. - Molde 146.xls",
+ "dataOrigem": "2020",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "25": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "26": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "30": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "31": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "34": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "35": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "36": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "37": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "38": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "39": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "40": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "41": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "42": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "43": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "44": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "45": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "46": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "47": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "48": {
+   "desvio": "CAVIDADE DESLIGADA",
+   "data": "2020-09-30",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "INJETORAS"
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "52": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "55": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "56": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "57": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "58": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "59": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "60": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIESTIRENO",
+  "maquina": "ORIENTE 11",
+  "controlador": "DOUGLAS"
+ }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "layout-129-grade",
+  "moldeId": "molde-129",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 501 435",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Colas/Tampas/Tampa para Cola 1000g - Molde 129/molde-129.svg). Molde 129 com 4 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 493,
+        "height": 427
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [],
+  "interms": [],
+  "hubs": [],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 81.5,
+      "y": 81.5,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "2",
+      "x": 418.5,
+      "y": 81.5,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "3",
+      "x": 81.5,
+      "y": 353,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "4",
+      "x": 418.5,
+      "y": 353,
+      "r": 64,
+      "fontSize": 49
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      2,
+      2
+    ]
+  }
+}

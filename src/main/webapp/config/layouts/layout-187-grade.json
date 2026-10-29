@@ -1,0 +1,65 @@
+{
+  "id": "layout-187-grade",
+  "moldeId": "molde-187",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 501 435",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Diversos/Conector para tubo de esferográfica brinde - Molde 187/molde-187.svg). Molde 187 com 4 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 493,
+        "height": 427
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [],
+  "interms": [],
+  "hubs": [],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 81.5,
+      "y": 81.5,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "2",
+      "x": 81.5,
+      "y": 352.5,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "3",
+      "x": 418.5,
+      "y": 81.5,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "4",
+      "x": 418.5,
+      "y": 352.5,
+      "r": 64,
+      "fontSize": 49
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      2,
+      2
+    ]
+  }
+}

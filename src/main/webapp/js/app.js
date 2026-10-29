@@ -2,7 +2,7 @@
 
 (function (CF) {
 
-  const { estado, dividir, dividirPorTamanhos, registroVazio, normalizarRegistro } = CF.estado;
+  const { estado, revisaoFixa, dividir, dividirPorTamanhos, registroVazio, normalizarRegistro } = CF.estado;
   const cfg = CF.cfg;
   const persistencia = CF.persistencia;
   const telaInicial = CF.telaInicial;
@@ -41,6 +41,33 @@
     return estado.moldes.find((m) => m.id === moldeId) || null;
   }
 
+  // `molde.padroes` guarda os valores padrão do molde (produto, material,
+  // revisão...). Um campo salvo em branco no registro da grade não deve apagar o
+  // padrão, então só valores preenchidos sobrescrevem — inclusive para a
+  // impressão, que lê `estado.dadosGrade`.
+  function semCamposVazios(dados) {
+    const saida = {};
+    Object.keys(dados || {}).forEach((campo) => {
+      const valor = dados[campo];
+      if (valor === undefined || valor === null) return;
+      if (typeof valor === "string" && valor.trim() === "") return;
+      saida[campo] = valor;
+    });
+    return saida;
+  }
+
+  function dadosGradeDoMolde(molde, persistido) {
+    const dados = Object.assign(
+      {},
+      (molde && molde.padroes) || {},
+      semCamposVazios(persistido)
+    );
+    // Revisão é regra do projeto: fixa e não editável, sobrescreve molde e grade.
+    dados.revisaoNum = revisaoFixa.num;
+    dados.revisaoData = revisaoFixa.data;
+    return dados;
+  }
+
   function aplicarDesenho(desenho) {
     const imagem = desenho && desenho.imagem ? cfg.urlRecurso(desenho.imagem) : "";
     const peca = el("pecaImg");
@@ -59,15 +86,22 @@
     if (folhaPeca && imagem) folhaPeca.src = imagem;
   }
 
-  function inicializarDados(molde, persistido) {
+  function inicializarDados(molde, persistido, grade) {
     const persistCav = (persistido && persistido.dadosCavidades) || {};
     const dadosCavidades = {};
     molde.cavidades.map(String).forEach((id) => {
       dadosCavidades[id] = persistCav[id] ? normalizarRegistro(persistCav[id]) : registroVazio();
     });
 
-    const dadosGrade = Object.assign({}, molde.padroes || {}, (persistido && persistido.dadosGrade) || {});
+    const dadosGrade = dadosGradeDoMolde(molde, persistido && persistido.dadosGrade);
     dadosGrade.moldeNum = molde.codigo;
+
+    // Máquina e data de entrada são escolhidas no modal de abertura da grade e
+    // não são editáveis na tela: o valor da grade manda sobre molde/registro.
+    if (grade) {
+      if (grade.maquina) dadosGrade.maquina = grade.maquina;
+      if (grade.dataEntrada) dadosGrade.dataEntrada = grade.dataEntrada;
+    }
 
     return { dadosCavidades, dadosGrade };
   }
@@ -86,7 +120,7 @@
         if (d.vedado === "S") ved++;
         else if (d.desvio) def++;
       });
-      const dadosGrade = Object.assign({}, (molde && molde.padroes) || {}, dados.dadosGrade || {});
+      const dadosGrade = dadosGradeDoMolde(molde, dados.dadosGrade);
       return {
         id: g.id,
         moldeCodigo: molde ? molde.codigo : g.moldeId,
@@ -116,10 +150,21 @@
 
   // ---- Abrir / carregar grade ----------------------------------------------
 
-  async function criarEAbrirGrade(moldeId) {
+  async function criarEAbrirGrade(moldeId, config) {
     const molde = acharMolde(moldeId);
     if (!molde) { alert("Molde não encontrado: " + moldeId); return; }
-    const grade = persistencia.criarGrade(moldeId);
+    const grade = persistencia.criarGrade(moldeId, config);
+
+    // Grade histórica importada: semeia os registros já lançados no Excel.
+    if (config && config.historico) {
+      const h = config.historico;
+      const dadosGrade = Object.assign({}, h.dadosGrade || {});
+      if (config.maquina) dadosGrade.maquina = config.maquina;
+      if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
+      persistencia.salvarGrade(grade.id, grade.moldeId,
+        h.dadosCavidades || {}, dadosGrade);
+    }
+
     await carregarGradeInterno(grade);
   }
 
@@ -144,7 +189,7 @@
       const ids = molde.cavidades.map(String);
       const modelo = normalizarLayout(layoutBruto, ids);
       const persistido = persistencia.carregarGrade(grade.id);
-      const dados = inicializarDados(molde, persistido);
+      const dados = inicializarDados(molde, persistido, grade);
 
       estado.gradeAtual = grade;
       estado.molde = molde;
@@ -205,6 +250,9 @@
     initRegistros();
     initIO();
     initImpressao();
+    if (CF.visualizador3d && CF.visualizador3d.init) {
+      CF.visualizador3d.init();
+    }
     telaInicial.init({ onAbrirGrade: abrirGrade, onAbrirMolde: criarEAbrirGrade });
 
     const btnVoltar = el("btnVoltar");
@@ -215,6 +263,7 @@
 
     try {
       estado.moldes = await cfg.carregarCatalogo();
+      estado.maquinas = await cfg.carregarMaquinas();
       estado.formas = await cfg.carregarFormas();
       estado.desenhos = await cfg.carregarDesenhos();
     } catch (e) {

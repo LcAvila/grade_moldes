@@ -1,0 +1,642 @@
+{
+  "communities": {
+    "0": [
+      "argparse",
+      "base64",
+      "collections",
+      "hashlib",
+      "io",
+      "json",
+      "math",
+      "olefile",
+      "os",
+      "pil",
+      "re",
+      "scripts_auditar_pecas",
+      "scripts_auditar_pecas_md5",
+      "scripts_auditar_pecas_md5_bytes",
+      "scripts_auditar_pecas_rationale_2",
+      "scripts_extrair_desenhos",
+      "scripts_extrair_desenhos_blobs_desenho_xls",
+      "scripts_extrair_desenhos_carve",
+      "scripts_extrair_desenhos_classificar",
+      "scripts_extrair_desenhos_codigo_de",
+      "scripts_extrair_desenhos_e_grade",
+      "scripts_extrair_desenhos_e_logo",
+      "scripts_extrair_desenhos_e_peca",
+      "scripts_extrair_desenhos_emf_para_png",
+      "scripts_extrair_desenhos_imagens_xls",
+      "scripts_extrair_desenhos_imagens_xlsx",
+      "scripts_extrair_desenhos_main",
+      "scripts_extrair_desenhos_rationale_100",
+      "scripts_extrair_desenhos_rationale_2",
+      "scripts_extrair_desenhos_rationale_200",
+      "scripts_extrair_desenhos_rationale_243",
+      "scripts_extrair_desenhos_rationale_256",
+      "scripts_extrair_desenhos_rationale_72",
+      "scripts_extrair_desenhos_svg_identico",
+      "scripts_importar_pecas",
+      "scripts_importar_pecas_gravar",
+      "scripts_importar_pecas_main",
+      "scripts_importar_pecas_md5",
+      "scripts_importar_pecas_rationale_2",
+      "scripts_importar_svgs_grades",
+      "scripts_importar_svgs_grades_carregar",
+      "scripts_importar_svgs_grades_corrigir_numeracao",
+      "scripts_importar_svgs_grades_estilo_px",
+      "scripts_importar_svgs_grades_gravar",
+      "scripts_importar_svgs_grades_ler_svg",
+      "scripts_importar_svgs_grades_main",
+      "scripts_importar_svgs_grades_montar_zonas",
+      "scripts_importar_svgs_grades_montar_zonas_achar",
+      "scripts_importar_svgs_grades_num",
+      "scripts_importar_svgs_grades_rationale_121",
+      "scripts_importar_svgs_grades_rationale_147",
+      "scripts_importar_svgs_grades_rationale_2",
+      "scripts_importar_svgs_grades_rationale_53",
+      "scripts_importar_svgs_grades_rationale_76",
+      "shutil",
+      "subprocess",
+      "sys",
+      "xml_etree_elementtree",
+      "zipfile"
+    ],
+    "1": [
+      "arraylist",
+      "constructor",
+      "drivermanager",
+      "hashmap",
+      "inputstream",
+      "invocationtargetexception",
+      "java_sql_connection",
+      "list",
+      "localdate",
+      "optional",
+      "preparedstatement",
+      "properties",
+      "resultset",
+      "sqlexception",
+      "src_main_java_fusion_developer_web_cavidades_config_appconfig",
+      "src_main_java_fusion_developer_web_cavidades_config_appconfig_appconfig",
+      "src_main_java_fusion_developer_web_cavidades_config_appconfig_appconfig_appconfig",
+      "src_main_java_fusion_developer_web_cavidades_config_appconfig_appconfig_required",
+      "src_main_java_fusion_developer_web_cavidades_model_atualizacaocavidadesrequest",
+      "src_main_java_fusion_developer_web_cavidades_model_atualizacaocavidadesrequest_atualizacaocavidadesrequest",
+      "src_main_java_fusion_developer_web_cavidades_model_cavidade",
+      "src_main_java_fusion_developer_web_cavidades_model_cavidade_cavidade",
+      "src_main_java_fusion_developer_web_cavidades_model_molde",
+      "src_main_java_fusion_developer_web_cavidades_model_molde_molde",
+      "src_main_java_fusion_developer_web_cavidades_repository_cavidaderepository",
+      "src_main_java_fusion_developer_web_cavidades_repository_cavidaderepository_cavidaderepository",
+      "src_main_java_fusion_developer_web_cavidades_repository_cavidaderepository_cavidaderepository_salvarlote",
+      "src_main_java_fusion_developer_web_cavidades_repository_cavidaderepositoryfusion",
+      "src_main_java_fusion_developer_web_cavidades_repository_cavidaderepositoryfusion_cavidaderepositoryfusion",
+      "src_main_java_fusion_developer_web_cavidades_repository_conexaomysql",
+      "src_main_java_fusion_developer_web_cavidades_repository_conexaomysql_conexaomysql",
+      "src_main_java_fusion_developer_web_cavidades_repository_conexaomysql_conexaomysql_abrir",
+      "src_main_java_fusion_developer_web_cavidades_repository_conexaomysql_conexaomysql_conexaomysql",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion",
+      "src_main_java_fusion_developer_web_cavidades_repository_molderepository",
+      "src_main_java_fusion_developer_web_cavidades_repository_molderepository_molderepository",
+      "src_main_java_fusion_developer_web_cavidades_repository_molderepository_molderepository_buscarcompletoporcodigo",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion",
+      "src_main_java_fusion_developer_web_cavidades_service_moldeservice",
+      "src_main_java_fusion_developer_web_cavidades_service_moldeservice_moldeservice_buscar",
+      "src_main_java_fusion_developer_web_cavidades_service_moldeservice_moldeservice_salvar",
+      "types"
+    ],
+    "2": [
+      "com_fasterxml_jackson_databind_jsonnode",
+      "com_fasterxml_jackson_databind_objectmapper",
+      "ioexception",
+      "jakarta_servlet_annotation_webservlet",
+      "jakarta_servlet_http_httpservlet",
+      "jakarta_servlet_http_httpservletrequest",
+      "jakarta_servlet_http_httpservletresponse",
+      "jakarta_servlet_servletconfig",
+      "map",
+      "objectnode",
+      "servletexception",
+      "src_main_java_fusion_developer_web_cavidades_service_moldeservice_moldeservice",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet_doget",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet_dopost",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet_doput",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet_init",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet_naosuportado",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet_segmentos",
+      "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_java_override",
+      "src_main_java_fusion_developer_web_cavidades_servlet_cavidadesservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_cavidadesservlet_cavidadesservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_cavidadesservlet_cavidadesservlet_doput",
+      "src_main_java_fusion_developer_web_cavidades_servlet_cavidadesservlet_java_override",
+      "src_main_java_fusion_developer_web_cavidades_servlet_moldesservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_moldesservlet_java_override",
+      "src_main_java_fusion_developer_web_cavidades_servlet_moldesservlet_moldesservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_moldesservlet_moldesservlet_doget",
+      "src_main_java_fusion_developer_web_cavidades_servlet_publicargedservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_publicargedservlet_java_override",
+      "src_main_java_fusion_developer_web_cavidades_servlet_publicargedservlet_publicargedservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_publicargedservlet_publicargedservlet_dopost",
+      "src_main_java_fusion_developer_web_cavidades_servlet_publicargedservlet_publicargedservlet_respondeerro",
+      "src_main_java_fusion_developer_web_cavidades_servlet_publicargedservlet_publicargedservlet_texto",
+      "src_main_java_fusion_developer_web_cavidades_servlet_usuarioatualservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_usuarioatualservlet_java_override",
+      "src_main_java_fusion_developer_web_cavidades_servlet_usuarioatualservlet_usuarioatualservlet",
+      "src_main_java_fusion_developer_web_cavidades_servlet_usuarioatualservlet_usuarioatualservlet_doget"
+    ],
+    "3": [
+      "docs_arquitetura_fusion",
+      "docs_arquitetura_fusion_10_build_e_teste_local",
+      "docs_arquitetura_fusion_1_as_três_camadas",
+      "docs_arquitetura_fusion_2_identificação_de_usuário_sem_autenticação_própria",
+      "docs_arquitetura_fusion_3_endpoints",
+      "docs_arquitetura_fusion_4_chaves_de_configuração_application_properties_ou_variável_de_ambiente",
+      "docs_arquitetura_fusion_5_especificação_do_formulário_fusion_criar_no_ambiente",
+      "docs_arquitetura_fusion_6_especificação_ged_criar_no_ambiente",
+      "docs_arquitetura_fusion_7_descobrir_os_fqn_das_classes_sdk_ausente_nesta_máquina",
+      "docs_arquitetura_fusion_8_checklist_de_homologação",
+      "docs_arquitetura_fusion_9_limitações_conhecidas_spike",
+      "docs_arquitetura_fusion_arquitetura_de_integração_com_o_fusion_platform",
+      "docs_arquitetura_fusion_post_api_moldes_115_publicar_ged",
+      "docs_arquitetura_fusion_put_api_moldes_115_cavidades",
+      "src_main_webapp_js_core_configloader",
+      "src_main_webapp_js_core_configloader_acharmolde",
+      "src_main_webapp_js_core_configloader_buscarjson",
+      "src_main_webapp_js_core_configloader_carregarcatalogo",
+      "src_main_webapp_js_core_configloader_carregardesenhos",
+      "src_main_webapp_js_core_configloader_carregarformas",
+      "src_main_webapp_js_core_configloader_carregargradehistorica",
+      "src_main_webapp_js_core_configloader_carregarindicehistorico",
+      "src_main_webapp_js_core_configloader_carregarlayout",
+      "src_main_webapp_js_core_configloader_carregarmaquinas",
+      "src_main_webapp_js_core_configloader_listarmaquinas",
+      "src_main_webapp_js_core_configloader_listarmaquinas_adicionar",
+      "src_main_webapp_js_core_configloader_url",
+      "src_main_webapp_js_core_configloader_urlrecurso"
+    ],
+    "4": [
+      "design",
+      "design_1_tema_visual_e_atmosfera",
+      "design_2_paleta_e_papéis_semânticos",
+      "design_3_tipografia",
+      "design_4_10_modal",
+      "design_4_1_botões",
+      "design_4_2_campos_de_formulário",
+      "design_4_3_editor_inline_editable",
+      "design_4_4_cards_de_resumo_resumo_status_resumo_card",
+      "design_4_5_card_de_grade_grade_card",
+      "design_4_6_navbar_navbar",
+      "design_4_7_cabeçalho_de_seção_ti_cabecalho",
+      "design_4_8_tabela_de_cavidades_tabela_cav",
+      "design_4_9_diagrama_svg_diagrama_box",
+      "design_4_componentes",
+      "design_5_layout_e_espaçamento",
+      "design_6_profundidade_e_elevação",
+      "design_7_do_s_and_don_ts",
+      "design_8_responsividade_e_impressão",
+      "design_9_guia_de_prompt_para_agentes",
+      "design_breakpoints_existem_apenas_dois",
+      "design_checklist_antes_de_concluir",
+      "design_design_md_customfusionweb",
+      "design_impressão_folha_impressao_tratada_como_tela",
+      "design_onde_mexer",
+      "design_prompts_prontos",
+      "design_referência_rápida"
+    ],
+    "5": [
+      "src_main_webapp_js_render_telainicial",
+      "src_main_webapp_js_render_telainicial_abrirmodal",
+      "src_main_webapp_js_render_telainicial_atualizarbotaoconfirmar",
+      "src_main_webapp_js_render_telainicial_atualizaropcoeshistorico",
+      "src_main_webapp_js_render_telainicial_cadastrarmolde",
+      "src_main_webapp_js_render_telainicial_cardel",
+      "src_main_webapp_js_render_telainicial_carregarindicehistorico",
+      "src_main_webapp_js_render_telainicial_chipel",
+      "src_main_webapp_js_render_telainicial_confirmarabrir",
+      "src_main_webapp_js_render_telainicial_databr",
+      "src_main_webapp_js_render_telainicial_esconder",
+      "src_main_webapp_js_render_telainicial_fecharmodal",
+      "src_main_webapp_js_render_telainicial_formatardata",
+      "src_main_webapp_js_render_telainicial_hojeiso",
+      "src_main_webapp_js_render_telainicial_init",
+      "src_main_webapp_js_render_telainicial_limparerro",
+      "src_main_webapp_js_render_telainicial_mostrar",
+      "src_main_webapp_js_render_telainicial_mostrarerro",
+      "src_main_webapp_js_render_telainicial_paradataiso",
+      "src_main_webapp_js_render_telainicial_preencheropcoes",
+      "src_main_webapp_js_render_telainicial_renderizar",
+      "src_main_webapp_js_render_telainicial_statel",
+      "src_main_webapp_js_render_telainicial_trocarhistorico"
+    ],
+    "6": [
+      "arraynode",
+      "bytearrayoutputstream",
+      "duration",
+      "httpclient",
+      "httprequest",
+      "httpresponse",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_configuracaoincompletaexception",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_configuracaoincompletaexception_configuracaoincompletaexception",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice_extrairboundary",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice_montarmultipart",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice_parseresposta",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice_publicar",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice_texto",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice_truncar",
+      "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_resultado",
+      "standardcharsets",
+      "uri",
+      "uuid"
+    ],
+    "7": [
+      "java_lang_reflect_method",
+      "src_main_java_fusion_developer_web_cavidades_repository_cavidaderepositoryfusion_cavidaderepositoryfusion_salvarlote",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_adapterutils",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_buscartodos",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_criar",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_empacotar",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_entitywrapper",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_formulariofusion",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_invocar",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_lervalor",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_metodosetvalue",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_persistengine",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_persistir",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_resolverclasse",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion_setarcampos",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_registro",
+      "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_registro_registro",
+      "suppresswarnings"
+    ],
+    "8": [
+      "src_main_webapp_js_core_persistencia",
+      "src_main_webapp_js_core_persistencia_achargrade",
+      "src_main_webapp_js_core_persistencia_carregargrade",
+      "src_main_webapp_js_core_persistencia_carregarregistrosmolde",
+      "src_main_webapp_js_core_persistencia_criargrade",
+      "src_main_webapp_js_core_persistencia_disponivel",
+      "src_main_webapp_js_core_persistencia_existelegado",
+      "src_main_webapp_js_core_persistencia_legadojamigrado",
+      "src_main_webapp_js_core_persistencia_lerjson",
+      "src_main_webapp_js_core_persistencia_listargrades",
+      "src_main_webapp_js_core_persistencia_migrarlegado",
+      "src_main_webapp_js_core_persistencia_migrarparagrades",
+      "src_main_webapp_js_core_persistencia_moldeidscomregistros",
+      "src_main_webapp_js_core_persistencia_novoid",
+      "src_main_webapp_js_core_persistencia_persistiratual",
+      "src_main_webapp_js_core_persistencia_removergrade",
+      "src_main_webapp_js_core_persistencia_salvargrade",
+      "src_main_webapp_js_core_persistencia_salvargrades",
+      "src_main_webapp_js_core_persistencia_salvarregistrosmolde"
+    ],
+    "9": [
+      "src_main_webapp_js_app",
+      "src_main_webapp_js_app_abrirgrade",
+      "src_main_webapp_js_app_acharmolde",
+      "src_main_webapp_js_app_aplicardesenho",
+      "src_main_webapp_js_app_carregargradeinterno",
+      "src_main_webapp_js_app_criareabrirgrade",
+      "src_main_webapp_js_app_el",
+      "src_main_webapp_js_app_esconderaviso",
+      "src_main_webapp_js_app_inicializardados",
+      "src_main_webapp_js_app_iniciar",
+      "src_main_webapp_js_app_migrarsenecessario",
+      "src_main_webapp_js_app_montarcards",
+      "src_main_webapp_js_app_mostraraviso",
+      "src_main_webapp_js_app_mostrarcarregando",
+      "src_main_webapp_js_app_rendertelainicial",
+      "src_main_webapp_js_app_voltarparainicial"
+    ],
+    "10": [
+      "src_main_webapp_js_core_estado",
+      "src_main_webapp_js_core_estado_br",
+      "src_main_webapp_js_core_estado_compararid",
+      "src_main_webapp_js_core_estado_dividir",
+      "src_main_webapp_js_core_estado_dividirportamanhos",
+      "src_main_webapp_js_core_estado_esc",
+      "src_main_webapp_js_core_estado_normalizarregistro",
+      "src_main_webapp_js_core_estado_registrovazio",
+      "src_main_webapp_js_core_registros",
+      "src_main_webapp_js_core_registros_atualizartudo",
+      "src_main_webapp_js_core_registros_excluir",
+      "src_main_webapp_js_core_registros_initregistros",
+      "src_main_webapp_js_core_registros_limpar",
+      "src_main_webapp_js_core_registros_salvar"
+    ],
+    "11": [
+      "httpservletrequest",
+      "httpservletresponse",
+      "jakarta_servlet_annotation_webfilter",
+      "jakarta_servlet_filter",
+      "jakarta_servlet_filterchain",
+      "jakarta_servlet_servletrequest",
+      "jakarta_servlet_servletresponse",
+      "linkedhashmap",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_identificacaofilter",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_identificacaofilter_identificacaofilter",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_identificacaofilter_identificacaofilter_dofilter",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_identificacaofilter_java_override"
+    ],
+    "12": [
+      "src_main_java_fusion_developer_web_cavidades_config_appconfig_appconfig_get",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_resultadoportal",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion_extrair",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion_portalutil",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion_primeirobooleano",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion_primeirotexto",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion_resolver",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_sessaofusion_sessaofusion_sessaofusion",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_usuarioatual",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_usuarioatual_usuarioatual",
+      "src_main_java_fusion_developer_web_cavidades_seguranca_usuarioatual_usuarioatual_usuarioatual"
+    ],
+    "13": [
+      "src_main_webapp_js_render_formulario",
+      "src_main_webapp_js_render_formulario_atualizarobsfield",
+      "src_main_webapp_js_render_formulario_atualizarselecao",
+      "src_main_webapp_js_render_formulario_clicarcavidade",
+      "src_main_webapp_js_render_formulario_clicarzona",
+      "src_main_webapp_js_render_formulario_criaropcoescavidades",
+      "src_main_webapp_js_render_formulario_ehsequencial",
+      "src_main_webapp_js_render_formulario_initformulario",
+      "src_main_webapp_js_render_formulario_lerformulario",
+      "src_main_webapp_js_render_formulario_limparformulario",
+      "src_main_webapp_js_render_formulario_sincronizarformulario",
+      "src_main_webapp_js_render_formulario_temedicaonaosalva"
+    ],
+    "14": [
+      "src_main_webapp_js_render_diagrama",
+      "src_main_webapp_js_render_diagrama_atualizardiagrama",
+      "src_main_webapp_js_render_diagrama_montardiagrama",
+      "src_main_webapp_js_render_diagrama_normalizarlayout",
+      "src_main_webapp_js_render_diagrama_posicao",
+      "src_main_webapp_js_render_diagrama_transformacao"
+    ],
+    "15": [
+      "agents",
+      "agents_agent_harnesses",
+      "agents_build_and_runtime",
+      "agents_design_system",
+      "agents_graphify"
+    ],
+    "16": [
+      "src_main_webapp_js_render_impressao",
+      "src_main_webapp_js_render_impressao_definir",
+      "src_main_webapp_js_render_impressao_initimpressao",
+      "src_main_webapp_js_render_impressao_linhafolha",
+      "src_main_webapp_js_render_impressao_montarfolhaimpressao"
+    ],
+    "17": [
+      "src_main_webapp_js_render_modal",
+      "src_main_webapp_js_render_modal_abrirdetalhes",
+      "src_main_webapp_js_render_modal_fecharmodal",
+      "src_main_webapp_js_render_modal_initmodal",
+      "src_main_webapp_js_render_modal_linha"
+    ],
+    "18": [
+      "src_main_webapp_js_render_tabela",
+      "src_main_webapp_js_render_tabela_atualizartabela",
+      "src_main_webapp_js_render_tabela_celulasdacavidade",
+      "src_main_webapp_js_render_tabela_montartabela",
+      "src_main_webapp_js_render_tabela_preenchercelulas"
+    ],
+    "19": [
+      "src_main_webapp_js_core_io",
+      "src_main_webapp_js_core_io_exportar",
+      "src_main_webapp_js_core_io_importartexto",
+      "src_main_webapp_js_core_io_initio"
+    ],
+    "20": [
+      "src_main_webapp_js_render_cabecalho",
+      "src_main_webapp_js_render_cabecalho_aplicargrade",
+      "src_main_webapp_js_render_cabecalho_coletargrade",
+      "src_main_webapp_js_render_cabecalho_initgrade"
+    ],
+    "21": [
+      "src_main_webapp_js_render_resumo",
+      "src_main_webapp_js_render_resumo_atualizarresumo",
+      "src_main_webapp_js_render_resumo_definir"
+    ],
+    "22": [
+      "src_main_webapp_js_render_svg",
+      "src_main_webapp_js_render_svg_criarel",
+      "src_main_webapp_js_render_svg_criartexto"
+    ],
+    "23": [
+      "docs_desenhos_extraidos",
+      "docs_desenhos_extraidos_desenhos_extraídos_das_planilhas"
+    ],
+    "24": [
+      "docs_inventario_moldes",
+      "docs_inventario_moldes_inventário_de_moldes_compactor"
+    ],
+    "25": [
+      "graphify_out_converted_08_24_01_25_conector_para_estojo_de_esferográfica_molde_187_7891b1ad",
+      "graphify_out_converted_08_24_01_25_conector_para_estojo_de_esferográfica_molde_187_7891b1ad_sheet_plan1"
+    ],
+    "26": [
+      "graphify_out_converted_conexão_esf_96_cav_molde_200_a48aacca",
+      "graphify_out_converted_conexão_esf_96_cav_molde_200_a48aacca_sheet_plan1"
+    ],
+    "27": [
+      "graphify_out_converted_corpo_dianteiro_duo_plus_109addbd",
+      "graphify_out_converted_corpo_dianteiro_duo_plus_109addbd_sheet_plan1"
+    ],
+    "28": [
+      "readme",
+      "readme_grade_moldes"
+    ],
+    "29": [
+      "src_main_webapp_js_layouts_generators",
+      "src_main_webapp_js_layouts_generators_radialzonas"
+    ],
+    "30": [
+      "pkg_com_customfusion_customfusionweb"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07130333138515488,
+    "1": 0.08826945412311266,
+    "2": 0.15519568151147098,
+    "3": 0.09523809523809523,
+    "4": 0.07407407407407407,
+    "5": 0.18972332015810275,
+    "6": 0.14210526315789473,
+    "7": 0.26900584795321636,
+    "8": 0.2807017543859649,
+    "9": 0.325,
+    "10": 0.21978021978021978,
+    "11": 0.24242424242424243,
+    "12": 0.2878787878787879,
+    "13": 0.3181818181818182,
+    "14": 0.5333333333333333,
+    "15": 0.4,
+    "16": 0.7,
+    "17": 0.6,
+    "18": 0.7,
+    "19": 0.8333333333333334,
+    "20": 0.6666666666666666,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_fusion_developer_web_cavidades_repository_formulariofusion_formulariofusion",
+      "label": "FormularioFusion",
+      "degree": 15
+    },
+    {
+      "id": "scripts_extrair_desenhos_main",
+      "label": "main()",
+      "degree": 13
+    },
+    {
+      "id": "src_main_java_fusion_developer_web_cavidades_servlet_apimoldesservlet_apimoldesservlet",
+      "label": "ApiMoldesServlet",
+      "degree": 13
+    },
+    {
+      "id": "src_main_webapp_js_core_persistencia_disponivel",
+      "label": "disponivel()",
+      "degree": 13
+    },
+    {
+      "id": "src_main_java_fusion_developer_web_cavidades_service_gedfusionservice_gedfusionservice",
+      "label": "GedFusionService",
+      "degree": 12
+    },
+    {
+      "id": "design_4_componentes",
+      "label": "4. Componentes",
+      "degree": 11
+    },
+    {
+      "id": "docs_arquitetura_fusion_arquitetura_de_integração_com_o_fusion_platform",
+      "label": "Arquitetura de integração com o Fusion Platform",
+      "degree": 11
+    },
+    {
+      "id": "src_main_java_fusion_developer_web_cavidades_config_appconfig_appconfig",
+      "label": "AppConfig",
+      "degree": 10
+    },
+    {
+      "id": "design_design_md_customfusionweb",
+      "label": "DESIGN.md — CustomFusionWeb",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_fusion_developer_web_cavidades_model_cavidade_cavidade",
+      "label": "Cavidade",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "8. Checklist de homologação",
+      "target": "url()",
+      "source_files": [
+        "docs/arquitetura-fusion.md",
+        "src/main/webapp/js/core/configLoader.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
+    },
+    {
+      "source": "sincronizarFormulario()",
+      "target": "compararId()",
+      "source_files": [
+        "src/main/webapp/js/render/formulario.js",
+        "src/main/webapp/js/core/estado.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "MoldeService",
+      "target": "CavidadeRepository",
+      "source_files": [
+        "src/main/java/fusion/developer/web/cavidades/service/MoldeService.java",
+        "src/main/java/fusion/developer/web/cavidades/repository/CavidadeRepository.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "MoldeService",
+      "target": "MoldeRepository",
+      "source_files": [
+        "src/main/java/fusion/developer/web/cavidades/service/MoldeService.java",
+        "src/main/java/fusion/developer/web/cavidades/repository/MoldeRepository.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "PublicarGedServlet",
+      "target": "GedFusionService",
+      "source_files": [
+        "src/main/java/fusion/developer/web/cavidades/servlet/PublicarGedServlet.java",
+        "src/main/java/fusion/developer/web/cavidades/service/GedFusionService.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `GedFusionService` connect `Community 6` to `Community 2`?",
+      "why": "High betweenness centrality (0.022) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `com.customfusion:CustomFusionWeb` to the rest of the system?",
+      "why": "1 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07130333138515488 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `AppConfig` connect `Community 1` to `Community 12`, `Community 6`?",
+      "why": "High betweenness centrality (0.021) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08826945412311266 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `UsuarioAtual` connect `Community 12` to `Community 2`?",
+      "why": "High betweenness centrality (0.016) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

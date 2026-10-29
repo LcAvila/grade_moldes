@@ -1,0 +1,468 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-117",
+ "codigo": "117",
+ "nomePeca": "TAMPA ESF. 07",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Tampas\\Tampa Esf. 07- 64 Cav - Molde 117\\2023\\04-03.07.23-Tampa Esf. 07 - 64 cav. - Molde 117.xls",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "16": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "17": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "18": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "19": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "20": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-07-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "21": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-07-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "22": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-07-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "23": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "24": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "25": {
+   "desvio": "ZONA 4 DESLIGADA MOTIVO CAV.29 VEDADA",
+   "data": "2023-11-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.I"
+  },
+  "26": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-05-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "29": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-11-20",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "30": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-05-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "31": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "34": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "36": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "37": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "38": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-10-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "41": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "42": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "43": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "44": {
+   "desvio": "ZONA 6 VEDADA MOTIVO FALHANDO",
+   "data": "2023-11-20",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": "VAGNER"
+  },
+  "45": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "48": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "49": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "52": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "53": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "54": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "55": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "56": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "57": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "58": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "59": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "60": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-05-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "BUCHA VIRADA",
+   "data": "2023-05-19",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "63": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "64": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 8",
+  "controlador": "JONAS",
+  "dataEntrada": "2023-07-03"
+ }
+}

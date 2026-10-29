@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-152",
+ "codigo": "152",
+ "nomePeca": "TAMPA MICROLINE",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Microline\\Tampa Microline - 16 Cav - Molde 152\\2019\\07 - 26.09.19-Tampa Microline - 16 cav. - Molde 152.xlsx",
+ "dataOrigem": "2019",
+ "exportadoEm": "2026-10-21T21:41:26",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "FALHANDO",
+   "data": "2019-07-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "VAZANDO NO TESTE DE ESTANQUEIDADE",
+   "data": "2019-08-28",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DANIEL"
+  },
+  "8": {
+   "desvio": "VAZANDO NO TESTE DE ESTANQUEIDADE",
+   "data": "2019-09-02",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "9": {
+   "desvio": "FALHANDO",
+   "data": "2019-07-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "ENTRADA DE AR FECHADA",
+   "data": "2019-09-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 6",
+  "controlador": "DAVID",
+  "dataEntrada": "2019-09-26"
+ }
+}

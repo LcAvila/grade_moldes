@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-145b",
+ "codigo": "145B",
+ "nomePeca": "TAMPA MARC. PINCEL",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Pincel - 16 Cav - Molde 145B\\2020\\02-28.04.20-Tampa Pincel - 16 cav. - Molde 145B.xlsx",
+ "dataOrigem": "2020",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "\"COPINHO AVANADO\" (QUEBRA DA ANILHA DO PINO DO FORMATO)",
+   "data": "2020-06-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "RESISTÊNCIA QUEIMADA",
+   "data": "2020-04-28",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "REXUPE NO INTERIOR DO COPINHO - VAZANDO NO TESTE DE ESTANQUEIDADE",
+   "data": "2020-06-03",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "MEDIDA INTERNO DO DIÂMETRO DE VEDAÇÃO COM Ø9,71 MM (ACIMA DO PERMITIDO)",
+   "data": "2020-06-02",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "\"COPINHO AVANADO\" (QUEBRA DA ANILHA DO PINO DO FORMATO)",
+   "data": "2020-07-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 33",
+  "controlador": "SILAS SANTANA",
+  "dataEntrada": "2020-04-28"
+ }
+}

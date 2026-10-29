@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-151",
+ "codigo": "151",
+ "nomePeca": "TAMPINHA MICROLINE",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Microline\\Tampinha Microline - 16 Cav - Molde 151\\2023\\07- 01.09.23- Tampinha Microline - 16 cav. - Molde 151.xlsx",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "4": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "7": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "8": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "9": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "12": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-10-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "PP 400",
+  "maquina": "ROMI 30",
+  "controlador": "MATHEUS",
+  "dataEntrada": "2023-09-01"
+ }
+}

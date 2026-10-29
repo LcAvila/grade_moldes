@@ -1,0 +1,244 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-147b",
+ "codigo": "147B",
+ "nomePeca": "TAMPINHA HIDR. COLOR",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Color - 32 Cav - Molde 147B\\2019\\04-12.04.19-Tampinha Hidr. Color - 32 cav. - Molde 147B.xls",
+ "dataOrigem": "2019",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REBARBA NO Ø MAIOR",
+   "data": "2019-04-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "QUEIMANDO NA SAÍDA DE GÁS",
+   "data": "2019-03-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "PROBLEMA NA RESISTÊNCIA (NÃO AQUECE)",
+   "data": "2019-04-12",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "REBARBA NO Ø MAIOR",
+   "data": "2019-04-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "15": {
+   "desvio": "REBARBA NO Ø MAIOR",
+   "data": "2019-04-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "20": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "REB. NO Ø12mm / BUCHA COM DESLOCAMENTO - RACHANDO NA PRODUÇÃO",
+   "data": "2018-03-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "22": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "REB. NO Ø12mm",
+   "data": "",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "24": {
+   "desvio": "REB. NO Ø12mm",
+   "data": "2018-03-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "25": {
+   "desvio": "REB. NO Ø12mm",
+   "data": "2018-03-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "26": {
+   "desvio": "ENTUPIDA",
+   "data": "2019-03-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "27": {
+   "desvio": "REB. NO Ø12mm",
+   "data": "2018-03-22",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER P"
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "CONTRAÇÃO",
+   "data": "2019-05-02",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "30": {
+   "desvio": "QUEIMANDO",
+   "data": "2019-04-15",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "31": {
+   "desvio": "PROBLEMA NA RESISTÊNCIA (NÃO AQUECE)",
+   "data": "2019-04-12",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DAVID"
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIESTIRENO",
+  "maquina": "ROMI 30",
+  "controlador": "DAVID",
+  "dataEntrada": "2019-04-12"
+ }
+}

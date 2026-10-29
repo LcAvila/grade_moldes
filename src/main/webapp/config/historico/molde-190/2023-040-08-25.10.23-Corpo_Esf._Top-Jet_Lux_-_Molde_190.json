@@ -1,0 +1,469 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-190",
+ "codigo": "190",
+ "nomePeca": "CORPO ESFEROGRÁFICA TOP/JET LUX",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Corpos\\Corpo Top - 64 Cav - Molde 190\\2023\\08-25.10.23-Corpo Esf. Top-Jet Lux - Molde 190.xls",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "2": {
+   "desvio": "ARRANHÃO INT.",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "3": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "4": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "5": {
+   "desvio": "",
+   "data": "25/1023",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "6": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "7": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "8": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "9": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "10": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "11": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "12": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "13": {
+   "desvio": "FALHA E CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "14": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "15": {
+   "desvio": "FALHA E CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "16": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "17": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "18": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "19": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "20": {
+   "desvio": "",
+   "data": "25/1023",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "21": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "22": {
+   "desvio": "",
+   "data": "25/1023",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "23": {
+   "desvio": "",
+   "data": "25/1023",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "25": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "26": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "27": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "28": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "29": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "30": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "31": {
+   "desvio": "CONTRAÇÃO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "32": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "33": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "34": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "35": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "36": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "37": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "38": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "39": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "40": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "41": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "42": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "43": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "44": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "45": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "46": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "47": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "48": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "49": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "50": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "51": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "52": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "53": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "54": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "55": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "56": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "57": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "58": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "59": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "60": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "61": {
+   "desvio": "REB NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "62": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "63": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "64": {
+   "desvio": "CONTRAÇÃO E REB. NO TOPO",
+   "data": "25/1023",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIESTIRENO (PS)",
+  "maquina": "ARBURG 52",
+  "controlador": "MATHEUS",
+  "dataEntrada": "2023-10-25",
+  "observacoes": "*PEÇAS NUMERADAS"
+ }
+}

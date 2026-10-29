@@ -1,0 +1,133 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-116a",
+ "codigo": "116A",
+ "nomePeca": "CORPO MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Q.B. - 16 Cav - Molde 116A\\2023\\03-19.04.23- Corpo Marcador Q.B. - 16 cav. - Molde 116A - Copia.xlsx",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "2": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-10",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "REBARBA NA ÁREA DE TRANSFER",
+   "data": "2023-05-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "VEDADA POR FALTA DE FALTA DE PEÇA DE REPOSIÇÃO",
+   "data": "2023-02-08",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F"
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-05-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "16": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2023-05-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ARBURG 52",
+  "controlador": "VAGNER",
+  "dataEntrada": "2023-04-19",
+  "observacoes": "MOLDE TRANSFERIDO PARA ENGEL 31"
+ }
+}

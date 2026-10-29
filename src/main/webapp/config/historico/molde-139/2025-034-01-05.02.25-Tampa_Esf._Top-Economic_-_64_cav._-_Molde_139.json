@@ -1,0 +1,468 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-139",
+ "codigo": "139",
+ "nomePeca": "TAMPA ESF. TOP/ECONOMIC",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Esferográficas\\Tampas\\Tampa Esf. Top- 64 Cav - Molde 139\\2025\\01-05.02.25-Tampa Esf. Top-Economic - 64 cav. - Molde 139.xls",
+ "dataOrigem": "2025",
+ "exportadoEm": "2026-10-21T21:41:26",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "2": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "6": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "7": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "14": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "15": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "16": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "17": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "18": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "19": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "20": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "21": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "22": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "23": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "24": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "25": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "26": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "27": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "28": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "29": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "30": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "31": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "32": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "33": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "34": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "35": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "36": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "37": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "38": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "39": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "40": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "41": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "42": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "43": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "44": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "45": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "46": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "47": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "48": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "49": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "50": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "51": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "52": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "53": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "54": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "55": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "56": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "57": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "58": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "59": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "60": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "61": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "62": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "63": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "64": {
+   "desvio": "REB. NA PASSAGEM DE AR",
+   "data": "2025-02-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ROMI 39",
+  "controlador": "VAGNER",
+  "dataEntrada": "2025-02-05"
+ }
+}

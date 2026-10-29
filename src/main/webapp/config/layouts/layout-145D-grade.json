@@ -1,0 +1,149 @@
+{
+  "id": "layout-145D-grade",
+  "moldeId": "molde-145d",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 829 749",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Reabastecedores/Tampas/Tampa p- Reabastecedor Q.B.- 16 Cav-Molde 145D/molde-145D.svg). Molde 145D com 16 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 821,
+        "height": 741
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [],
+  "interms": [],
+  "hubs": [],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 82,
+      "y": 81.5,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "2",
+      "x": 82,
+      "y": 277,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "3",
+      "x": 86,
+      "y": 473,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "4",
+      "x": 86,
+      "y": 666,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "5",
+      "x": 302,
+      "y": 81.5,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "6",
+      "x": 302,
+      "y": 277,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "7",
+      "x": 306,
+      "y": 473,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "8",
+      "x": 306,
+      "y": 666,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "9",
+      "x": 522,
+      "y": 81.5,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "10",
+      "x": 522,
+      "y": 277,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "11",
+      "x": 526,
+      "y": 473,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "12",
+      "x": 526,
+      "y": 666,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "13",
+      "x": 742,
+      "y": 81.5,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "14",
+      "x": 742,
+      "y": 277,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "15",
+      "x": 746,
+      "y": 473,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "16",
+      "x": 746,
+      "y": 666,
+      "r": 64,
+      "fontSize": 49
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      8,
+      8
+    ]
+  }
+}

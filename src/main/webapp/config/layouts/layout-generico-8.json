@@ -1,0 +1,73 @@
+{
+  "id": "layout-generico-8",
+  "revisao": "1",
+  "tipo": "parametrizado",
+  "gerador": "radial-zonas",
+  "viewBox": "0 0 1300 1350",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout generico (anel radial) para moldes com 8 cavidades. Posicoes calculadas em circulo; clique no hub central seleciona a zona inteira.",
+  "parametros": {
+    "moldura": {
+      "x": 4,
+      "y": 4,
+      "width": 1292,
+      "height": 1342
+    },
+    "hub": {
+      "x": 650.0,
+      "y": 675.0
+    },
+    "posicoes": [
+      {
+        "x": 650.0,
+        "y": 375.0
+      },
+      {
+        "x": 862.13,
+        "y": 462.87
+      },
+      {
+        "x": 950.0,
+        "y": 675.0
+      },
+      {
+        "x": 862.13,
+        "y": 887.13
+      },
+      {
+        "x": 650.0,
+        "y": 975.0
+      },
+      {
+        "x": 437.87,
+        "y": 887.13
+      },
+      {
+        "x": 350.0,
+        "y": 675.0
+      },
+      {
+        "x": 437.87,
+        "y": 462.87
+      }
+    ],
+    "interms": [],
+    "zonas": [
+      {
+        "label": "8",
+        "offX": 0,
+        "offY": 0,
+        "inicioIndice": 0
+      }
+    ]
+  },
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      4,
+      4
+    ]
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "id": "layout-157-grade",
+  "moldeId": "molde-157",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 953 1170",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Reabastecedores/Bico/Bico p- Reabastecedor - 16 Cav - Molde 157/molde-157.svg). Molde 157 com 16 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 945,
+        "height": 1162
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 348,
+        "y1": 795,
+        "x2": 202,
+        "y2": 957
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 594,
+        "y1": 797,
+        "x2": 744,
+        "y2": 949
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 63,
+        "y1": 795,
+        "x2": 202,
+        "y2": 957
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 893,
+        "y1": 797,
+        "x2": 744,
+        "y2": 949
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 348,
+        "y1": 369,
+        "x2": 205,
+        "y2": 215
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 598,
+        "y1": 374,
+        "x2": 741,
+        "y2": 210
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 59,
+        "y1": 369,
+        "x2": 205,
+        "y2": 215
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 890,
+        "y1": 371,
+        "x2": 741,
+        "y2": 210
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 893,
+        "y1": 1110,
+        "x2": 744,
+        "y2": 949
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 594,
+        "y1": 1110,
+        "x2": 744,
+        "y2": 949
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 348,
+        "y1": 1104,
+        "x2": 202,
+        "y2": 957
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 58,
+        "y1": 1110,
+        "x2": 202,
+        "y2": 957
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 63,
+        "y1": 59,
+        "x2": 205,
+        "y2": 215
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 599,
+        "y1": 59,
+        "x2": 741,
+        "y2": 210
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 348,
+        "y1": 59,
+        "x2": 205,
+        "y2": 215
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    },
+    {
+      "tag": "line",
+      "attrs": {
+        "x1": 890,
+        "y1": 58,
+        "x2": 741,
+        "y2": 210
+      },
+      "classes": [
+        "linha-conexao"
+      ]
+    }
+  ],
+  "interms": [],
+  "hubs": [
+    {
+      "x": 205,
+      "y": 215,
+      "r": 41,
+      "label": "1",
+      "fontSize": 27.0,
+      "cavidades": []
+    },
+    {
+      "x": 202,
+      "y": 957,
+      "r": 41,
+      "label": "2",
+      "fontSize": 27.0,
+      "cavidades": []
+    },
+    {
+      "x": 741,
+      "y": 210,
+      "r": 41,
+      "label": "3",
+      "fontSize": 27.0,
+      "cavidades": []
+    },
+    {
+      "x": 744,
+      "y": 949,
+      "r": 41,
+      "label": "4",
+      "fontSize": 27.0,
+      "cavidades": []
+    }
+  ],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 63,
+      "y": 59,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "2",
+      "x": 59,
+      "y": 369,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "3",
+      "x": 63,
+      "y": 795,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "4",
+      "x": 58,
+      "y": 1110,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "5",
+      "x": 348,
+      "y": 59,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "6",
+      "x": 348,
+      "y": 369,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "7",
+      "x": 348,
+      "y": 795,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "8",
+      "x": 348,
+      "y": 1104,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "9",
+      "x": 599,
+      "y": 59,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "10",
+      "x": 598,
+      "y": 374,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "11",
+      "x": 594,
+      "y": 797,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "12",
+      "x": 594,
+      "y": 1110,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "13",
+      "x": 890,
+      "y": 58,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "14",
+      "x": 890,
+      "y": 371,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "15",
+      "x": 893,
+      "y": 797,
+      "r": 41,
+      "fontSize": 31
+    },
+    {
+      "id": "16",
+      "x": 893,
+      "y": 1110,
+      "r": 41,
+      "fontSize": 31
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      8,
+      8
+    ]
+  }
+}

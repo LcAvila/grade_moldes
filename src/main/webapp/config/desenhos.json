@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "observacao": "Registro de desenhos tecnicos/imagems de peca. 'imagem' e o recurso exibido (peca na tela e na folha de impressao). 'documento' aponta para o documento original completo, quando anexado.",
+  "observacao": "Registro de desenhos tecnicos/imagems de peca. 'imagem' e o recurso exibido (peca na tela e na folha de impressao). 'documento' aponta para o documento original completo, quando anexado. Entradas com 'papel' vieram da extracao automatica das planilhas do repositorio 'pastas'. Entradas com 'papel' vieram da extracao automatica das planilhas do repositorio 'pastas'.",
   "desenhos": [
     {
       "id": "desenho-168-r05",
@@ -9,6 +9,1194 @@
       "imagem": "assets/images/conexão esferografica.png",
       "documento": null,
       "observacao": "Imagem da peca usada como desenho de referencia. O documento tecnico original completo ainda nao foi anexado."
+    },
+    {
+      "id": "desenho-97-peca",
+      "moldeId": "molde-97",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/97.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 64 Cav - Molde 97/desenho - molde 97.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-97",
+      "papel": "grade",
+      "imagem": "assets/desenhos/97-grade.svg",
+      "documento": "assets/desenhos/originais/97-grade.png",
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 64 Cav - Molde 97/molde-97.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-97-grade.",
+      "id": "desenho-97-grade"
+    },
+    {
+      "id": "desenho-98-peca",
+      "moldeId": "molde-98",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/98.png",
+      "documento": null,
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 64 Cav-Molde 98/desenho - molde 98.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-98",
+      "papel": "grade",
+      "imagem": "assets/desenhos/98-grade.svg",
+      "documento": "assets/desenhos/originais/98-grade.png",
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 64 Cav-Molde 98/molde-98.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-98-grade.",
+      "id": "desenho-98-grade"
+    },
+    {
+      "id": "desenho-101-peca",
+      "moldeId": "molde-101",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/101.png",
+      "documento": null,
+      "origem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Neo Pen - 64 Cav - Mol.101\\2025\\18-05.12.24-Tampinha Neo Pen - Molde 101.xls",
+      "observacao": "Desenho da peca injetada extraido da planilha do repositorio 'pastas'."
+    },
+    {
+      "moldeId": "molde-108",
+      "papel": "grade",
+      "imagem": "assets/desenhos/108-grade.svg",
+      "documento": "assets/desenhos/originais/108-grade.jpg",
+      "origem": "Esferográficas/Corpos/Corpo 07- 64Cav - Molde 108/molde-108.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-108-grade.",
+      "id": "desenho-108-grade"
+    },
+    {
+      "id": "desenho-109-grade",
+      "moldeId": "molde-109",
+      "papel": "grade",
+      "imagem": "assets/desenhos/109-grade.svg",
+      "documento": "assets/desenhos/originais/109-grade.png",
+      "origem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Color - 48 Cav - Molde 109\\2025\\04-14.05.25-Tampinha Hidr. Color - 48 cav. - Molde 109 (PP).xls",
+      "observacao": "Desenho da grade do molde (identico ao da planilha) convertido para SVG."
+    },
+    {
+      "id": "desenho-110-peca",
+      "moldeId": "molde-110",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/110.png",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Color - 48 Cav - Molde 110/desenho - molde 110.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-110",
+      "papel": "grade",
+      "imagem": "assets/desenhos/110-grade.svg",
+      "documento": "assets/desenhos/originais/110-grade.png",
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Color - 48 Cav - Molde 110/molde-110.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-110-grade.",
+      "id": "desenho-110-grade"
+    },
+    {
+      "id": "desenho-128-peca",
+      "moldeId": "molde-128",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/128.png",
+      "documento": null,
+      "origem": "Diversos/Apagador - Molde 128/desenho - molde 128.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-129",
+      "papel": "grade",
+      "imagem": "assets/desenhos/129-grade.svg",
+      "documento": "assets/desenhos/originais/129-grade.png",
+      "origem": "Colas/Tampas/Tampa para Cola 1000g - Molde 129/molde-129.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-129-grade.",
+      "id": "desenho-129-grade"
+    },
+    {
+      "id": "desenho-140-peca",
+      "moldeId": "molde-140",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/140.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 64 Cav - Molde 140/desenho - molde 140.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-140",
+      "papel": "grade",
+      "imagem": "assets/desenhos/140-grade.svg",
+      "documento": "assets/desenhos/originais/140-grade.png",
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 64 Cav - Molde 140/molde-140.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-140-grade.",
+      "id": "desenho-140-grade"
+    },
+    {
+      "id": "desenho-146-peca",
+      "moldeId": "molde-146",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/146.png",
+      "documento": null,
+      "origem": "Hidrográficas/Tampinha/desenho - molde 146.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-146",
+      "papel": "grade",
+      "imagem": "assets/desenhos/146-grade.svg",
+      "documento": "assets/desenhos/originais/146-grade.png",
+      "origem": "Hidrográficas/Tampinha/molde-146.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-146-grade.",
+      "id": "desenho-146-grade"
+    },
+    {
+      "id": "desenho-148-peca",
+      "moldeId": "molde-148",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/148.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. Color - 64 Cav - Molde 148/desenho - molde 148.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-150-peca",
+      "moldeId": "molde-150",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/150.png",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Conexão Microline - 16 Cav- Molde 150/desenho - molde 150.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-154-peca",
+      "moldeId": "molde-154",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/154.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. 07 Plus- 16 Cav- Molde 154/desenho - molde 154.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-156-peca",
+      "moldeId": "molde-156",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/156.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 16 Cav - Molde 156/desenho - molde 156.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-156",
+      "papel": "grade",
+      "imagem": "assets/desenhos/156-grade.svg",
+      "documento": "assets/desenhos/originais/156-grade.png",
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 16 Cav.-Molde 156/molde-156.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-156-grade.",
+      "id": "desenho-156-grade"
+    },
+    {
+      "id": "desenho-157-peca",
+      "moldeId": "molde-157",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/157.png",
+      "documento": null,
+      "origem": "Reabastecedores/Bico/Bico p- Reabastecedor - 16 Cav - Molde 157/desenho - molde 157.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-165",
+      "papel": "grade",
+      "imagem": "assets/desenhos/165-grade.svg",
+      "documento": "assets/desenhos/originais/165-grade.png",
+      "origem": "Esferográficas/Corpos/Corpo 07- 64 Cav - Molde 165/molde-165.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-165-grade.",
+      "id": "desenho-165-grade"
+    },
+    {
+      "id": "desenho-167A-peca",
+      "moldeId": "molde-167a",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/167A.png",
+      "documento": null,
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 64 Cav. Molde 167A/desenho - molde 167A.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-168-grade",
+      "moldeId": "molde-168",
+      "papel": "grade",
+      "imagem": "assets/desenhos/168-grade.svg",
+      "documento": "assets/desenhos/originais/168-grade.png",
+      "origem": "02-Cavidade não conforme\\Esferográficas\\Conexão\\Conexão Esf. - 64 Cav-Molde 168\\2024\\01-24.04.24-Conexão Esf. - 64 cav. - Molde 168.xls",
+      "observacao": "Desenho da grade do molde (identico ao da planilha) convertido para SVG."
+    },
+    {
+      "id": "desenho-173-peca",
+      "moldeId": "molde-173",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/173.png",
+      "documento": null,
+      "origem": "Esferográficas/Esferográficas Especiais/Tampa Tinteiro- 8 Cav - Molde 173/desenho - molde 173.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-186-peca",
+      "moldeId": "molde-186",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/186.png",
+      "documento": null,
+      "origem": "Diversos/Corpo de estojo Magister - 8 cav. - Molde 186/desenho - molde 186.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-187-peca",
+      "moldeId": "molde-187",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/187.png",
+      "documento": null,
+      "origem": "Diversos/Conector para tubo de esferográfica brinde - Molde 187/desenho - molde 187.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-189-peca",
+      "moldeId": "molde-189",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/189.png",
+      "documento": null,
+      "origem": "Marcadores/Tampas Marcadores/Tampa Marcador Q.B. - 16 Cav. - Molde 189/desenho - molde 189.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "moldeId": "molde-190",
+      "papel": "grade",
+      "imagem": "assets/desenhos/190-grade.svg",
+      "documento": "assets/desenhos/originais/190-grade.png",
+      "origem": "Esferográficas/Corpos/Corpo Top - 64 Cav - Molde 190/molde-190.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-190-grade.",
+      "id": "desenho-190-grade"
+    },
+    {
+      "moldeId": "molde-192",
+      "papel": "grade",
+      "imagem": "assets/desenhos/192-grade.svg",
+      "documento": "assets/desenhos/originais/192-grade.png",
+      "origem": "Esferográficas/Corpos/Corpo 07 - 64 cav - Molde 192/molde-192.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-192-grade.",
+      "id": "desenho-192-grade"
+    },
+    {
+      "moldeId": "molde-197",
+      "papel": "grade",
+      "imagem": "assets/desenhos/197-grade.svg",
+      "documento": "assets/desenhos/originais/197-grade.png",
+      "origem": "Esferográficas/Corpos/Corpo 07 - 64 cav - Molde 197/molde-197.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-197-grade.",
+      "id": "desenho-197-grade"
+    },
+    {
+      "moldeId": "molde-199",
+      "papel": "grade",
+      "imagem": "assets/desenhos/199-grade.svg",
+      "documento": "assets/desenhos/originais/199-grade.png",
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 199/molde-199.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-199-grade.",
+      "id": "desenho-199-grade"
+    },
+    {
+      "moldeId": "molde-200",
+      "papel": "grade",
+      "imagem": "assets/desenhos/200-grade.svg",
+      "documento": "assets/desenhos/originais/200-grade.png",
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 96 Cav-Molde 200/molde-200.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-200-grade.",
+      "id": "desenho-200-grade"
+    },
+    {
+      "id": "desenho-101-grade",
+      "moldeId": "molde-101",
+      "papel": "grade",
+      "imagem": "assets/desenhos/101-grade.svg",
+      "documento": "assets/desenhos/originais/101-grade.png",
+      "origem": "02-Cavidade não conforme\\Hidrográficas\\Tampinha\\Tampinha Hidrog. Neo Pen - 64 Cav - Mol.101\\2024\\10-23.08.24-Tampinha Neo Pen - Molde 101.xls",
+      "observacao": "Desenho da grade do molde (identico ao da planilha) convertido para SVG."
+    },
+    {
+      "moldeId": "molde-120",
+      "papel": "grade",
+      "imagem": "assets/desenhos/120-grade.svg",
+      "documento": "assets/desenhos/originais/120-grade.jpg",
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 120/molde-120.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-120-grade.",
+      "id": "desenho-120-grade"
+    },
+    {
+      "moldeId": "molde-143",
+      "papel": "grade",
+      "imagem": "assets/desenhos/143-grade.svg",
+      "documento": "assets/desenhos/originais/143-grade.jpg",
+      "origem": "Esferográficas/Corpos/Corpo 07-Economic - 64 Cav - Molde 143/molde-143.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-143-grade.",
+      "id": "desenho-143-grade"
+    },
+    {
+      "moldeId": "molde-167a",
+      "papel": "grade",
+      "imagem": "assets/desenhos/167A-grade.svg",
+      "documento": "assets/desenhos/originais/167A-grade.png",
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 64 Cav. Molde 167A/molde-167A.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-167A-grade.",
+      "id": "desenho-167A-grade"
+    },
+    {
+      "moldeId": "molde-194",
+      "papel": "grade",
+      "imagem": "assets/desenhos/194-grade.svg",
+      "documento": "assets/desenhos/originais/194-grade.png",
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 194/molde-194.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-194-grade.",
+      "id": "desenho-194-grade"
+    },
+    {
+      "moldeId": "molde-11a",
+      "papel": "grade",
+      "imagem": "assets/desenhos/11A-grade.svg",
+      "documento": null,
+      "origem": "Colas/Bicos/Bico Frasco de Cola - Molde 11A/molde-11A.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-11A-grade.",
+      "id": "desenho-11A-grade"
+    },
+    {
+      "moldeId": "molde-89",
+      "papel": "grade",
+      "imagem": "assets/desenhos/89-grade.svg",
+      "documento": null,
+      "origem": "Lapiseiras/Corpos/Corpo Lapiseira Aluno - 16 Cav - Molde 89/molde-89.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-89-grade.",
+      "id": "desenho-89-grade"
+    },
+    {
+      "moldeId": "molde-107",
+      "papel": "grade",
+      "imagem": "assets/desenhos/107-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. Top- 64 Cav- Molde 107/molde-107.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-107-grade.",
+      "id": "desenho-107-grade"
+    },
+    {
+      "moldeId": "molde-115",
+      "papel": "grade",
+      "imagem": "assets/desenhos/115-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07- 64 Cav - Molde 115/molde-115.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-115-grade.",
+      "id": "desenho-115-grade"
+    },
+    {
+      "moldeId": "molde-116",
+      "papel": "grade",
+      "imagem": "assets/desenhos/116-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Pincel - 16 Cav - Molde 116/molde-116.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-116-grade.",
+      "id": "desenho-116-grade"
+    },
+    {
+      "moldeId": "molde-116a",
+      "papel": "grade",
+      "imagem": "assets/desenhos/116A-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Q.B. - 16 Cav - Molde 116A/molde-116A.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-116A-grade.",
+      "id": "desenho-116A-grade"
+    },
+    {
+      "moldeId": "molde-117",
+      "papel": "grade",
+      "imagem": "assets/desenhos/117-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. 07- 64 Cav - Molde 117/molde-117.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-117-grade.",
+      "id": "desenho-117-grade"
+    },
+    {
+      "moldeId": "molde-121",
+      "papel": "grade",
+      "imagem": "assets/desenhos/121-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNM - 64 Cav - Molde 121/molde-121.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-121-grade.",
+      "id": "desenho-121-grade"
+    },
+    {
+      "moldeId": "molde-122",
+      "papel": "grade",
+      "imagem": "assets/desenhos/122-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Neo Pen - 48 Cav - Molde 122/molde-122.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-122-grade.",
+      "id": "desenho-122-grade"
+    },
+    {
+      "moldeId": "molde-128",
+      "papel": "grade",
+      "imagem": "assets/desenhos/128-grade.svg",
+      "documento": null,
+      "origem": "Diversos/Apagador - Molde 128/molde-128.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-128-grade.",
+      "id": "desenho-128-grade"
+    },
+    {
+      "moldeId": "molde-138",
+      "papel": "grade",
+      "imagem": "assets/desenhos/138-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo Top - 64 Cav - Molde 138/molde-138.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-138-grade.",
+      "id": "desenho-138-grade"
+    },
+    {
+      "moldeId": "molde-139",
+      "papel": "grade",
+      "imagem": "assets/desenhos/139-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. Top- 64 Cav - Molde 139/molde-139.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-139-grade.",
+      "id": "desenho-139-grade"
+    },
+    {
+      "moldeId": "molde-144",
+      "papel": "grade",
+      "imagem": "assets/desenhos/144-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 144/molde-144.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-144-grade.",
+      "id": "desenho-144-grade"
+    },
+    {
+      "moldeId": "molde-145a",
+      "papel": "grade",
+      "imagem": "assets/desenhos/145A-grade.svg",
+      "documento": null,
+      "origem": "Colas/Tampas/Tampa para Cola 40 e 90g - Molde 145A/molde-145A.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-145A-grade.",
+      "id": "desenho-145A-grade"
+    },
+    {
+      "moldeId": "molde-145b",
+      "papel": "grade",
+      "imagem": "assets/desenhos/145B-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Tampas Marcadores/Tampa Marcador Pincel - 16 Cav - Molde 145B/molde-145B.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-145B-grade.",
+      "id": "desenho-145B-grade"
+    },
+    {
+      "moldeId": "molde-145c",
+      "papel": "grade",
+      "imagem": "assets/desenhos/145C-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Tampinhas Marcadores/Tampinha Marc. Pincel e Q.B. - 16 Cav - Molde 145C/molde-145C.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-145C-grade.",
+      "id": "desenho-145C-grade"
+    },
+    {
+      "moldeId": "molde-145d",
+      "papel": "grade",
+      "imagem": "assets/desenhos/145D-grade.svg",
+      "documento": null,
+      "origem": "Reabastecedores/Tampas/Tampa p- Reabastecedor Q.B.- 16 Cav-Molde 145D/molde-145D.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-145D-grade.",
+      "id": "desenho-145D-grade"
+    },
+    {
+      "moldeId": "molde-145e",
+      "papel": "grade",
+      "imagem": "assets/desenhos/145E-grade.svg",
+      "documento": null,
+      "origem": "Reabastecedores/Tampas/Tampa p- Reabastecedor Pincel- 16 Cav-Molde 145E/molde-145E.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-145E-grade.",
+      "id": "desenho-145E-grade"
+    },
+    {
+      "moldeId": "molde-147a",
+      "papel": "grade",
+      "imagem": "assets/desenhos/147A-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Color - 32 Cav - Molde 147A/molde-147A.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-147A-grade.",
+      "id": "desenho-147A-grade"
+    },
+    {
+      "moldeId": "molde-148",
+      "papel": "grade",
+      "imagem": "assets/desenhos/148-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. Color - 64 Cav - Molde 148/molde-148.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-148-grade.",
+      "id": "desenho-148-grade"
+    },
+    {
+      "moldeId": "molde-150",
+      "papel": "grade",
+      "imagem": "assets/desenhos/150-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Conexão Microline - 16 Cav- Molde 150/molde-150.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-150-grade.",
+      "id": "desenho-150-grade"
+    },
+    {
+      "moldeId": "molde-151",
+      "papel": "grade",
+      "imagem": "assets/desenhos/151-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Tampinha Microline - 16 Cav - Molde 151/molde-151.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-151-grade.",
+      "id": "desenho-151-grade"
+    },
+    {
+      "moldeId": "molde-152",
+      "papel": "grade",
+      "imagem": "assets/desenhos/152-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Tampa Microline - 16 Cav - Molde 152/molde-152.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-152-grade.",
+      "id": "desenho-152-grade"
+    },
+    {
+      "moldeId": "molde-153",
+      "papel": "grade",
+      "imagem": "assets/desenhos/153-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07 Plus- 16 Cav - Molde 153/molde-153.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-153-grade.",
+      "id": "desenho-153-grade"
+    },
+    {
+      "moldeId": "molde-154",
+      "papel": "grade",
+      "imagem": "assets/desenhos/154-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. 07 Plus- 16 Cav- Molde 154/molde-154.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-154-grade.",
+      "id": "desenho-154-grade"
+    },
+    {
+      "moldeId": "molde-157",
+      "papel": "grade",
+      "imagem": "assets/desenhos/157-grade.svg",
+      "documento": null,
+      "origem": "Reabastecedores/Bico/Bico p- Reabastecedor - 16 Cav - Molde 157/molde-157.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-157-grade.",
+      "id": "desenho-157-grade"
+    },
+    {
+      "moldeId": "molde-158",
+      "papel": "grade",
+      "imagem": "assets/desenhos/158-grade.svg",
+      "documento": null,
+      "origem": "Lapiseiras/Botões/Botão Lapiseira Técnico - 16 Cav - Molde 158/molde-158.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-158-grade.",
+      "id": "desenho-158-grade"
+    },
+    {
+      "moldeId": "molde-159",
+      "papel": "grade",
+      "imagem": "assets/desenhos/159-grade.svg",
+      "documento": null,
+      "origem": "Lapiseiras/Corpos/Corpo Lapiseira Técnico - 16 Cav - Molde 159/molde-159.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-159-grade.",
+      "id": "desenho-159-grade"
+    },
+    {
+      "moldeId": "molde-160",
+      "papel": "grade",
+      "imagem": "assets/desenhos/160-grade.svg",
+      "documento": null,
+      "origem": "Lapiseiras/Dianteiras/Dianteira Lapiseira Técnico - 16 Cav-Molde 160/molde-160.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-160-grade.",
+      "id": "desenho-160-grade"
+    },
+    {
+      "moldeId": "molde-162",
+      "papel": "grade",
+      "imagem": "assets/desenhos/162-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Tampas Marcadores/Tampa Marcador Destaq - 16 Cav - Molde 162/molde-162.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-162-grade.",
+      "id": "desenho-162-grade"
+    },
+    {
+      "moldeId": "molde-163",
+      "papel": "grade",
+      "imagem": "assets/desenhos/163-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Tampinhas Marcadores/Tampinha Marcador Destaq - 16 Cav - Molde 163/molde-163.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-163-grade.",
+      "id": "desenho-163-grade"
+    },
+    {
+      "moldeId": "molde-167",
+      "papel": "grade",
+      "imagem": "assets/desenhos/167-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 64 Cav - Molde 167/molde-167.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-167-grade.",
+      "id": "desenho-167-grade"
+    },
+    {
+      "moldeId": "molde-169",
+      "papel": "grade",
+      "imagem": "assets/desenhos/169-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Neo Pen - 64 Cav - Molde 169/molde-169.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-169-grade.",
+      "id": "desenho-169-grade"
+    },
+    {
+      "moldeId": "molde-181",
+      "papel": "grade",
+      "imagem": "assets/desenhos/181-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. 07- 64 Cav - Molde 181/molde-181.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-181-grade.",
+      "id": "desenho-181-grade"
+    },
+    {
+      "moldeId": "molde-183",
+      "papel": "grade",
+      "imagem": "assets/desenhos/183-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07 Vip retrátil - 24 Cav - molde 183/molde-183.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-183-grade.",
+      "id": "desenho-183-grade"
+    },
+    {
+      "moldeId": "molde-184",
+      "papel": "grade",
+      "imagem": "assets/desenhos/184-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Clip Esf 07 VIP Retrátil - 24 Cav - Molde 184/molde-184.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-184-grade.",
+      "id": "desenho-184-grade"
+    },
+    {
+      "moldeId": "molde-185",
+      "papel": "grade",
+      "imagem": "assets/desenhos/185-grade.svg",
+      "documento": null,
+      "origem": "Esferográficas/Botão Vip/molde-185.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-185-grade.",
+      "id": "desenho-185-grade"
+    },
+    {
+      "moldeId": "molde-186",
+      "papel": "grade",
+      "imagem": "assets/desenhos/186-grade.svg",
+      "documento": null,
+      "origem": "Diversos/Corpo de estojo Magister - 8 cav. - Molde 186/molde-186.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-186-grade.",
+      "id": "desenho-186-grade"
+    },
+    {
+      "moldeId": "molde-187",
+      "papel": "grade",
+      "imagem": "assets/desenhos/187-grade.svg",
+      "documento": null,
+      "origem": "Diversos/Conector para tubo de esferográfica brinde - Molde 187/molde-187.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-187-grade.",
+      "id": "desenho-187-grade"
+    },
+    {
+      "moldeId": "molde-188",
+      "papel": "grade",
+      "imagem": "assets/desenhos/188-grade.svg",
+      "documento": null,
+      "origem": "Colas/Bicos/Bico Para Frasco de Cola - 16 Cav. - Molde 188/molde-188.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-188-grade.",
+      "id": "desenho-188-grade"
+    },
+    {
+      "moldeId": "molde-189",
+      "papel": "grade",
+      "imagem": "assets/desenhos/189-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Tampas Marcadores/Tampa Marcador Q.B. - 16 Cav. - Molde 189/molde-189.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-189-grade.",
+      "id": "desenho-189-grade"
+    },
+    {
+      "moldeId": "molde-191",
+      "papel": "grade",
+      "imagem": "assets/desenhos/191-grade.svg",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Pincel - 16 Cav - Molde 191/molde-191.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-191-grade.",
+      "id": "desenho-191-grade"
+    },
+    {
+      "moldeId": "molde-193",
+      "papel": "grade",
+      "imagem": "assets/desenhos/193-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Tampa Microline - 32 Cav - Molde 193/molde-193.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-193-grade.",
+      "id": "desenho-193-grade"
+    },
+    {
+      "moldeId": "molde-195",
+      "papel": "grade",
+      "imagem": "assets/desenhos/195-grade.svg",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNM - 64 Cav - Molde 195/molde-195.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-195-grade.",
+      "id": "desenho-195-grade"
+    },
+    {
+      "moldeId": "molde-202",
+      "papel": "grade",
+      "imagem": "assets/desenhos/202-grade.svg",
+      "documento": null,
+      "origem": "Colas/Arruela/molde-202.svg",
+      "observacao": "Grade do molde (SVG real do diagrama) integrada ao app como layout interativo layout-202-grade.",
+      "id": "desenho-202-grade"
+    },
+    {
+      "id": "desenho-11A-peca",
+      "moldeId": "molde-11a",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/11A.png",
+      "documento": null,
+      "origem": "Colas/Bicos/Bico Frasco de Cola - Molde 11A/desenho - molde 11A.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-89-peca",
+      "moldeId": "molde-89",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/89.png",
+      "documento": null,
+      "origem": "Lapiseiras/Corpos/Corpo Lapiseira Aluno - 16 Cav - Molde 89/desenho - molde 89.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-107-peca",
+      "moldeId": "molde-107",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/107.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. Top- 64 Cav- Molde 107/desenho - molde 107.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-108-peca",
+      "moldeId": "molde-108",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/108.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07- 64Cav - Molde 108/desenho - molde 108.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-115-peca",
+      "moldeId": "molde-115",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/115.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07- 64 Cav - Molde 115/desenho - molde 115.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-116-peca",
+      "moldeId": "molde-116",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/116.png",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Pincel - 16 Cav - Molde 116/desenho - molde 116.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-116A-peca",
+      "moldeId": "molde-116a",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/116A.png",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Q.B. - 16 Cav - Molde 116A/desenho - molde 116A.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-117-peca",
+      "moldeId": "molde-117",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/117.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. 07- 64 Cav - Molde 117/desenho - molde 117.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-120-peca",
+      "moldeId": "molde-120",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/120.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 120/desenho - molde 120.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-121-peca",
+      "moldeId": "molde-121",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/121.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNM - 64 Cav - Molde 121/desenho - molde 121.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-122-peca",
+      "moldeId": "molde-122",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/122.png",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Neo Pen - 48 Cav - Molde 122/desenho - molde 122.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-129-peca",
+      "moldeId": "molde-129",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/129.png",
+      "documento": null,
+      "origem": "Colas/Tampas/Tampa para Cola 1000g - Molde 129/desenho - molde 129.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-138-peca",
+      "moldeId": "molde-138",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/138.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo Top - 64 Cav - Molde 138/desenho - molde 138.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-139-peca",
+      "moldeId": "molde-139",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/139.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. Top- 64 Cav - Molde 139/desenho - molde 139.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-143-peca",
+      "moldeId": "molde-143",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/143.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07-Economic - 64 Cav - Molde 143/desenho - molde 143.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-144-peca",
+      "moldeId": "molde-144",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/144.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 144/desenho - molde 144.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-145A-peca",
+      "moldeId": "molde-145a",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/145A.png",
+      "documento": null,
+      "origem": "Colas/Tampas/Tampa para Cola 40 e 90g - Molde 145A/desenho - molde 145A.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-145B-peca",
+      "moldeId": "molde-145b",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/145B.png",
+      "documento": null,
+      "origem": "Marcadores/Tampas Marcadores/Tampa Marcador Pincel - 16 Cav - Molde 145B/desenho - molde 145B.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-145C-peca",
+      "moldeId": "molde-145c",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/145C.png",
+      "documento": null,
+      "origem": "Marcadores/Tampinhas Marcadores/Tampinha Marc. Pincel e Q.B. - 16 Cav - Molde 145C/desenho - molde 145C.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-145D-peca",
+      "moldeId": "molde-145d",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/145D.png",
+      "documento": null,
+      "origem": "Reabastecedores/Tampas/Tampa p- Reabastecedor Q.B.- 16 Cav-Molde 145D/desenho - molde 145D.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-145E-peca",
+      "moldeId": "molde-145e",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/145E.png",
+      "documento": null,
+      "origem": "Reabastecedores/Tampas/Tampa p- Reabastecedor Pincel- 16 Cav-Molde 145E/desenho - molde 145E.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-147A-peca",
+      "moldeId": "molde-147a",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/147A.png",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Color - 32 Cav - Molde 147A/desenho - molde 147A.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-151-peca",
+      "moldeId": "molde-151",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/151.png",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Tampinha Microline - 16 Cav - Molde 151/desenho - molde 151.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-152-peca",
+      "moldeId": "molde-152",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/152.png",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Tampa Microline - 16 Cav - Molde 152/desenho - molde 152.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-153-peca",
+      "moldeId": "molde-153",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/153.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07 Plus- 16 Cav - Molde 153/desenho - molde 153.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-158-peca",
+      "moldeId": "molde-158",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/158.png",
+      "documento": null,
+      "origem": "Lapiseiras/Botões/Botão Lapiseira Técnico - 16 Cav - Molde 158/desenho - molde 158.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-159-peca",
+      "moldeId": "molde-159",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/159.png",
+      "documento": null,
+      "origem": "Lapiseiras/Corpos/Corpo Lapiseira Técnico - 16 Cav - Molde 159/desenho - molde 159.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-160-peca",
+      "moldeId": "molde-160",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/160.png",
+      "documento": null,
+      "origem": "Lapiseiras/Dianteiras/Dianteira Lapiseira Técnico - 16 Cav-Molde 160/desenho - molde 160.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-162-peca",
+      "moldeId": "molde-162",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/162.png",
+      "documento": null,
+      "origem": "Marcadores/Tampas Marcadores/Tampa Marcador Destaq - 16 Cav - Molde 162/desenho - molde 162.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-163-peca",
+      "moldeId": "molde-163",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/163.png",
+      "documento": null,
+      "origem": "Marcadores/Tampinhas Marcadores/Tampinha Marcador Destaq - 16 Cav - Molde 163/desenho - molde 163.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-164-peca",
+      "moldeId": "molde-164",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/164.png",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Destaq - 16 Cav - Molde 164/desenho - molde 164.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-165-peca",
+      "moldeId": "molde-165",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/165.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07- 64 Cav - Molde 165/desenho - molde 165.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-167-peca",
+      "moldeId": "molde-167",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/167.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampinhas/Tampinha Esf. - 64 Cav - Molde 167/desenho - molde 167.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-169-peca",
+      "moldeId": "molde-169",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/169.png",
+      "documento": null,
+      "origem": "Hidrográficas/Tampa/Tampa Hidrog. Neo Pen - 64 Cav - Molde 169/desenho - molde 169.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-181-peca",
+      "moldeId": "molde-181",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/181.png",
+      "documento": null,
+      "origem": "Esferográficas/Tampas/Tampa Esf. 07- 64 Cav - Molde 181/desenho - molde 181.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-183-peca",
+      "moldeId": "molde-183",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/183.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07 Vip retrátil - 24 Cav - molde 183/desenho - molde 183.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-184-peca",
+      "moldeId": "molde-184",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/184.png",
+      "documento": null,
+      "origem": "Esferográficas/Clip Esf 07 VIP Retrátil - 24 Cav - Molde 184/desenho - molde 184.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-185-peca",
+      "moldeId": "molde-185",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/185.png",
+      "documento": null,
+      "origem": "Esferográficas/Botão Vip/desenho - molde 185.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-188-peca",
+      "moldeId": "molde-188",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/188.png",
+      "documento": null,
+      "origem": "Colas/Bicos/Bico Para Frasco de Cola - 16 Cav. - Molde 188/desenho - molde 188.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-190-peca",
+      "moldeId": "molde-190",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/190.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo Top - 64 Cav - Molde 190/desenho - molde 190.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-191-peca",
+      "moldeId": "molde-191",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/191.png",
+      "documento": null,
+      "origem": "Marcadores/Corpos Marcadores/Corpo Marcador Pincel - 16 Cav - Molde 191/desenho - molde 191.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-192-peca",
+      "moldeId": "molde-192",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/192.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07 - 64 cav - Molde 192/desenho - molde 192.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-193-peca",
+      "moldeId": "molde-193",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/193.png",
+      "documento": null,
+      "origem": "Hidrográficas/Microline/Tampa Microline - 32 Cav - Molde 193/desenho - molde 193.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-194-peca",
+      "moldeId": "molde-194",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/194.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 194/desenho - molde 194.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-195-peca",
+      "moldeId": "molde-195",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/195.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNM - 64 Cav - Molde 195/desenho - molde 195.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-197-peca",
+      "moldeId": "molde-197",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/197.png",
+      "documento": null,
+      "origem": "Esferográficas/Corpos/Corpo 07 - 64 cav - Molde 197/desenho - molde 197.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-199-peca",
+      "moldeId": "molde-199",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/199.png",
+      "documento": null,
+      "origem": "Hidrográficas/Corpo/Corpo Hidrog. HNG - 64 Cav - Molde 199/desenho - molde 199.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-200-peca",
+      "moldeId": "molde-200",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/200.png",
+      "documento": null,
+      "origem": "Esferográficas/Conexão/Conexão Esf. - 96 Cav-Molde 200/desenho - molde 200.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
+    },
+    {
+      "id": "desenho-202-peca",
+      "moldeId": "molde-202",
+      "papel": "peca",
+      "imagem": "assets/images/pecas/202.png",
+      "documento": null,
+      "origem": "Colas/Arruela/desenho - molde 202.png",
+      "observacao": "Desenho da peca do molde ('desenho - molde N.png') das pastas organizadas pelo usuario, integrado ao cadastro."
     }
   ]
-}
+}

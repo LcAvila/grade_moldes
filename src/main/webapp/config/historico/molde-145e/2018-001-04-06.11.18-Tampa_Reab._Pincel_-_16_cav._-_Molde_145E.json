@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-145e",
+ "codigo": "145E",
+ "nomePeca": "TAMPA REAB. PINCEL",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Reabastecedores\\Tampas\\Tampa p- Reabastecedor Pincel- 16 Cav-Molde 145E\\2018\\04-06.11.18-Tampa Reab. Pincel - 16 cav. - Molde 145E.xlsx",
+ "dataOrigem": "2018",
+ "exportadoEm": "2026-10-21T21:41:28",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "EXPERIÊNCIA",
+   "data": "2018-11-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "2": {
+   "desvio": "EXPERIÊNCIA",
+   "data": "2018-11-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "3": {
+   "desvio": "F.P.F.Q., RESISTÊNCIA QUEIMADA",
+   "data": "2018-09-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "4": {
+   "desvio": "INSERTO DA BUCHA QUE FORMA O COPINHO NO TOPO DA TAMPA QUEBRADO",
+   "data": "2018-05-04",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "INSERTO DA BUCHA QUE FORMA O COPINHO NO TOPO DA TAMPA QUEBRADO",
+   "data": "2018-03-12",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "10": {
+   "desvio": "COPINHO DA BUCHA QUEBRADO",
+   "data": "2018-11-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "11": {
+   "desvio": "RESISTÊNCIA QUEIMADA",
+   "data": "2018-11-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "INSERTO DA BUCHA QUE FORMA O COPINHO NO TOPO DA TAMPA QUEBRADO",
+   "data": "2018-09-05",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "14": {
+   "desvio": "F.P.F.Q.",
+   "data": "2018-11-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "PATRICK"
+  },
+  "15": {
+   "desvio": "INSERTO DA BUCHA QUE FORMA O COPINHO NO TOPO DA TAMPA QUEBRADO",
+   "data": "2018-11-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  },
+  "16": {
+   "desvio": "INSERTO DA BUCHA QUE FORMA O COPINHO NO TOPO DA TAMPA QUEBRADO",
+   "data": "2018-03-09",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "SILAS"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIETILENO ( PEAD )",
+  "maquina": "ENGEL 5",
+  "controlador": "SILAS SANTANA",
+  "dataEntrada": "2018-11-06"
+ }
+}

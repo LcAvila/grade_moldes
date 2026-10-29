@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-116a",
+ "codigo": "116A",
+ "nomePeca": "CORPO MARC. Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Corpos Marcadores\\Corpo Marcador Q.B. - 16 Cav - Molde 116A\\2024\\06-23.09.24-Corpo Marcador Q.B. - 16 cav. - Molde 116A.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "FRENTE QUEBRADA",
+   "data": "2024-09-27",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "2": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-11-01",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-11-01",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  },
+  "8": {
+   "desvio": "BUCHA RACHADA",
+   "data": "2023-02-07",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "V.P.F."
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "REBARBA NA ÁREA DO TRANSFER Ø DA TAMPA. ARRANHADO EXTERNO Ø DA TAMPINHA.",
+   "data": "2024-11-01",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VICTOR"
+  },
+  "12": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "13": {
+   "desvio": "VAZANDO ÁGUA REBARBA",
+   "data": "2024-09-26",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "14": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "15": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "16": {
+   "desvio": "ARRANHÃO EXTERNO",
+   "data": "2024-09-23",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "VAGNER"
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ROMI 09",
+  "controlador": "VAGNER",
+  "dataEntrada": "2024-09-23"
+ }
+}

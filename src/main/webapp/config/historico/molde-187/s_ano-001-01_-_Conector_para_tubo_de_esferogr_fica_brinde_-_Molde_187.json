@@ -1,0 +1,47 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-187",
+ "codigo": "187",
+ "nomePeca": "Conector para tubo de esferográfica brinde",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Diversos\\Conector para tubo de esferográfica brinde - Molde 187\\01 - Conector para tubo de esferográfica brinde - Molde 187.xlsx",
+ "dataOrigem": "",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REBARBA NAS ESTRIAS",
+   "data": "2022-03-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "2": {
+   "desvio": "QUEIMANDO NA SAÍDA DE GÁS",
+   "data": "2022-03-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "3": {
+   "desvio": "REBARBA NAS ESTRIAS",
+   "data": "2022-03-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  },
+  "4": {
+   "desvio": "FURANDO / REBARBA NAS ESTRIAS",
+   "data": "2022-03-17",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "DIOGO"
+  }
+ },
+ "dadosGrade": {
+  "maquina": "ENGEL 3",
+  "controlador": "PATRICK",
+  "dataEntrada": "2022-03-15"
+ }
+}

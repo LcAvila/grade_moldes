@@ -6,6 +6,8 @@
 
   let cacheFormas = null;
   let cacheDesenhos = null;
+  let cacheMaquinas = null;
+  let cacheHistorico = null;
 
   function url(rel) {
     const caminho = String(rel == null ? "" : rel).replace(/^\/+/, "");
@@ -55,6 +57,61 @@
     return mapa;
   }
 
+  async function carregarMaquinas() {
+    if (cacheMaquinas) return cacheMaquinas;
+    let lista = [];
+    try {
+      const cat = await buscarJson("config/maquinas.json");
+      lista = Array.isArray(cat.maquinas) ? cat.maquinas : [];
+    } catch (e) {
+      console.warn("Catálogo de máquinas indisponível (" + e.message + ").");
+    }
+    cacheMaquinas = lista;
+    return lista;
+  }
+
+  async function carregarIndiceHistorico() {
+    if (cacheHistorico) return cacheHistorico;
+    try {
+      const idx = await buscarJson("config/historico/index.json");
+      cacheHistorico = (idx && typeof idx === "object") ? idx : {};
+    } catch (e) {
+      console.warn("Índice de grades históricas indisponível (" + e.message + ").");
+      cacheHistorico = {};
+    }
+    return cacheHistorico;
+  }
+
+  async function carregarGradeHistorica(caminho) {
+    if (!caminho) throw new Error("Arquivo histórico não informado.");
+    return buscarJson("config/historico/" + caminho);
+  }
+
+  // Lista final usada na abertura de grade: catálogo + máquinas citadas nos moldes.
+  function listarMaquinas() {
+    const saida = [];
+    const vistos = {};
+
+    function adicionar(nome) {
+      const texto = String(nome == null ? "" : nome).trim();
+      if (!texto) return;
+      const chave = texto.toUpperCase();
+      if (vistos[chave]) return;
+      vistos[chave] = true;
+      saida.push(texto);
+    }
+
+    (estado.maquinas || []).forEach((m) => {
+      adicionar(typeof m === "string" ? m : (m && (m.nome || m.codigo)) || "");
+    });
+    (estado.moldes || []).forEach((mol) => {
+      adicionar(mol.padroes && mol.padroes.maquina);
+    });
+
+    saida.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+    return saida;
+  }
+
   function urlRecurso(rel) {
     if (!rel) return "";
     return url(rel);
@@ -66,6 +123,10 @@
     carregarLayout: carregarLayout,
     carregarFormas: carregarFormas,
     carregarDesenhos: carregarDesenhos,
+    carregarMaquinas: carregarMaquinas,
+    listarMaquinas: listarMaquinas,
+    carregarIndiceHistorico: carregarIndiceHistorico,
+    carregarGradeHistorica: carregarGradeHistorica,
     urlRecurso: urlRecurso
   };
 

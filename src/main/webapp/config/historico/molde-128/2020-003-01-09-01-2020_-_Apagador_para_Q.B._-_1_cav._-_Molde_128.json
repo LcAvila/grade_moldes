@@ -1,0 +1,27 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-128",
+ "codigo": "128",
+ "nomePeca": "APAGADOR PARA Q.B.",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Diversos\\Apagador - Molde 128\\2020\\01-09-01-2020 - Apagador para Q.B. - 1 cav. - Molde 128.xlsx",
+ "dataOrigem": "2020",
+ "exportadoEm": "2026-10-21T21:41:25",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ENGEL 33",
+  "controlador": "MÁRCIO",
+  "dataEntrada": "2020-01-09"
+ }
+}

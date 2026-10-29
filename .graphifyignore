@@ -1,0 +1,9 @@
+# Harness/tooling payloads: not project code
+.opencode/
+design-md/
+graphify-out/
+
+# Build output and out-of-tree assets
+target/
+bin/
+referencias/

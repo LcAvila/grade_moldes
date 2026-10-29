@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-145b",
+ "codigo": "145B",
+ "nomePeca": "TAMPA MARC. PINCEL",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Marcadores\\Tampas Marcadores\\Tampa Marcador Pincel - 16 Cav - Molde 145B\\2023\\04 - 11.09.23-Tampa Pincel - 16 cav. - Molde 145B.xlsx",
+ "dataOrigem": "2023",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "2": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-09-11",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "5": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "6": {
+   "desvio": "REB. NO Ø MAIOR E REB. NO PONTO DE ALIMENTAÇÃO",
+   "data": "2023-09-14",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MATHEUS"
+  },
+  "7": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "8": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "9": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "10": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-09-11",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "11": {
+   "desvio": "ENTUPIDA",
+   "data": "2023-09-11",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "12": {
+   "desvio": "COPINHO QUEBRADO",
+   "data": "2023-09-11",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "13": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "14": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "15": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MÁRCIO"
+  },
+  "16": {
+   "desvio": "REBARBA NA BORDA DO COPINHO",
+   "data": "2023-09-29",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "JONAS"
+  }
+ },
+ "dadosGrade": {
+  "material": "POLIPROPILENO",
+  "maquina": "ROMI 39",
+  "controlador": "MÁRCIO",
+  "dataEntrada": "2023-09-11"
+ }
+}

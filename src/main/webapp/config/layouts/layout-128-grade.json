@@ -1,0 +1,44 @@
+{
+  "id": "layout-128-grade",
+  "moldeId": "molde-128",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 171 164",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Diversos/Apagador - Molde 128/molde-128.svg). Molde 128 com 1 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 163,
+        "height": 156
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [],
+  "interms": [],
+  "hubs": [],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 85,
+      "y": 81.5,
+      "r": 61,
+      "fontSize": 46
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      1,
+      0
+    ]
+  }
+}

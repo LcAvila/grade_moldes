@@ -1,0 +1,93 @@
+{
+  "id": "layout-186-grade",
+  "moldeId": "molde-186",
+  "revisao": "1",
+  "tipo": "estatico",
+  "viewBox": "0 0 862 818",
+  "formaPadrao": "forma-circulo-28",
+  "observacao": "Layout estatico gerado do SVG da grade real do molde (Diversos/Corpo de estojo Magister - 8 cav. - Molde 186/molde-186.svg). Molde 186 com 8 cavidades.",
+  "fundo": [
+    {
+      "tag": "rect",
+      "attrs": {
+        "x": 4,
+        "y": 4,
+        "width": 854,
+        "height": 810
+      },
+      "classes": [
+        "moldura-rect"
+      ]
+    }
+  ],
+  "conexoes": [],
+  "interms": [],
+  "hubs": [],
+  "cavidades": [
+    {
+      "id": "1",
+      "x": 195,
+      "y": 191.5,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "2",
+      "x": 82,
+      "y": 408,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "3",
+      "x": 195,
+      "y": 618,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "4",
+      "x": 442.5,
+      "y": 735,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "5",
+      "x": 683,
+      "y": 618,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "6",
+      "x": 779,
+      "y": 411.5,
+      "r": 63,
+      "fontSize": 48
+    },
+    {
+      "id": "7",
+      "x": 697,
+      "y": 195,
+      "r": 64,
+      "fontSize": 49
+    },
+    {
+      "id": "8",
+      "x": 446,
+      "y": 81.5,
+      "r": 63,
+      "fontSize": 48
+    }
+  ],
+  "tabela": {
+    "blocos": 2
+  },
+  "impressao": {
+    "tamanhosBlocos": [
+      4,
+      4
+    ]
+  }
+}

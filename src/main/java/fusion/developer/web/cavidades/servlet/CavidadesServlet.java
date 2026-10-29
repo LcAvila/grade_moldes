@@ -3,7 +3,8 @@ package fusion.developer.web.cavidades.servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fusion.developer.web.cavidades.model.AtualizacaoCavidadesRequest;
 import fusion.developer.web.cavidades.service.MoldeService;
-import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
-@WebServlet("/api/moldes/*/cavidades")
+/** Gravação de cavidades. Despachada por ApiMoldesServlet: PUT /api/moldes/{codigo}/cavidades. */
 public class CavidadesServlet extends HttpServlet {
     private final ObjectMapper json = new ObjectMapper().findAndRegisterModules();
     private final MoldeService service = new MoldeService();
@@ -26,7 +27,15 @@ public class CavidadesServlet extends HttpServlet {
         String codigo = partes[partes.length - 2];
         try {
             AtualizacaoCavidadesRequest body = json.readValue(req.getInputStream(), AtualizacaoCavidadesRequest.class);
-            service.salvar(codigo, body);
+
+            // o autor NÃO vem confiável do cliente: a sessão do Fusion manda
+            fusion.developer.web.cavidades.seguranca.UsuarioAtual usuario =
+                    (fusion.developer.web.cavidades.seguranca.UsuarioAtual) req.getAttribute("usuarioAtual");
+            if (usuario != null) {
+                body.usuario = usuario.login;
+            }
+
+            service.salvar(codigo, body, body.usuario);
             resp.setContentType("application/json;charset=UTF-8");
             json.writeValue(resp.getWriter(), Map.of("ok", true));
         } catch (Exception e) {

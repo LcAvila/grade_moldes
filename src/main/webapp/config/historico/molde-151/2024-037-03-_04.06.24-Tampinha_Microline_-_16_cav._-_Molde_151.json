@@ -1,0 +1,132 @@
+{
+ "formato": "customfusion.cavidades",
+ "versao": 2,
+ "moldeId": "molde-151",
+ "codigo": "151",
+ "nomePeca": "TAMPINHA MICROLINE",
+ "layoutId": "",
+ "origem": "historico-repositorio-pastas",
+ "arquivoOrigem": "02-Cavidade não conforme\\Hidrográficas\\Microline\\Tampinha Microline - 16 Cav - Molde 151\\2024\\03- 04.06.24-Tampinha Microline - 16 cav. - Molde 151.xlsx",
+ "dataOrigem": "2024",
+ "exportadoEm": "2026-10-21T21:41:27",
+ "dadosCavidades": {
+  "1": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "2": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "3": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "4": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "5": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "6": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "7": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "8": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "9": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "10": {
+   "desvio": "",
+   "data": "",
+   "vedado": "S",
+   "observacao": "",
+   "controlador": ""
+  },
+  "11": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "12": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO (ESTADO CRÍTICO)",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "13": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "14": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "15": {
+   "desvio": "REB. NO PONTO DE ENCONTRO COM O PAVIO",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  },
+  "16": {
+   "desvio": "ENTUPIDA",
+   "data": "2024-06-06",
+   "vedado": "N",
+   "observacao": "",
+   "controlador": "MARLON"
+  }
+ },
+ "dadosGrade": {
+  "material": "PP",
+  "maquina": "ROMI 29",
+  "controlador": "MARLON",
+  "dataEntrada": "2024-06-04"
+ }
+}
