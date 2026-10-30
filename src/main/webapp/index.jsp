@@ -16,7 +16,7 @@
 
 <link rel="stylesheet"
 
-	href="${pageContext.request.contextPath}/css/style.css?v=20261029k">
+	href="${pageContext.request.contextPath}/css/style.css?v=20261030c">
 
 
 
@@ -496,8 +496,6 @@
 
 							<button type="button" class="btn-peca-3d" id="btnAbrir3D"
 
-								onclick="if(window.CF && CF.visualizador3d) CF.visualizador3d.abrirModal3D();"
-
 								title="Abrir peça em 3D com vistas do SolidWorks (Ctrl+1 a Ctrl+8)">
 
 								<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
@@ -517,8 +515,6 @@
 						</div>
 
 						<div class="peca-card-preview" id="pecaGatilho"
-
-							onclick="if(window.CF && CF.visualizador3d) CF.visualizador3d.abrirModal3D();"
 
 							title="Clique para abrir e girar a peça em 3D (SolidWorks)">
 
@@ -1050,34 +1046,41 @@
 
 
 
-	<!-- Modal 3D SolidWorks da Peça -->
-
-	<!-- Modal 3D SolidWorks da Peça -->
+	<!-- Modal 3D SolidWorks da Peça -->
 	<div class="modal-overlay" id="modalPeca3D">
 		<div class="modal modal-3d">
 			<div class="m3d-header">
 				<div class="m3d-header-info">
-					<div class="m3d-badge-row">
-						<span class="m3d-chip m3d-chip-solid">SOLIDWORKS 3D</span>
-						<span class="m3d-chip m3d-chip-soft">REV 05</span>
-						<span class="m3d-chip m3d-chip-soft">DESENHO 23.05.01-06</span>
-					</div>
-					<h3 class="m3d-title" id="modalPeca3dTitulo">Visualização 3D — Conexão Esferográfica Padrão</h3>
-					<div class="m3d-subtitle" id="modalPeca3dSub">Peça técnica compartilhada pelos moldes 168, 200, 98, 167A e 156</div>
+					<div class="m3d-badge-row">
+						<span class="m3d-mark" aria-hidden="true">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
+								<path d="M12 2 21 7v10l-9 5-9-5V7z"></path>
+								<path d="m3 7 9 5 9-5M12 12v10"></path>
+							</svg>
+						</span>
+						<span class="m3d-chip m3d-chip-solid">SOLIDWORKS 3D</span>
+						<span class="m3d-chip m3d-chip-soft">REV 05</span>
+						<span class="m3d-chip m3d-chip-soft">DESENHO 23.05.01-06</span>
+					</div>
+					<h3 class="m3d-title" id="modalPeca3dTitulo">Visualização 3D — Conexão Esferográfica Padrão</h3>
+					<div class="m3d-subtitle" id="modalPeca3dSub">Peça técnica compartilhada pelos moldes 168, 200, 98, 167A e 156</div>
+				</div>
+				<div class="m3d-header-actions">
+					<button class="m3d-btn-close" id="btnFecharModal3D" type="button"
+						aria-label="Fechar visualizador 3D"
+						onclick="if(window.CF && CF.visualizador3d) CF.visualizador3d.fecharModal3D();"
+						title="Fechar visualizador 3D (Esc)">
+						<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none">
+							<line x1="18" y1="6" x2="6" y2="18"></line>
+							<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
+					</button>
 				</div>
-				<button class="m3d-btn-close" id="btnFecharModal3D" type="button"
-					onclick="if(window.CF && CF.visualizador3d) CF.visualizador3d.fecharModal3D();"
-					title="Fechar visualizador 3D (Esc)">
-					<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none">
-						<line x1="18" y1="6" x2="6" y2="18"></line>
-						<line x1="6" y1="6" x2="18" y2="18"></line>
-					</svg>
-				</button>
 			</div>
 
 			<div class="m3d-toolbar">
 				<div class="m3d-toolbar-left">
-					<span class="m3d-toolbar-label">VISTAS CAD:</span>
+					<span class="m3d-toolbar-label">VISTAS CAD</span>
 					<div class="m3d-views-bar">
 						<button type="button" class="m3d-view-btn" data-view="1" title="Vista Frontal (Ctrl + 1)">Frontal <span class="m3d-kbd">Ctrl+1</span></button>
 						<button type="button" class="m3d-view-btn" data-view="2" title="Vista Posterior (Ctrl + 2)">Posterior <span class="m3d-kbd">Ctrl+2</span></button>
@@ -1089,7 +1092,15 @@
 						<button type="button" class="m3d-view-btn" data-view="8" title="Vista Normal / Alinhada (Ctrl + 8)">Normal <span class="m3d-kbd">Ctrl+8</span></button>
 					</div>
 				</div>
-				<div class="m3d-toolbar-right">
+				<div class="m3d-toolbar-right">
+					<button type="button" class="m3d-tool-btn m3d-tool-btn-primary" id="btnM3dMedir" title="Medir distância entre dois pontos (M)">
+						<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8">
+							<path d="M3 17.5 17.5 3M4.5 15.5l2 2M8 12l2 2M11.5 8.5l2 2M15 5l2 2"></path>
+							<path d="M15.5 15.5h5v5"></path>
+						</svg>
+						<span>Medir <span class="m3d-kbd">M</span></span>
+					</button>
+					<span class="m3d-toolbar-sep" aria-hidden="true"></span>
 					<button type="button" class="m3d-tool-btn" id="btnM3dFit" title="Enquadrar Peça ao Centro (F)">
 						<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
 							<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
@@ -1109,26 +1120,122 @@
 							<rect x="14" y="14" width="7" height="7"></rect>
 							<rect x="3" y="14" width="7" height="7"></rect>
 						</svg>
-						<span>Grade</span>
-					</button>
-				</div>
+						<span>Grade</span>
+
+					</button>
+
+					<button type="button" class="m3d-tool-btn" id="btnM3dCorte" title="Cortar a peça (seção)">
+						<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M4 12h16M12 4v16"></path>
+						</svg>
+						<span>Corte</span>
+					</button>
+
+				</div>
 			</div>
 
-			<div class="m3d-viewport" id="m3dViewport">
-				<div class="m3d-loading" id="m3dLoading">Carregando modelo 3D...</div>
-				<canvas id="m3dCanvas"></canvas>
-				<div class="m3d-hud-view" id="m3dViewIndicator">
-					<span class="m3d-hud-dot"></span>
-					<span id="m3dViewTexto">Vista: Perspectiva Isométrica (Ctrl+7)</span>
-				</div>
-				<div class="m3d-hud-controls-hint">
-					<span>Botão esquerdo: Girar • Botão direito: Pan • Scroll: Zoom</span>
-				</div>
-				<div class="m3d-gizmo" id="m3dGizmo">
-					<span class="m3d-axis axis-x" title="Eixo X (Vermelho)">X</span>
-					<span class="m3d-axis axis-y" title="Eixo Y (Verde)">Y</span>
-					<span class="m3d-axis axis-z" title="Eixo Z (Azul)">Z</span>
-				</div>
+			<div class="m3d-workspace">
+				<div class="m3d-stage">
+					<div class="m3d-viewport" id="m3dViewport">
+						<div class="m3d-loading" id="m3dLoading">Carregando modelo 3D...</div>
+						<canvas id="m3dCanvas"></canvas>
+						<div class="m3d-hud-view" id="m3dViewIndicator">
+							<span class="m3d-hud-dot"></span>
+							<span id="m3dViewTexto">Vista: Perspectiva Isométrica (Ctrl+7)</span>
+						</div>
+						<div class="m3d-hud-controls-hint" id="m3dHudHint">
+							Arraste: girar · Botão direito: pan · Scroll: zoom
+						</div>
+						<div class="m3d-hud-measure" id="m3dHudMeasure" style="display: none;">
+							<span class="m3d-hud-measure-dot"></span>
+							<span id="m3dHudMeasureText">PONTO 1 DE 2 · selecione a origem</span>
+						</div>
+						<div class="m3d-cursor-tag" id="m3dSnapTag" style="display: none;">VÉRTICE</div>
+						<div class="m3d-callout" id="m3dCallout" style="display: none;">
+							<span id="m3dCalloutValue">0,00 mm</span>
+						</div>
+						<div class="m3d-gizmo" id="m3dGizmo">
+							<span class="m3d-axis axis-x" title="Eixo X (Vermelho)">X</span>
+							<span class="m3d-axis axis-y" title="Eixo Y (Verde)">Y</span>
+							<span class="m3d-axis axis-z" title="Eixo Z (Azul)">Z</span>
+						</div>
+					</div>
+				</div>
+
+				<aside class="m3d-panel" aria-label="Ferramentas de medição">
+					<div class="m3d-panel-head">
+						<div class="m3d-panel-title">
+							<span class="m3d-panel-kicker">FERRAMENTA</span>
+							<h4>Medição</h4>
+						</div>
+						<div class="m3d-unit-switch" role="group" aria-label="Unidade de medida">
+							<button type="button" class="m3d-unit-btn ativo" data-unit="mm" aria-pressed="true" title="Milímetros">mm</button>
+							<button type="button" class="m3d-unit-btn" data-unit="cm" aria-pressed="false" title="Centímetros">cm</button>
+						</div>
+					</div>
+
+					<div class="m3d-precision">
+						<span class="m3d-precision-dot"></span>
+						<span>Precisão <strong id="m3dPrecisaoTexto">0,01 mm</strong> · snap em vértices</span>
+					</div>
+
+					<div class="m3d-mode-grid">
+						<button type="button" class="m3d-mode-btn" aria-pressed="false" data-measure-mode="distancia" title="Distância entre 2 pontos (M)">
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7">
+								<path d="M3 17.5 17.5 3M4.5 15.5l2 2M8 12l2 2M11.5 8.5l2 2M15 5l2 2"></path>
+								<path d="M15.5 15.5h5v5"></path>
+							</svg>
+							<span class="m3d-mode-label">Distância</span>
+							<span class="m3d-mode-sub">2 pontos</span>
+						</button>
+						<button type="button" class="m3d-mode-btn" aria-pressed="false" data-measure-mode="diametro" title="Diâmetro por 3 pontos da circunferência">
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7">
+								<circle cx="12" cy="12" r="7.5"></circle>
+								<path d="M4.5 12h15M9 9l-4.5 3L9 15M15 9l4.5 3-4.5 3"></path>
+							</svg>
+							<span class="m3d-mode-label">Diâmetro</span>
+							<span class="m3d-mode-sub">3 pontos</span>
+						</button>
+						<button type="button" class="m3d-mode-btn" aria-pressed="false" data-measure-mode="angulo" title="Ângulo entre dois segmentos (3 pontos)">
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7">
+								<path d="M4 19h16M4 19 16 5"></path>
+								<path d="M10.5 19a6.5 6.5 0 0 0-1.9-4.6"></path>
+							</svg>
+							<span class="m3d-mode-label">Ângulo</span>
+							<span class="m3d-mode-sub">3 pontos</span>
+						</button>
+						<button type="button" class="m3d-mode-btn" aria-pressed="false" data-measure-mode="caixa" title="Medir os limites X, Y e Z do modelo">
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7">
+								<path d="M12 3 21 8v8l-9 5-9-5V8z"></path>
+								<path d="m3 8 9 5 9-5M12 13v8"></path>
+							</svg>
+							<span class="m3d-mode-label">Caixa</span>
+							<span class="m3d-mode-sub">X · Y · Z</span>
+						</button>
+					</div>
+
+					<div class="m3d-measure-status" id="m3dMeasureStatus" role="status" aria-live="polite">
+						<span class="m3d-status-dot"></span>
+						<span id="m3dMeasureStatusText">Selecione uma ferramenta de medição para começar.</span>
+					</div>
+
+					<div class="m3d-results-head">
+						<span>MEDIÇÕES</span>
+						<span class="m3d-results-count" id="m3dResultsCount">0</span>
+						<button type="button" class="m3d-link-btn" id="btnM3dLimparMedicoes" title="Remover todas as medições">Limpar</button>
+					</div>
+
+					<div class="m3d-measure-list" id="m3dMeasureList"></div>
+
+					<div class="m3d-panel-foot">
+						<div class="m3d-snap-legend">
+							<span><i class="m3d-snap-dot"></i>Vértice</span>
+							<span><i class="m3d-snap-dot aresta"></i>Aresta</span>
+							<span><i class="m3d-snap-dot face"></i>Face</span>
+						</div>
+						<div class="m3d-panel-hint">Arraste para girar · <code>Alt</code> ponto livre · <code>Esc</code> sai</div>
+					</div>
+				</aside>
 			</div>
 
 			<div class="m3d-footer">
@@ -1140,21 +1247,151 @@
 						</svg>
 						<span id="m3dInfoOrigem">Arquivo CAD SolidWorks: 23.05.01-06-REV05 - CONEXÃO ESF. PADRÃO (DESENHO).SLDPRT</span>
 					</div>
-					<div class="m3d-hint-row">
-						Dica: Clique em qualquer face da peça e pressione <code>Ctrl + 8</code> para alinhar a visão normal a ela.
-					</div>
-				</div>
-				<div class="m3d-footer-actions">
-					<button class="btn btn-secondary m3d-btn-fechar" id="btnFecharModal3DRodape" type="button"
-						onclick="if(window.CF && CF.visualizador3d) CF.visualizador3d.fecharModal3D();">
-						FECHAR
-					</button>
+					<div class="m3d-hint-row" id="m3dHintRow">
+						Dica: clique em uma face e use <code>Ctrl + 8</code> para alinhar a vista. Pressione <code>M</code> para medir.
+					</div>
+				</div>
+				<div class="m3d-footer-actions">
+					<span class="m3d-footer-shortcuts"><code>M</code> medir · <code>F</code> ajustar · <code>Esc</code> fechar</span>
+					<button class="btn btn-secondary m3d-btn-fechar" id="btnFecharModal3DRodape" type="button"
+						onclick="if(window.CF && CF.visualizador3d) CF.visualizador3d.fecharModal3D();">
+						FECHAR
+					</button>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<script src="${pageContext.request.contextPath}/js/core/estado.js?v=20261029f"></script>
+		</div>
+	</div>
+
+	<!-- Modal 3D Autodesk Platform Services -->
+	<div class="modal-overlay" id="modalPeca3DAps">
+		<div class="modal modal-3d modal-3d-aps">
+			<div class="m3d-header">
+				<div class="m3d-header-info">
+					<div class="m3d-badge-row">
+						<span class="m3d-mark" aria-hidden="true">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
+								<path d="M12 2 21 7v10l-9 5-9-5V7z"></path>
+								<path d="m3 7 9 5 9-5M12 12v10"></path>
+							</svg>
+						</span>
+						<span class="m3d-chip m3d-chip-solid">AUTODESK APS</span>
+						<span class="m3d-chip m3d-chip-soft">SVF2</span>
+						<span class="m3d-chip m3d-chip-soft" id="m3dApsChipArquivo">STL</span>
+					</div>
+					<h3 class="m3d-title" id="modalPeca3DApsTitulo">Visualização 3D — Autodesk Platform Services</h3>
+					<div class="m3d-subtitle" id="modalPeca3DApsSub">Modelo traduzido e medido na nuvem Autodesk</div>
+				</div>
+				<div class="m3d-header-actions">
+					<button class="m3d-btn-close" id="btnFecharModal3DAps" type="button"
+						aria-label="Fechar visualizador Autodesk"
+						title="Fechar visualizador (Esc)">
+						<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none">
+							<line x1="18" y1="6" x2="6" y2="18"></line>
+							<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="m3d-workspace">
+				<div class="m3d-stage">
+					<div class="m3d-aps-wrap">
+						<div class="m3d-aps-viewport" id="m3dApsViewer"></div>
+						<div class="m3d-aps-overlay" id="m3dApsOverlay">
+							<div class="m3d-aps-overlay-card">
+								<span class="m3d-aps-spinner" id="m3dApsSpinner" aria-hidden="true"></span>
+								<strong id="m3dApsOverlayTitulo">Conectando ao Autodesk Platform Services</strong>
+								<span id="m3dApsOverlayTexto">Solicitando token...</span>
+								<div class="m3d-aps-progress" role="progressbar" aria-label="Progresso da tradução">
+									<i id="m3dApsProgresso"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="m3d-panel" aria-label="Ferramentas de medição Autodesk">
+					<div class="m3d-panel-head">
+						<div class="m3d-panel-title">
+							<span class="m3d-panel-kicker">AUTODESK</span>
+							<h4>Medição</h4>
+						</div>
+						<div class="m3d-unit-switch" role="group" aria-label="Unidade de medida">
+							<button type="button" class="m3d-aps-unit-btn m3d-unit-btn ativo" data-aps-unit="mm" aria-pressed="true" title="Milímetros">mm</button>
+							<button type="button" class="m3d-aps-unit-btn m3d-unit-btn" data-aps-unit="cm" aria-pressed="false" title="Centímetros">cm</button>
+						</div>
+					</div>
+
+					<div class="m3d-precision">
+						<span class="m3d-precision-dot"></span>
+						<span>Precisão <strong id="m3dApsPrecisao">0,01 mm</strong> · snap nativo APS</span>
+					</div>
+
+					<div class="m3d-mode-grid">
+						<button type="button" class="m3d-aps-mode-btn m3d-mode-btn ativo" aria-pressed="true" data-aps-mode="distancia" title="Distância entre 2 pontos (M)">
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7">
+								<path d="M3 17.5 17.5 3M4.5 15.5l2 2M8 12l2 2M11.5 8.5l2 2M15 5l2 2"></path>
+								<path d="M15.5 15.5h5v5"></path>
+							</svg>
+							<span class="m3d-mode-label">Distância</span>
+							<span class="m3d-mode-sub">2 pontos</span>
+						</button>
+						<button type="button" class="m3d-aps-mode-btn m3d-mode-btn" aria-pressed="false" data-aps-mode="angulo" title="Ângulo entre dois segmentos (3 pontos)">
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7">
+								<path d="M4 19h16M4 19 16 5"></path>
+								<path d="M10.5 19a6.5 6.5 0 0 0-1.9-4.6"></path>
+							</svg>
+							<span class="m3d-mode-label">Ângulo</span>
+							<span class="m3d-mode-sub">3 pontos</span>
+						</button>
+					</div>
+
+					<div class="m3d-measure-status" id="m3dApsStatus" role="status" aria-live="polite">
+						<span class="m3d-status-dot"></span>
+						<span id="m3dApsStatusTexto">Abra uma peça para carregar o modelo.</span>
+					</div>
+
+					<div class="m3d-results-head">
+						<span>MEDIÇÕES</span>
+						<span class="m3d-results-count" id="m3dApsContagem">0</span>
+						<button type="button" class="m3d-link-btn" id="btnM3dApsLimpar" title="Remover todas as medições">Limpar</button>
+					</div>
+
+					<div class="m3d-measure-list" id="m3dApsLista"></div>
+
+					<div class="m3d-panel-foot">
+						<div class="m3d-aps-actions">
+							<button type="button" class="m3d-tool-btn m3d-tool-btn-primary" id="btnM3dApsMedir" title="Ativar medição (M)">Medir</button>
+							<button type="button" class="m3d-tool-btn" id="btnM3dApsCalibrar" title="Calibrar a escala do modelo">Calibrar</button>
+							<button type="button" class="m3d-tool-btn" id="btnM3dApsFit" title="Enquadrar peça (F)">Ajustar</button>
+						</div>
+						<div class="m3d-panel-hint">Snap APS em vértices, arestas e faces · <code>Esc</code> sai</div>
+					</div>
+				</aside>
+			</div>
+
+			<div class="m3d-footer">
+				<div class="m3d-footer-info">
+					<div class="m3d-origem-row">
+						<svg class="m3d-icon-mini" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+							<polyline points="14 2 14 8 20 8"></polyline>
+						</svg>
+						<span id="m3dApsInfoOrigem">Modelo STL traduzido para SVF2 no Autodesk Platform Services</span>
+					</div>
+					<div class="m3d-hint-row">
+						Dica: use <strong>Calibrar</strong> se o STL não declarar unidade. Pressione <code>M</code> para medir.
+					</div>
+				</div>
+				<div class="m3d-footer-actions">
+					<span class="m3d-footer-shortcuts"><code>M</code> medir · <code>F</code> ajustar · <code>Esc</code> fechar</span>
+					<button class="btn btn-secondary m3d-btn-fechar" id="btnFecharModal3DApsRodape" type="button">FECHAR</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="${pageContext.request.contextPath}/js/core/estado.js?v=20261029f"></script>
 
 	<script src="${pageContext.request.contextPath}/js/core/persistencia.js"></script>
 
@@ -1182,17 +1419,19 @@
 
 	<script src="${pageContext.request.contextPath}/js/core/configLoader.js"></script>
 
-	<script src="${pageContext.request.contextPath}/js/render/telaInicial.js"></script>
-
-		<script src="${pageContext.request.contextPath}/js/lib/three/three.min.js"></script>
-
-	<script src="${pageContext.request.contextPath}/js/lib/three/OrbitControls.js"></script>
-
-	<script src="${pageContext.request.contextPath}/js/lib/three/STLLoader.js"></script>
-
-	<script src="${pageContext.request.contextPath}/js/lib/three/GLTFLoader.js"></script>
-
-	<script src="${pageContext.request.contextPath}/js/render/visualizador3d.js?v=20261029m"></script>
+	<script src="${pageContext.request.contextPath}/js/render/telaInicial.js"></script>
+
+	<script src="${pageContext.request.contextPath}/js/lib/three/three.min.js"></script>
+
+	<script src="${pageContext.request.contextPath}/js/lib/three/OrbitControls.js"></script>
+
+	<script src="${pageContext.request.contextPath}/js/lib/three/STLLoader.js"></script>
+
+	<script src="${pageContext.request.contextPath}/js/render/visualizador3d.js?v=20261030d"></script>
+
+	<script src="${pageContext.request.contextPath}/js/render/visualizador3dAps.js?v=20261030c"></script>
+
+	<script src="${pageContext.request.contextPath}/js/render/visualizador3dFacade.js?v=20261030c"></script>
 
 	<script src="${pageContext.request.contextPath}/js/app.js?v=20261029k"></script>
 
