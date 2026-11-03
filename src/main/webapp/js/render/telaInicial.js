@@ -18,7 +18,27 @@
     if (btnAbrir) btnAbrir.addEventListener("click", abrirModal);
 
     const btnCadastrar = document.getElementById("btnCadastrarMolde");
-    if (btnCadastrar) btnCadastrar.addEventListener("click", cadastrarMolde);
+    if (btnCadastrar) btnCadastrar.addEventListener("click", abrirModalCadastro);
+
+    const cadInput = document.getElementById("cadArquivoCad");
+    if (cadInput) cadInput.addEventListener("change", () => {
+      const nome = cadInput.files && cadInput.files[0] ? cadInput.files[0].name : "Selecionar arquivo STL";
+      const el = document.getElementById("cadArquivoCadNome");
+      if (el) el.textContent = nome;
+    });
+    const imgInput = document.getElementById("cadImagem");
+    if (imgInput) imgInput.addEventListener("change", () => {
+      const nome = imgInput.files && imgInput.files[0] ? imgInput.files[0].name : "Selecionar imagem";
+      const el = document.getElementById("cadImagemNome");
+      if (el) el.textContent = nome;
+    });
+
+    const btnCancelarCad = document.getElementById("btnCancelarCadMolde");
+    if (btnCancelarCad) btnCancelarCad.addEventListener("click", fecharModalCadastro);
+    const btnConfirmarCad = document.getElementById("btnConfirmarCadMolde");
+    if (btnConfirmarCad) btnConfirmarCad.addEventListener("click", confirmarCadastro);
+    const overlayCad = document.getElementById("modalCadastrarMolde");
+    if (overlayCad) overlayCad.addEventListener("click", (e) => { if (e.target.id === "modalCadastrarMolde") fecharModalCadastro(); });
 
     const btnCancelar = document.getElementById("btnCancelarAbrir");
     if (btnCancelar) btnCancelar.addEventListener("click", fecharModal);
@@ -232,6 +252,9 @@
     dataAbertura.value = hoje;
     if (dataHoje) dataHoje.textContent = dataBR(hoje);
 
+    // --- Check-list de validação ---
+    montarChecklist();
+
     // --- Grade histórica (opcional) ---
     pacoteHistorico = null;
     const selHistorico = document.getElementById("selHistorico");
@@ -390,6 +413,50 @@
     erro.style.display = "none";
   }
 
+  const PONTOS_CHECKLIST = [
+    "REBARBAS",
+    "MANCHAS",
+    "OUTROS ASPECTOS VISUAIS",
+    "DIMENSIONAL",
+    "ESTANQUEIDADE",
+    "FUROS ANTIASFIXIANTES DESOBSTRUÍDOS"
+  ];
+
+  function montarChecklist() {
+    const tabela = document.getElementById("clTabela");
+    if (!tabela) return;
+    tabela.innerHTML = "";
+    const cab = document.createElement("div");
+    cab.className = "cl-linha cl-cab";
+    cab.innerHTML = '<span class="cl-ponto">PONTO VERIFICÁVEL</span>' +
+      '<span class="cl-op">C</span><span class="cl-op">NC</span><span class="cl-op">NA</span>';
+    tabela.appendChild(cab);
+    PONTOS_CHECKLIST.forEach((ponto, idx) => {
+      const linha = document.createElement("div");
+      linha.className = "cl-linha";
+      linha.innerHTML = '<span class="cl-ponto">' + ponto + '</span>' +
+        '<label class="cl-op"><input type="radio" name="cl_' + idx + '" value="C"></label>' +
+        '<label class="cl-op"><input type="radio" name="cl_' + idx + '" value="NC"></label>' +
+        '<label class="cl-op"><input type="radio" name="cl_' + idx + '" value="NA"></label>';
+      tabela.appendChild(linha);
+    });
+  }
+
+  function coletarChecklist() {
+    const pontos = {};
+    PONTOS_CHECKLIST.forEach((ponto, idx) => {
+      const sel = document.querySelector('input[name="cl_' + idx + '"]:checked');
+      pontos[ponto] = sel ? sel.value : "";
+    });
+    return {
+      situacao: (document.getElementById("clSituacao") || {}).value || "",
+      pontos: pontos,
+      controlador: (document.getElementById("clControlador") || {}).value || "",
+      observacoes: (document.getElementById("clObservacoes") || {}).value || "",
+      status: (document.getElementById("clStatus") || {}).value || ""
+    };
+  }
+
   function confirmarAbrir() {
     const selMolde = document.getElementById("selMolde");
     const selMaquina = document.getElementById("selMaquina");
@@ -418,7 +485,8 @@
       onAbrirMolde(moldeId, {
         maquina: maquina,
         dataEntrada: data,
-        historico: pacoteHistorico || null
+        historico: pacoteHistorico || null,
+        checklist: coletarChecklist()
       });
     }
   }
@@ -428,19 +496,73 @@
     if (overlay) overlay.classList.remove("active");
   }
 
-  // Abre a tela de cadastro de molde (servidor local em :8787).
-  // Abre a janela já no gesto do clique (evita bloqueador de popup) e, se o
-  // servidor não estiver rodando, fecha e orienta a executar o cadastrar-molde.ps1.
-  function cadastrarMolde() {
-    const url = "http://localhost:8787/";
-    const w = window.open(url, "_blank");
-    fetch(url, { mode: "no-cors" }).catch(() => {
-      if (w && !w.closed) w.close();
-      alert("A tela de cadastro não está rodando.\n\nPara abrir, execute no PowerShell:\n\n" +
-        "powershell -NoProfile -ExecutionPolicy Bypass -File " +
-        "\"C:\\Users\\lucas_avila\\Desktop\\Cavidade não conforme\\cadastrar-molde.ps1\"\n\n" +
-        "Depois clique novamente em \"CADASTRAR MOLDE\".");
-    });
+  function abrirModalCadastro() {
+    const overlay = document.getElementById("modalCadastrarMolde");
+    if (!overlay) return;
+    const err = document.getElementById("cadMoldeErro");
+    if (err) { err.textContent = ""; err.style.display = "none"; }
+    overlay.classList.add("active");
+  }
+
+  function fecharModalCadastro() {
+    const overlay = document.getElementById("modalCadastrarMolde");
+    if (overlay) overlay.classList.remove("active");
+  }
+
+  async function confirmarCadastro() {
+    const err = document.getElementById("cadMoldeErro");
+    const codigo = (document.getElementById("cadCodigo") || {}).value || "";
+    const nomePeca = (document.getElementById("cadNomePeca") || {}).value || "";
+    const familia = (document.getElementById("cadFamilia") || {}).value || "";
+    const cavidades = parseInt((document.getElementById("cadCavidades") || {}).value || "0", 10);
+    const material = (document.getElementById("cadMaterial") || {}).value || "";
+    const maquina = (document.getElementById("cadMaquina") || {}).value || "";
+    const cadFile = (document.getElementById("cadArquivoCad") || {}).files || [];
+    const imgFile = (document.getElementById("cadImagem") || {}).files || [];
+
+    if (!codigo.trim()) { mostrarErroCad("Informe o codigo do molde."); return; }
+    if (!nomePeca.trim()) { mostrarErroCad("Informe o nome da peca."); return; }
+    if (!cavidades || cavidades < 1) { mostrarErroCad("Informe a quantidade de cavidades."); return; }
+
+    const fd = new FormData();
+    fd.append("codigo", codigo.trim());
+    fd.append("nomePeca", nomePeca.trim());
+    fd.append("familia", familia.trim());
+    fd.append("cavidades", String(cavidades));
+    fd.append("material", material.trim());
+    fd.append("maquina", maquina.trim());
+    if (cadFile.length) fd.append("cadFile", cadFile[0]);
+    if (imgFile.length) fd.append("imagem", imgFile[0]);
+
+    const btn = document.getElementById("btnConfirmarCadMolde");
+    if (btn) btn.disabled = true;
+    try {
+      const ctx = (document.body && document.body.dataset && document.body.dataset.context) || "/CustomFusionWeb";
+      const resp = await fetch(ctx + "/api/moldes/cadastrar", { method: "POST", body: fd });
+      const data = await resp.json().catch(() => ({}));
+      if (!resp.ok || !data.ok) {
+        throw new Error(data.erro || ("HTTP " + resp.status));
+      }
+      fecharModalCadastro();
+      alert("Molde " + codigo + " cadastrado com sucesso.");
+      // recarrega a lista de moldes
+      if (CF.cfg && typeof CF.cfg.carregarMoldes === "function") {
+        CF.cfg.carregarMoldes().then(() => { if (typeof renderizar === "function") renderizar(); });
+      } else {
+        location.reload();
+      }
+    } catch (e) {
+      mostrarErroCad("Falha ao cadastrar: " + (e && e.message ? e.message : e));
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+
+  function mostrarErroCad(msg) {
+    const err = document.getElementById("cadMoldeErro");
+    if (!err) return;
+    err.textContent = msg;
+    err.style.display = "block";
   }
 
   CF.telaInicial = {

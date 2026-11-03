@@ -109,7 +109,12 @@
   // ---- Tela principal (grades abertas) --------------------------------------
 
   function montarCards() {
-    return persistencia.listarGrades().map((g) => {
+    return persistencia.listarGrades()
+      .filter((g) => {
+        const dados = persistencia.carregarGrade(g.id) || { dadosGrade: {} };
+        return !(dados.dadosGrade && dados.dadosGrade.publicado);
+      })
+      .map((g) => {
       const molde = acharMolde(g.moldeId);
       const dados = persistencia.carregarGrade(g.id) || { dadosCavidades: {}, dadosGrade: {} };
       const ids = molde ? molde.cavidades.map(String) : [];
@@ -161,8 +166,15 @@
       const dadosGrade = Object.assign({}, h.dadosGrade || {});
       if (config.maquina) dadosGrade.maquina = config.maquina;
       if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
+      if (config.checklist) dadosGrade.checklist = config.checklist;
       persistencia.salvarGrade(grade.id, grade.moldeId,
         h.dadosCavidades || {}, dadosGrade);
+    } else if (config && config.checklist) {
+      const dadosGrade = Object.assign({}, (persistencia.carregarGrade(grade.id) || {}).dadosGrade || {});
+      if (config.maquina) dadosGrade.maquina = config.maquina;
+      if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
+      dadosGrade.checklist = config.checklist;
+      persistencia.salvarGrade(grade.id, grade.moldeId, {}, dadosGrade);
     }
 
     await carregarGradeInterno(grade);
@@ -239,6 +251,61 @@
     }
   }
 
+  async function publicarGrade() {
+    if (!estado.gradeAtual || !estado.molde) {
+      alert("Nenhuma grade aberta.");
+      return;
+    }
+    const codigo = estado.molde.codigo;
+    // monta a folha de impressao (A4) antes de capturar o HTML
+    if (CF.impressao && typeof CF.impressao.montarFolhaImpressao === "function") {
+      CF.impressao.montarFolhaImpressao();
+    }
+    const folha = document.getElementById("folhaImpressao");
+    if (!folha) {
+      alert("Folha de impressao nao encontrada.");
+      return;
+    }
+    const html = "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Grade " + codigo + "</title></head><body>" + folha.outerHTML + "</body></html>";
+    // base64 (unicode-safe)
+    const bytes = new TextEncoder().encode(html);
+    let binary = "";
+    bytes.forEach((b) => { binary += String.fromCharCode(b); });
+    const b64 = btoa(binary);
+
+    const btn = document.getElementById("btnPublicarGrade");
+    if (btn) btn.disabled = true;
+    try {
+      const ctx = estado.contextPath || "";
+      const resp = await fetch(ctx + "/api/moldes/" + encodeURIComponent(codigo) + "/publicar-ged", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ file: "grade-" + codigo + ".html", fileBytes: b64 })
+      });
+      const data = await resp.json().catch(() => ({}));
+      if (!resp.ok || !data.ok) {
+        throw new Error(data.erro || ("HTTP " + resp.status));
+      }
+      // marca a grade como publicada/encerrada
+      if (estado.gradeAtual && estado.gradeAtual.id) {
+        const g = persistencia.acharGrade(estado.gradeAtual.id);
+        if (g) {
+          const dg = persistencia.carregarGrade(g.id) || {};
+          const dados = dg.dadosGrade || {};
+          dados.publicado = true;
+          dados.dataPublicacao = new Date().toISOString().slice(0, 10);
+          persistencia.salvarGrade(g.id, g.moldeId, dg.dadosCavidades || estado.dadosCavidades, dados);
+        }
+      }
+      alert("Grade publicada no GED com sucesso.");
+      voltarParaInicial();
+    } catch (e) {
+      alert("Falha ao publicar: " + (e && e.message ? e.message : e));
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+
   async function iniciar() {
     const body = document.body;
     estado.contextPath = body.dataset.context || "";
@@ -250,6 +317,8 @@
     initRegistros();
     initIO();
     initImpressao();
+    const btnPublicar = el("btnPublicarGrade");
+    if (btnPublicar) btnPublicar.addEventListener("click", publicarGrade);
     if (CF.visualizador3d && CF.visualizador3d.init) {
       CF.visualizador3d.init();
     }

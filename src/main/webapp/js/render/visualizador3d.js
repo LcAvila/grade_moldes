@@ -1366,17 +1366,16 @@
   }
 
   function carregarModelo(url, nomePeca, infoExtra) {
+    // Evita cache do navegador/reuso de geometria quando o arquivo STL for substituído.
+    url = String(url || "");
+    if (url.indexOf("?") === -1) {
+      url += "?v=" + Date.now();
+    }
+
     var loading = el("m3dLoading");
     if (loading) {
       loading.style.display = "flex";
       loading.textContent = "Carregando modelo 3D (" + (nomePeca || "Peça") + ")...";
-    }
-
-    if (modeloCarregadoUrl === url && objetoAtual) {
-      if (loading) loading.style.display = "none";
-      ajustarAoModelo();
-      irParaVista(7, false);
-      return;
     }
 
     if (typeof THREE.STLLoader === "function") {

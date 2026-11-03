@@ -3,6 +3,7 @@ package fusion.developer.web.cavidades.servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,12 +25,14 @@ import java.util.Map;
  *   POST  /api/moldes/{codigo}/publicar-ged -> PublicarGedServlet.doPost
  */
 @WebServlet("/api/moldes/*")
+@MultipartConfig(maxFileSize = 50 * 1024 * 1024, maxRequestSize = 60 * 1024 * 1024)
 public class ApiMoldesServlet extends HttpServlet {
 
     private final ObjectMapper json = new ObjectMapper();
     private final MoldesServlet moldes = new MoldesServlet();
     private final CavidadesServlet cavidades = new CavidadesServlet();
     private final PublicarGedServlet ged = new PublicarGedServlet();
+    private final CadastrarMoldeServlet cadastrar = new CadastrarMoldeServlet();
 
     /**
      * Inicializa os sub-servlets com o mesmo config: sem isso,
@@ -42,6 +45,7 @@ public class ApiMoldesServlet extends HttpServlet {
         moldes.init(config);
         cavidades.init(config);
         ged.init(config);
+        cadastrar.init(config);
     }
 
     @Override
@@ -67,6 +71,10 @@ public class ApiMoldesServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String[] p = segmentos(req);
+        if (p != null && p.length == 1 && "cadastrar".equals(p[0])) {
+            cadastrar.doPost(req, resp);
+            return;
+        }
         if (p != null && p.length == 2 && "publicar-ged".equals(p[1])) {
             ged.doPost(req, resp);
             return;

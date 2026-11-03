@@ -44,7 +44,7 @@ public class ApsModeloServlet extends HttpServlet {
 
         try {
             ApsModeloService.Resultado resultado = verificar
-                    ? ApsModeloService.verificar(arquivo)
+                    ? ApsModeloService.verificar(diretorioModelos(), arquivo)
                     : ApsModeloService.obter(diretorioModelos(), arquivo);
 
             json.writeValue(resp.getWriter(), paraJson(resultado));

@@ -49,12 +49,29 @@ public final class ApsModeloService {
     }
 
     /** Consulta rápida (sem upload) usada pelo front para decidir entre APS e viewer local. */
-    public static Resultado verificar(String arquivo) {
+    public static Resultado verificar(Path diretorio, String arquivo) {
         if (!ApsConfig.configurado()) {
             return new Resultado(false, "desconfigurado", null, arquivo, null,
                     "APS não configurado.");
         }
-        Registro reg = arquivo == null ? null : CACHE.get(arquivo.trim());
+        Path base = diretorio == null ? null : diretorio.toAbsolutePath().normalize();
+        String nome = arquivo == null ? null : arquivo.trim();
+        if (base != null && nome != null && !nome.isBlank()) {
+            try {
+                Path destino = base.resolve(nome).normalize();
+                if (destino.startsWith(base) && java.nio.file.Files.isRegularFile(destino)) {
+                    String chave = chaveComMtime(nome, destino);
+                    Registro reg = CACHE.get(chave);
+                    if (reg == null) {
+                        return new Resultado(true, "pendente", null, nome, "0%",
+                                "Modelo ainda não enviado ao APS.");
+                    }
+                    return converter(reg, nome);
+                }
+            } catch (Exception ignored) {
+            }
+        }
+        Registro reg = nome == null ? null : CACHE.get(nome);
         if (reg == null) {
             return new Resultado(true, "pendente", null, arquivo, "0%",
                     "Modelo ainda não enviado ao APS.");
@@ -72,10 +89,11 @@ public final class ApsModeloService {
         String nome = validarArquivo(base, arquivo);
 
         synchronized (TRAVA) {
-            Registro reg = CACHE.get(nome);
+            String chave = chaveComMtime(nome, base.resolve(nome));
+            Registro reg = CACHE.get(chave);
             if (reg == null) {
                 reg = new Registro();
-                CACHE.put(nome, reg);
+                CACHE.put(chave, reg);
             }
 
             if ("ready".equals(reg.status)) {
@@ -122,6 +140,14 @@ public final class ApsModeloService {
         }
     }
 
+    private static String chaveComMtime(String nome, Path destino) {
+        long mtime = 0L;
+        try {
+            mtime = java.nio.file.Files.getLastModifiedTime(destino).toMillis();
+        } catch (Exception ignored) {
+        }
+        return nome + "@" + mtime;
+    }
     private static void preparar(Path origem, String nome, Registro reg) {
         byte[] conteudo;
         try {
