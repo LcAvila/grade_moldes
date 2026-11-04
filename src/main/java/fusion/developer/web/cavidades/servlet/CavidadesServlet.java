@@ -3,8 +3,6 @@ package fusion.developer.web.cavidades.servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fusion.developer.web.cavidades.model.AtualizacaoCavidadesRequest;
 import fusion.developer.web.cavidades.service.MoldeService;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletConfig;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -27,6 +25,10 @@ public class CavidadesServlet extends HttpServlet {
         String codigo = partes[partes.length - 2];
         try {
             AtualizacaoCavidadesRequest body = json.readValue(req.getInputStream(), AtualizacaoCavidadesRequest.class);
+            if (body.cavidades == null || body.cavidades.isEmpty()) {
+                resp.sendError(400, "Informe ao menos uma cavidade.");
+                return;
+            }
 
             // o autor NÃO vem confiável do cliente: a sessão do Fusion manda
             fusion.developer.web.cavidades.seguranca.UsuarioAtual usuario =
@@ -38,6 +40,8 @@ public class CavidadesServlet extends HttpServlet {
             service.salvar(codigo, body, body.usuario);
             resp.setContentType("application/json;charset=UTF-8");
             json.writeValue(resp.getWriter(), Map.of("ok", true));
+        } catch (IllegalArgumentException e) {
+            resp.sendError(400, e.getMessage());
         } catch (Exception e) {
             getServletContext().log("Erro ao salvar cavidades", e);
             resp.sendError(500, e.getMessage());

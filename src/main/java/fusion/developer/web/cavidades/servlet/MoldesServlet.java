@@ -2,17 +2,16 @@ package fusion.developer.web.cavidades.servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fusion.developer.web.cavidades.service.MoldeService;
-import jakarta.servlet.ServletConfig;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.Map;
 
 /** Busca de molde. Despachada por ApiMoldesServlet: GET /api/moldes/{codigo}. */
 public class MoldesServlet extends HttpServlet {
-    private final ObjectMapper json = new ObjectMapper().findAndRegisterModules();
+    private final ObjectMapper json = new ObjectMapper();
     private final MoldeService service = new MoldeService();
 
     @Override

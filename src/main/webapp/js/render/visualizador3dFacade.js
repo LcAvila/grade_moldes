@@ -69,18 +69,20 @@
   }
 
   function infoModelo(dados) {
-    var cod = codigoMolde(dados);
-    var moldesConexao = ["168", "200", "98", "167A", "156"];
+    var estado = CF.estado && CF.estado.estado;
+    var molde = (dados && dados.molde) || (estado && estado.molde) || null;
 
-    if (moldesConexao.indexOf(cod) !== -1 || !cod) {
+    if (molde && CF.cfg && typeof CF.cfg.resolverModelo3d === "function") {
+      var resolvido = CF.cfg.resolverModelo3d(molde);
       return {
-        arquivo: "conexao-padrao.stl",
-        titulo: "Visualização 3D da Peça — Conexão Esferográfica",
-        subtitulo: "REV05 · 23.05.01-06 · Moldes 168, 200, 98, 167A e 156",
-        infoExtra: "Arquivo CAD SolidWorks: 23.05.01-06-REV05 - CONEXÃO ESF. PADRÃO (DESENHO).SLDPRT"
+        arquivo: resolvido.nomeArquivo,
+        titulo: resolvido.titulo,
+        subtitulo: resolvido.subtitulo,
+        infoExtra: resolvido.infoExtra
       };
     }
 
+    var cod = codigoMolde(dados);
     return {
       arquivo: "molde-" + cod + ".stl",
       titulo: "Desenho 3D da Peça — Molde " + cod,

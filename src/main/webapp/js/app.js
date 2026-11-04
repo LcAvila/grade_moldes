@@ -13,7 +13,6 @@
   const { atualizarResumo } = CF.resumo;
   const { abrirDetalhes, initModal } = CF.modal;
   const { initImpressao } = CF.impressao;
-  const { initIO } = CF.io;
   const { initRegistros } = CF.registros;
 
   function el(id) { return document.getElementById(id); }
@@ -108,48 +107,39 @@
 
   // ---- Tela principal (grades abertas) --------------------------------------
 
-  function montarCards() {
-    return persistencia.listarGrades()
-      .filter((g) => {
-        const dados = persistencia.carregarGrade(g.id) || { dadosGrade: {} };
-        return !(dados.dadosGrade && dados.dadosGrade.publicado);
-      })
+  async function montarCards() {
+    const grades = await persistencia.listarGrades();
+    return grades
+      .filter((g) => !(g.dadosGrade && g.dadosGrade.publicado))
       .map((g) => {
-      const molde = acharMolde(g.moldeId);
-      const dados = persistencia.carregarGrade(g.id) || { dadosCavidades: {}, dadosGrade: {} };
-      const ids = molde ? molde.cavidades.map(String) : [];
-      let ved = 0;
-      let def = 0;
-      ids.forEach((id) => {
-        const d = dados.dadosCavidades[id] || {};
-        if (d.vedado === "S") ved++;
-        else if (d.desvio) def++;
+        const molde = acharMolde(g.moldeId);
+        const dadosGrade = dadosGradeDoMolde(molde, g.dadosGrade);
+        const total = molde ? molde.cavidades.length : (g.total || 0);
+        const vedadas = g.vedadas || 0;
+        return {
+          id: g.id,
+          moldeCodigo: molde ? molde.codigo : g.moldeId,
+          moldeNome: molde ? molde.nomePeca : "(molde não cadastrado)",
+          maquina: dadosGrade.maquina || "",
+          material: dadosGrade.material || "",
+          total: total,
+          ativas: Math.max(0, total - vedadas),
+          vedadas: vedadas,
+          defeitos: g.defeitos || 0,
+          abertaEm: g.abertaEm
+        };
       });
-      const dadosGrade = dadosGradeDoMolde(molde, dados.dadosGrade);
-      return {
-        id: g.id,
-        moldeCodigo: molde ? molde.codigo : g.moldeId,
-        moldeNome: molde ? molde.nomePeca : "(molde não cadastrado)",
-        maquina: dadosGrade.maquina || "",
-        material: dadosGrade.material || "",
-        total: ids.length,
-        ativas: ids.length - ved,
-        vedadas: ved,
-        defeitos: def,
-        abertaEm: g.abertaEm
-      };
-    });
   }
 
-  function renderTelaInicial() {
-    telaInicial.renderizar(montarCards());
+  async function renderTelaInicial() {
+    telaInicial.renderizar(await montarCards());
   }
 
-  function voltarParaInicial() {
+  async function voltarParaInicial() {
     if (temEdicaoNaoSalva() && !confirm("Há alterações não salvas no formulário. Voltar para as grades?")) {
       return;
     }
-    renderTelaInicial();
+    await renderTelaInicial();
     telaInicial.mostrar();
   }
 
@@ -158,32 +148,43 @@
   async function criarEAbrirGrade(moldeId, config) {
     const molde = acharMolde(moldeId);
     if (!molde) { alert("Molde não encontrado: " + moldeId); return; }
-    const grade = persistencia.criarGrade(moldeId, config);
+    try {
+      const grade = await persistencia.criarGrade(moldeId, config);
 
-    // Grade histórica importada: semeia os registros já lançados no Excel.
-    if (config && config.historico) {
-      const h = config.historico;
-      const dadosGrade = Object.assign({}, h.dadosGrade || {});
-      if (config.maquina) dadosGrade.maquina = config.maquina;
-      if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
-      if (config.checklist) dadosGrade.checklist = config.checklist;
-      persistencia.salvarGrade(grade.id, grade.moldeId,
-        h.dadosCavidades || {}, dadosGrade);
-    } else if (config && config.checklist) {
-      const dadosGrade = Object.assign({}, (persistencia.carregarGrade(grade.id) || {}).dadosGrade || {});
-      if (config.maquina) dadosGrade.maquina = config.maquina;
-      if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
-      dadosGrade.checklist = config.checklist;
-      persistencia.salvarGrade(grade.id, grade.moldeId, {}, dadosGrade);
+      // Grade histórica importada: semeia os registros já lançados no Excel.
+      if (config && config.historico) {
+        const h = config.historico;
+        const dadosGrade = Object.assign({}, h.dadosGrade || {});
+        if (config.maquina) dadosGrade.maquina = config.maquina;
+        if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
+        if (config.checklist) dadosGrade.checklist = config.checklist;
+        await persistencia.salvarGrade(grade.id, grade.moldeId,
+          h.dadosCavidades || {}, dadosGrade);
+      } else if (config && config.checklist) {
+        const atual = await persistencia.carregarGrade(grade.id) || {};
+        const dadosGrade = Object.assign({}, atual.dadosGrade || {});
+        if (config.maquina) dadosGrade.maquina = config.maquina;
+        if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
+        dadosGrade.checklist = config.checklist;
+        await persistencia.salvarGrade(grade.id, grade.moldeId, {}, dadosGrade);
+      }
+
+      await carregarGradeInterno(grade);
+    } catch (e) {
+      console.error(e);
+      alert("Não foi possível abrir a grade: " + (e && e.message ? e.message : e));
     }
-
-    await carregarGradeInterno(grade);
   }
 
   async function abrirGrade(gradeId) {
-    const grade = persistencia.acharGrade(gradeId);
-    if (!grade) { alert("Grade não encontrada."); return; }
-    await carregarGradeInterno(grade);
+    try {
+      const grade = await persistencia.carregarGrade(gradeId);
+      if (!grade) { alert("Grade não encontrada."); return; }
+      await carregarGradeInterno(grade);
+    } catch (e) {
+      console.error(e);
+      alert("Não foi possível carregar a grade: " + (e && e.message ? e.message : e));
+    }
   }
 
   async function carregarGradeInterno(grade) {
@@ -200,7 +201,7 @@
       const desenho = estado.desenhos[molde.desenhoId] || null;
       const ids = molde.cavidades.map(String);
       const modelo = normalizarLayout(layoutBruto, ids);
-      const persistido = persistencia.carregarGrade(grade.id);
+      const persistido = await persistencia.carregarGrade(grade.id);
       const dados = inicializarDados(molde, persistido, grade);
 
       estado.gradeAtual = grade;
@@ -239,23 +240,12 @@
     }
   }
 
-  async function migrarSeNecessario() {
-    if (!persistencia.existeLegado() || persistencia.legadoJaMigrado()) return;
-    const ok = confirm(
-      "Encontramos registros do Molde 168 no formato antigo (localStorage).\n" +
-      "Migrar para o novo formato por grade? Os dados antigos serão mantidos como backup (" + "cavidades168.bak" + ")."
-    );
-    if (!ok) return;
-    if (persistencia.migrarLegado("molde-168")) {
-      alert("Migração concluída. Os registros do Molde 168 foram atualizados.");
-    }
-  }
-
   async function publicarGrade() {
     if (!estado.gradeAtual || !estado.molde) {
       alert("Nenhuma grade aberta.");
       return;
     }
+    await persistencia.flush();
     const codigo = estado.molde.codigo;
     // monta a folha de impressao (A4) antes de capturar o HTML
     if (CF.impressao && typeof CF.impressao.montarFolhaImpressao === "function") {
@@ -288,17 +278,21 @@
       }
       // marca a grade como publicada/encerrada
       if (estado.gradeAtual && estado.gradeAtual.id) {
-        const g = persistencia.acharGrade(estado.gradeAtual.id);
+        const g = await persistencia.carregarGrade(estado.gradeAtual.id);
         if (g) {
-          const dg = persistencia.carregarGrade(g.id) || {};
-          const dados = dg.dadosGrade || {};
-          dados.publicado = true;
-          dados.dataPublicacao = new Date().toISOString().slice(0, 10);
-          persistencia.salvarGrade(g.id, g.moldeId, dg.dadosCavidades || estado.dadosCavidades, dados);
+          const dados = Object.assign({}, g.dadosGrade || {}, {
+            publicado: true,
+            dataPublicacao: new Date().toISOString().slice(0, 10)
+          });
+          await persistencia.salvarGrade(
+            g.id,
+            g.moldeId || estado.gradeAtual.moldeId,
+            estado.dadosCavidades || g.dadosCavidades || {},
+            dados);
         }
       }
       alert("Grade publicada no GED com sucesso.");
-      voltarParaInicial();
+      await voltarParaInicial();
     } catch (e) {
       alert("Falha ao publicar: " + (e && e.message ? e.message : e));
     } finally {
@@ -315,7 +309,6 @@
     initGrade();
     initModal();
     initRegistros();
-    initIO();
     initImpressao();
     const btnPublicar = el("btnPublicarGrade");
     if (btnPublicar) btnPublicar.addEventListener("click", publicarGrade);
@@ -343,10 +336,14 @@
       return;
     }
 
-    await migrarSeNecessario();
-    persistencia.migrarParaGrades();
+    try {
+      const migradas = await persistencia.migrarLocalStorage();
+      if (migradas) console.info("Grades migradas do localStorage para o SQLite: " + migradas);
+    } catch (e) {
+      console.warn("Falha ao migrar o localStorage para o SQLite: " + e.message);
+    }
 
-    renderTelaInicial();
+    await renderTelaInicial();
     telaInicial.mostrar();
   }
 

@@ -8,9 +8,13 @@
   const PREFIXO_GRADE = "customfusion.grade.";
   const PREFIXO_REGISTROS = "customfusion.registros.";
   const CHAVE_LEGADA = "cavidades168";
-  const CHAVE_BACKUP = "cavidades168.bak";
-  const CHAVE_MIGRADO = "customfusion.migracao.v1";
-  const VERSAO = 3;
+  const CHAVE_MIGRACAO = "customfusion.sqlite.migrado.v1";
+  const ATRASO_SALVAMENTO = 250;
+
+  let cacheGrades = null;
+  let timerSalvamento = null;
+  let pacotePendente = null;
+  let filaSalvamento = Promise.resolve();
 
   function disponivel() {
     try {
@@ -23,200 +27,213 @@
     }
   }
 
-  function novoId() {
-    return "g" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
-  }
-
   function lerJson(chave) {
-    const raw = window.localStorage.getItem(chave);
-    if (!raw) return null;
     try {
-      return JSON.parse(raw);
+      const raw = window.localStorage.getItem(chave);
+      return raw ? JSON.parse(raw) : null;
     } catch (e) {
       return null;
     }
   }
 
-  // ---- Lista de grades abertas ---------------------------------------------
-
-  function listarGrades() {
-    if (!disponivel()) return [];
-    const lista = lerJson(CHAVE_GRADES);
-    return Array.isArray(lista) ? lista : [];
-  }
-
-  function salvarGrades(lista) {
-    if (!disponivel()) return;
-    window.localStorage.setItem(CHAVE_GRADES, JSON.stringify(lista || []));
-  }
-
-  function acharGrade(gradeId) {
-    return listarGrades().find((g) => g.id === gradeId) || null;
-  }
-
-  function criarGrade(moldeId, config) {
-    const cfg = config || {};
-    const grade = {
-      id: novoId(),
-      moldeId: moldeId,
-      abertaEm: new Date().toISOString(),
-      maquina: cfg.maquina || "",
-      dataEntrada: cfg.dataEntrada || ""
-    };
-    const lista = listarGrades();
-    lista.push(grade);
-    salvarGrades(lista);
-
-    // Dados iniciais da grade (máquina / data de entrada escolhidos na abertura).
-    const dadosGrade = {};
-    if (grade.maquina) dadosGrade.maquina = grade.maquina;
-    if (grade.dataEntrada) dadosGrade.dataEntrada = grade.dataEntrada;
-    if (Object.keys(dadosGrade).length) {
-      salvarGrade(grade.id, grade.moldeId, {}, dadosGrade);
+  async function api(caminho, opcoes) {
+    const cfg = Object.assign({
+      headers: { "Content-Type": "application/json" }
+    }, opcoes || {});
+    const resp = await fetch(estado.contextPath + "/api" + caminho, cfg);
+    const corpo = await resp.json().catch(() => ({}));
+    if (!resp.ok) {
+      const erro = new Error(corpo && corpo.erro ? corpo.erro : ("HTTP " + resp.status));
+      erro.status = resp.status;
+      throw erro;
     }
+    return corpo;
+  }
 
+  function invalidarCache() {
+    cacheGrades = null;
+  }
+
+  // ---- Grades ---------------------------------------------------------------
+
+  async function listarGrades() {
+    if (cacheGrades) return cacheGrades.slice();
+    const dados = await api("/grades");
+    cacheGrades = Array.isArray(dados.grades) ? dados.grades : [];
+    return cacheGrades.slice();
+  }
+
+  async function acharGrade(gradeId) {
+    const lista = await listarGrades();
+    return lista.find((g) => g.id === gradeId) || null;
+  }
+
+  async function criarGrade(moldeId, config) {
+    const cfg = config || {};
+    const grade = await api("/grades", {
+      method: "POST",
+      body: JSON.stringify({
+        moldeId: moldeId,
+        maquina: cfg.maquina || "",
+        dataEntrada: cfg.dataEntrada || ""
+      })
+    });
+    invalidarCache();
     return grade;
   }
 
-  function removerGrade(gradeId) {
-    if (!disponivel()) return;
-    const lista = listarGrades().filter((g) => g.id !== gradeId);
-    salvarGrades(lista);
-    window.localStorage.removeItem(PREFIXO_GRADE + gradeId);
+  async function removerGrade(gradeId) {
+    await api("/grades/" + encodeURIComponent(gradeId), { method: "DELETE" });
+    invalidarCache();
   }
 
-  // ---- Dados por grade ------------------------------------------------------
-
-  function carregarGrade(gradeId) {
-    if (!disponivel() || !gradeId) return null;
-    const p = lerJson(PREFIXO_GRADE + gradeId);
-    if (!p || typeof p !== "object") return null;
-    return {
-      versao: p.versao || VERSAO,
-      gradeId: gradeId,
-      moldeId: p.moldeId || null,
-      dadosCavidades: p.dadosCavidades || {},
-      dadosGrade: p.dadosGrade || {}
-    };
+  async function carregarGrade(gradeId) {
+    if (!gradeId) return null;
+    try {
+      return await api("/grades/" + encodeURIComponent(gradeId));
+    } catch (e) {
+      if (e.status === 404) return null;
+      throw e;
+    }
   }
 
-  function salvarGrade(gradeId, moldeId, dadosCavidades, dadosGrade) {
-    if (!disponivel() || !gradeId) return;
-    const pacote = {
-      versao: VERSAO,
-      gradeId: gradeId,
-      moldeId: moldeId || null,
-      dadosCavidades: dadosCavidades || {},
-      dadosGrade: dadosGrade || {}
-    };
-    window.localStorage.setItem(PREFIXO_GRADE + gradeId, JSON.stringify(pacote));
+  async function salvarGrade(gradeId, moldeId, dadosCavidades, dadosGrade) {
+    await api("/grades/" + encodeURIComponent(gradeId), {
+      method: "PUT",
+      keepalive: true,
+      body: JSON.stringify({
+        moldeId: moldeId,
+        dadosCavidades: dadosCavidades || {},
+        dadosGrade: dadosGrade || {}
+      })
+    });
+    invalidarCache();
   }
 
+  // Salva em segundo plano, agrupando edições próximas (blur, salvar, etc.).
   function persistirAtual() {
     if (!estado.gradeAtual) return;
-    salvarGrade(estado.gradeAtual.id, estado.gradeAtual.moldeId, estado.dadosCavidades, estado.dadosGrade);
-  }
-
-  // ---- Compatibilidade com o modelo antigo (por molde) ----------------------
-
-  function carregarRegistrosMolde(moldeId) {
-    if (!disponivel() || !moldeId) return null;
-    const p = lerJson(PREFIXO_REGISTROS + moldeId);
-    if (!p || typeof p !== "object") return null;
-    return {
-      dadosCavidades: p.dadosCavidades || {},
-      dadosGrade: p.dadosGrade || {}
+    pacotePendente = {
+      gradeId: estado.gradeAtual.id,
+      moldeId: estado.gradeAtual.moldeId,
+      dadosCavidades: estado.dadosCavidades,
+      dadosGrade: estado.dadosGrade
     };
+    if (timerSalvamento) return;
+    timerSalvamento = window.setTimeout(descarregarPendente, ATRASO_SALVAMENTO);
   }
 
-  function salvarRegistrosMolde(moldeId, dadosCavidades, dadosGrade) {
-    if (!disponivel() || !moldeId) return;
-    const pacote = {
-      versao: 2,
-      moldeId: moldeId,
-      dadosCavidades: dadosCavidades || {},
-      dadosGrade: dadosGrade || {}
-    };
-    window.localStorage.setItem(PREFIXO_REGISTROS + moldeId, JSON.stringify(pacote));
+  function descarregarPendente() {
+    if (timerSalvamento) {
+      window.clearTimeout(timerSalvamento);
+      timerSalvamento = null;
+    }
+    const pacote = pacotePendente;
+    pacotePendente = null;
+    if (!pacote) return filaSalvamento;
+    filaSalvamento = filaSalvamento
+      .then(() => salvarGrade(pacote.gradeId, pacote.moldeId, pacote.dadosCavidades, pacote.dadosGrade))
+      .catch((e) => console.error("Falha ao salvar a grade no SQLite: " + e.message));
+    return filaSalvamento;
   }
 
-  function moldeIdsComRegistros() {
-    const ids = [];
-    if (!disponivel()) return ids;
-    for (let i = 0; i < window.localStorage.length; i++) {
-      const k = window.localStorage.key(i);
-      if (k && k.indexOf(PREFIXO_REGISTROS) === 0) {
-        ids.push(k.substring(PREFIXO_REGISTROS.length));
+  async function flush() {
+    descarregarPendente();
+    await filaSalvamento;
+  }
+
+  // ---- Migração única do localStorage --------------------------------------
+
+  async function migrarLocalStorage() {
+    if (!disponivel()) return 0;
+    if (window.localStorage.getItem(CHAVE_MIGRACAO) === "1") return 0;
+
+    const grades = [];
+    const lista = lerJson(CHAVE_GRADES);
+    const temGrades = Array.isArray(lista) && lista.length > 0;
+
+    if (temGrades) {
+      lista.forEach((g) => {
+        const pacote = lerJson(PREFIXO_GRADE + g.id);
+        if (!pacote) return;
+        grades.push({
+          id: g.id,
+          moldeId: g.moldeId || pacote.moldeId,
+          abertaEm: g.abertaEm,
+          dadosCavidades: pacote.dadosCavidades || {},
+          dadosGrade: pacote.dadosGrade || {}
+        });
+      });
+    } else {
+      // Formato anterior às grades múltiplas: um pacote por molde.
+      for (let i = 0; i < window.localStorage.length; i++) {
+        const chave = window.localStorage.key(i);
+        if (!chave || chave.indexOf(PREFIXO_REGISTROS) !== 0) continue;
+        const pacote = lerJson(chave);
+        if (!pacote) continue;
+        grades.push({
+          moldeId: chave.substring(PREFIXO_REGISTROS.length),
+          dadosCavidades: pacote.dadosCavidades || {},
+          dadosGrade: pacote.dadosGrade || {}
+        });
+      }
+
+      const legado = lerJson(CHAVE_LEGADA);
+      if (legado && !grades.some((g) => g.moldeId === "molde-168")) {
+        grades.push({
+          moldeId: "molde-168",
+          dadosCavidades: legado.dadosCavidades || {},
+          dadosGrade: legado.dadosGrade || {}
+        });
       }
     }
-    return ids;
+
+    let importadas = 0;
+    if (grades.length) {
+      const resultado = await api("/grades/importar", {
+        method: "POST",
+        body: JSON.stringify({ grades: grades })
+      });
+      importadas = resultado.importadas || 0;
+    }
+
+    window.localStorage.setItem(CHAVE_MIGRACAO, "1");
+    invalidarCache();
+    return importadas;
   }
 
-  // Converte os registros antigos (um por molde) em grades abertas.
-  function migrarParaGrades() {
-    if (!disponivel()) return 0;
-    if (window.localStorage.getItem(CHAVE_GRADES) != null) return 0;
-
-    const lista = [];
-    moldeIdsComRegistros().forEach((moldeId) => {
-      const antigo = carregarRegistrosMolde(moldeId);
-      if (!antigo) return;
-      const id = novoId();
-      salvarGrade(id, moldeId, antigo.dadosCavidades, antigo.dadosGrade);
-      lista.push({ id: id, moldeId: moldeId, abertaEm: new Date().toISOString() });
-    });
-    salvarGrades(lista);
-    return lista.length;
+  async function migrarParaGrades() {
+    return migrarLocalStorage();
   }
-
-  // ---- Legado v1 (cavidades168) --------------------------------------------
 
   function existeLegado() {
-    if (!disponivel()) return false;
-    return window.localStorage.getItem(CHAVE_LEGADA) != null;
+    return disponivel() && (window.localStorage.getItem(CHAVE_GRADES) != null
+      || window.localStorage.getItem(CHAVE_LEGADA) != null);
   }
 
   function legadoJaMigrado() {
-    if (!disponivel()) return false;
-    return window.localStorage.getItem(CHAVE_MIGRADO) === "1";
+    return disponivel() && window.localStorage.getItem(CHAVE_MIGRACAO) === "1";
   }
 
-  function migrarLegado(moldeIdDestino) {
-    if (!disponivel()) return false;
-    const raw = window.localStorage.getItem(CHAVE_LEGADA);
-    if (!raw) return false;
-
-    let p;
-    try {
-      p = JSON.parse(raw);
-    } catch (e) {
-      return false;
-    }
-    if (!p || typeof p !== "object") return false;
-
-    if (window.localStorage.getItem(CHAVE_BACKUP) == null) {
-      window.localStorage.setItem(CHAVE_BACKUP, raw);
-    }
-
+  async function migrarLegado(moldeIdDestino) {
+    const existentes = new Set();
+    const lista = lerJson(CHAVE_GRADES);
+    if (Array.isArray(lista)) lista.forEach((g) => existentes.add(g.moldeId));
+    const legado = lerJson(CHAVE_LEGADA);
     const destino = moldeIdDestino || "molde-168";
-    const legado = {
-      dadosCavidades: p.dadosCavidades || {},
-      dadosGrade: p.dadosGrade || {}
-    };
-
-    const atual = carregarRegistrosMolde(destino);
-    let dadosCavidades;
-    let dadosGrade;
-    if (atual) {
-      dadosCavidades = Object.assign({}, legado.dadosCavidades, atual.dadosCavidades);
-      dadosGrade = Object.assign({}, legado.dadosGrade, atual.dadosGrade);
-    } else {
-      dadosCavidades = legado.dadosCavidades;
-      dadosGrade = legado.dadosGrade;
-    }
-
-    salvarRegistrosMolde(destino, dadosCavidades, dadosGrade);
-    window.localStorage.setItem(CHAVE_MIGRADO, "1");
+    if (!legado || existentes.has(destino)) return false;
+    await api("/grades/importar", {
+      method: "POST",
+      body: JSON.stringify({
+        grades: [{
+          moldeId: destino,
+          dadosCavidades: legado.dadosCavidades || {},
+          dadosGrade: legado.dadosGrade || {}
+        }]
+      })
+    });
+    window.localStorage.setItem(CHAVE_MIGRACAO, "1");
+    invalidarCache();
     return true;
   }
 
@@ -228,6 +245,8 @@
     carregarGrade: carregarGrade,
     salvarGrade: salvarGrade,
     persistirAtual: persistirAtual,
+    flush: flush,
+    migrarLocalStorage: migrarLocalStorage,
     migrarParaGrades: migrarParaGrades,
     existeLegado: existeLegado,
     legadoJaMigrado: legadoJaMigrado,

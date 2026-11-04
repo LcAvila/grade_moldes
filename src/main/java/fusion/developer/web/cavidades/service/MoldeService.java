@@ -1,40 +1,42 @@
 package fusion.developer.web.cavidades.service;
 
-import fusion.developer.web.cavidades.config.AppConfig;
 import fusion.developer.web.cavidades.model.AtualizacaoCavidadesRequest;
-import fusion.developer.web.cavidades.model.Molde;
-import fusion.developer.web.cavidades.repository.CavidadeRepository;
-import fusion.developer.web.cavidades.repository.CavidadeRepositoryFusion;
-import fusion.developer.web.cavidades.repository.MoldeRepository;
+import fusion.developer.web.cavidades.model.Cavidade;
+import fusion.developer.web.cavidades.repository.CatalogoRepository;
+import fusion.developer.web.cavidades.repository.GradeRepository;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class MoldeService {
-    private final MoldeRepository moldes = new MoldeRepository();
-    private final CavidadeRepository cavidades = new CavidadeRepository();
 
-    public Molde buscar(String codigo) throws Exception {
-        return moldes.buscarCompletoPorCodigo(codigo)
-            .orElseThrow(() -> new IllegalArgumentException("Molde não encontrado: " + codigo));
+    private final CatalogoRepository catalogo = new CatalogoRepository();
+    private final GradeRepository grades = new GradeRepository();
+
+    public Map<String, Object> buscar(String codigo) throws Exception {
+        return catalogo.buscarMoldePorCodigo(codigo)
+                .orElseThrow(() -> new IllegalArgumentException("Molde não encontrado: " + codigo));
     }
 
     /**
-     * Persiste as cavidades. O destino é escolhido por app.persistencia:
-     *   fusion (padrão) = formulário do Fusion Platform — caminho aprovado,
-     *                     não toca no MySQL e não exige schema próprio;
-     *   mysql           = tabelas cavidades/moldes existentes (via JDBC).
-     * O usuário vem da sessão do Fusion (IdentificacaoFilter); só cai no
-     * body (req.usuario) quando não há sessão (ex.: testes locais).
+     * Compatibilidade com o endpoint antigo por molde. O fluxo principal do app
+     * usa /api/grades; este caminho grava o mesmo formato em registros_molde.
      */
     public void salvar(String codigo, AtualizacaoCavidadesRequest req, String usuario) throws Exception {
-        String modo = AppConfig.get("app.persistencia");
-        modo = (modo == null || modo.isBlank()) ? "fusion" : modo.trim();
-
-        if ("mysql".equalsIgnoreCase(modo)) {
-            Molde m = buscar(codigo);
-            cavidades.salvarLote(m.id, req.cavidades);
-            return;
+        Map<String, Object> dadosCavidades = new LinkedHashMap<>();
+        if (req != null && req.cavidades != null) {
+            for (Cavidade cavidade : req.cavidades) {
+                Map<String, Object> registro = new LinkedHashMap<>();
+                registro.put("desvio", cavidade.desvio == null ? "" : cavidade.desvio);
+                registro.put("data", cavidade.data == null ? "" : cavidade.data.toString());
+                registro.put("vedado", "S".equals(cavidade.vedado) ? "S" : "N");
+                registro.put("observacao", cavidade.desvioTexto == null ? "" : cavidade.desvioTexto);
+                registro.put("controlador", usuario != null && !usuario.isBlank()
+                        ? usuario
+                        : (cavidade.controlador == null ? "" : cavidade.controlador));
+                dadosCavidades.put(String.valueOf(cavidade.numero), registro);
+            }
         }
-
-        String responsavel = (usuario != null && !usuario.isBlank()) ? usuario : req.usuario;
-        new CavidadeRepositoryFusion().salvarLote(codigo, req.cavidades, responsavel);
+        grades.salvarRegistrosMolde(codigo, dadosCavidades, new LinkedHashMap<>());
     }
 }

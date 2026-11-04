@@ -1,1 +1,0 @@
-O logo oficial não foi recuperado. O JSP preserva o SVG inline do HTML original.

@@ -239,13 +239,13 @@
           texto: "Molde " + m.codigo + " — " + (m.nomePeca || "") +
             " (" + (m.cavidades || []).length + " cav.)"
         })),
-      "Nenhum molde cadastrado. Verifique config/moldes.json.");
+      "Nenhum molde cadastrado. Verifique o banco SQLite.");
 
     // --- Máquinas cadastradas ---
     const maquinas = (CF.cfg && CF.cfg.listarMaquinas) ? CF.cfg.listarMaquinas() : [];
     preencherOpcoes(selMaquina, "Selecione a máquina",
       maquinas.map((nome) => ({ valor: nome, texto: nome })),
-      "Nenhuma máquina cadastrada. Verifique config/maquinas.json.");
+      "Nenhuma máquina cadastrada. Verifique o banco SQLite.");
 
     // --- Data: sempre a data de hoje, editável ---
     const hoje = hojeISO();
@@ -386,8 +386,8 @@
       } else {
         hint.classList.remove("hint-erro");
         hint.innerHTML = select.id === "selMolde"
-          ? "Todos os moldes cadastrados em <strong>config/moldes.json</strong>."
-          : "Máquinas cadastradas em <strong>config/maquinas.json</strong>.";
+          ? "Todos os moldes cadastrados no <strong>banco SQLite</strong>."
+          : "Máquinas cadastradas no <strong>banco SQLite</strong>.";
       }
     }
   }
@@ -545,11 +545,12 @@
       }
       fecharModalCadastro();
       alert("Molde " + codigo + " cadastrado com sucesso.");
-      // recarrega a lista de moldes
-      if (CF.cfg && typeof CF.cfg.carregarMoldes === "function") {
-        CF.cfg.carregarMoldes().then(() => { if (typeof renderizar === "function") renderizar(); });
-      } else {
-        location.reload();
+      // recarrega catálogo e cards sem perder o estado da tela
+      if (CF.cfg && typeof CF.cfg.carregarCatalogo === "function") {
+        CF.estado.estado.moldes = await CF.cfg.carregarCatalogo(true);
+      }
+      if (CF.app && typeof CF.app.renderTelaInicial === "function") {
+        await CF.app.renderTelaInicial();
       }
     } catch (e) {
       mostrarErroCad("Falha ao cadastrar: " + (e && e.message ? e.message : e));

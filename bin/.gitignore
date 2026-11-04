@@ -1,8 +1,0 @@
-target/
-.metadata/
-.settings/
-.classpath
-.project
-.env
-*.log
-~$*

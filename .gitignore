@@ -1,2 +1,5 @@
 /target/
+/bin/
+/.vscode/
+/graphify-out/cache/
 *.log

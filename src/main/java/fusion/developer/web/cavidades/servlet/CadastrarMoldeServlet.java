@@ -1,8 +1,7 @@
 package fusion.developer.web.cavidades.servlet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.servlet.annotation.MultipartConfig;
-import jakarta.servlet.annotation.WebServlet;
+import fusion.developer.web.cavidades.repository.CatalogoRepository;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -28,11 +27,12 @@ import java.util.Map;
  *   campos: codigo, nomePeca, familia, cavidades (int), material, maquina, revisaoCadastro
  *   partes: cadFile (STL, opcional), imagem (PNG/JPG, opcional)
  *
- * Grava os arquivos em /assets/... e atualiza config/moldes.json e config/desenhos.json.
+ * Grava os arquivos em /assets/... e os metadados no SQLite.
  */
 public class CadastrarMoldeServlet extends HttpServlet {
 
     private final ObjectMapper json = new ObjectMapper();
+    private final CatalogoRepository catalogo = new CatalogoRepository();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -54,7 +54,11 @@ public class CadastrarMoldeServlet extends HttpServlet {
             }
 
             String codigoNorm = codigo.trim().toUpperCase();
-            Path baseWebapp = Paths.get(req.getServletContext().getRealPath("/"));
+            String realPath = req.getServletContext().getRealPath("/");
+            if (realPath == null) {
+                throw new IllegalStateException("A aplicacao precisa estar explodida no Tomcat para gravar arquivos.");
+            }
+            Path baseWebapp = Paths.get(realPath);
             Path dirModels = baseWebapp.resolve("assets/models");
             Path dirPecas = baseWebapp.resolve("assets/images/pecas");
             Path dirDesenhos = baseWebapp.resolve("assets/desenhos");
@@ -71,6 +75,9 @@ public class CadastrarMoldeServlet extends HttpServlet {
                     Files.copy(in, destino, StandardCopyOption.REPLACE_EXISTING);
                 }
             }
+            String modelo3dId = Files.isRegularFile(dirModels.resolve(nomeStl))
+                    ? "molde-" + codigoNorm.toLowerCase().replace(" ", "-")
+                    : null;
 
             // --- Imagem da peca ---
             Part imgPart = part(req, "imagem");
@@ -101,10 +108,7 @@ public class CadastrarMoldeServlet extends HttpServlet {
                 Files.writeString(dirDesenhos.resolve(nomeSvg), svg, StandardCharsets.UTF_8);
             }
 
-            // --- layout generico mais proximo ---
             String layoutId = "layout-generico-" + cavidadesParaLayout(cavidades);
-
-            // --- cavidades list ---
             List<String> cavList = new ArrayList<>();
             for (int i = 1; i <= cavidades; i++) cavList.add(String.valueOf(i));
 
@@ -118,7 +122,10 @@ public class CadastrarMoldeServlet extends HttpServlet {
             moldEntry.put("revisaoCadastro", revisao.isBlank() ? "1" : revisao.trim());
             moldEntry.put("cavidades", cavList);
             moldEntry.put("layoutId", layoutId);
-            moldEntry.put("desenhoId", "desenho-" + codigoNorm + "-peca");
+            if (imgBytes != null) {
+                moldEntry.put("desenhoId", "desenho-" + codigoNorm + "-peca");
+            }
+            if (modelo3dId != null) moldEntry.put("modelo3dId", modelo3dId);
             Map<String, Object> padroes = new LinkedHashMap<>();
             padroes.put("produto", nomePeca.trim().toUpperCase());
             padroes.put("moldeMod", "Molde " + codigoNorm);
@@ -127,45 +134,34 @@ public class CadastrarMoldeServlet extends HttpServlet {
             moldEntry.put("padroes", padroes);
             moldEntry.put("origem", "cadastro via app web");
 
-            // --- atualiza moldes.json ---
-            Path moldesPath = baseWebapp.resolve("config/moldes.json");
-            Map<String, Object> moldesRoot = readJson(moldesPath);
-            @SuppressWarnings("unchecked")
-            List<Map<String, Object>> moldes = (List<Map<String, Object>>) moldesRoot.get("moldes");
-            if (moldes == null) { moldes = new ArrayList<>(); moldesRoot.put("moldes", moldes); }
-            // remove duplicata por codigo
-            moldes.removeIf(m -> codigoNorm.equals(String.valueOf(m.get("codigo")).toUpperCase()));
-            moldes.add(moldEntry);
-            json.writerWithDefaultPrettyPrinter().writeValue(moldesPath.toFile(), moldesRoot);
+            moldId = catalogo.salvarMolde(moldEntry);
 
-            // --- atualiza desenhos.json ---
-            Path desenhosPath = baseWebapp.resolve("config/desenhos.json");
-            if (Files.isRegularFile(desenhosPath)) {
-                Map<String, Object> desenhosRoot = readJson(desenhosPath);
-                // estrutura: { desenhos: [ { id, molde, tipo, imagem, ... } ] } ou array?
-                // tenta array direto
-                Object node = desenhosRoot.get("desenhos");
-                if (node instanceof List) {
-                    @SuppressWarnings("unchecked")
-                    List<Map<String, Object>> lista = (List<Map<String, Object>>) node;
-                    if (imgBytes != null) {
-                        Map<String, Object> peca = new LinkedHashMap<>();
-                        peca.put("id", "desenho-" + codigoNorm + "-peca");
-                        peca.put("molde", codigoNorm);
-                        peca.put("tipo", "peca");
-                        peca.put("imagem", "assets/images/pecas/" + nomeImagem);
-                        lista.add(peca);
-                    }
-                    if (imgBytes != null) {
-                        Map<String, Object> grade = new LinkedHashMap<>();
-                        grade.put("id", "desenho-" + codigoNorm + "-grade");
-                        grade.put("molde", codigoNorm);
-                        grade.put("tipo", "grade");
-                        grade.put("imagem", "assets/desenhos/" + nomeSvg);
-                        lista.add(grade);
-                    }
-                    json.writerWithDefaultPrettyPrinter().writeValue(desenhosPath.toFile(), desenhosRoot);
-                }
+            if (modelo3dId != null) {
+                Map<String, Object> modelo = new LinkedHashMap<>();
+                modelo.put("id", modelo3dId);
+                modelo.put("arquivo", "assets/models/" + nomeStl);
+                modelo.put("nome", nomePeca.trim());
+                if (!revisao.isBlank()) modelo.put("revisao", revisao.trim());
+                modelo.put("fallbackProcedural", false);
+                catalogo.salvarModelo3d(modelo);
+            }
+
+            if (imgBytes != null) {
+                Map<String, Object> peca = new LinkedHashMap<>();
+                peca.put("id", "desenho-" + codigoNorm + "-peca");
+                peca.put("moldeId", moldId);
+                peca.put("papel", "peca");
+                peca.put("imagem", "assets/images/pecas/" + nomeImagem);
+                peca.put("origem", "cadastro via app web");
+                catalogo.salvarDesenho(peca);
+
+                Map<String, Object> grade = new LinkedHashMap<>();
+                grade.put("id", "desenho-" + codigoNorm + "-grade");
+                grade.put("moldeId", moldId);
+                grade.put("papel", "grade");
+                grade.put("imagem", "assets/desenhos/" + nomeSvg);
+                grade.put("origem", "cadastro via app web");
+                catalogo.salvarDesenho(grade);
             }
 
             json.writeValue(resp.getWriter(), Map.of("ok", true, "codigo", codigoNorm, "moldId", moldId));
@@ -202,13 +198,5 @@ public class CadastrarMoldeServlet extends HttpServlet {
         int[] opts = {1, 2, 4, 8, 16, 24, 32, 48, 64, 96};
         for (int o : opts) if (n <= o) return o;
         return 96;
-    }
-
-    @SuppressWarnings("unchecked")
-    private static Map<String, Object> readJson(Path p) throws IOException {
-        if (!Files.isRegularFile(p)) return new LinkedHashMap<>();
-        Object o = new ObjectMapper().readValue(p.toFile(), Object.class);
-        if (o instanceof Map) return (Map<String, Object>) o;
-        return new LinkedHashMap<>();
     }
 }

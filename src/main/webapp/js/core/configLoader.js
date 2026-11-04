@@ -8,6 +8,7 @@
   let cacheDesenhos = null;
   let cacheMaquinas = null;
   let cacheHistorico = null;
+  let cacheModelos3d = null;
 
   function url(rel) {
     const caminho = String(rel == null ? "" : rel).replace(/^\/+/, "");
@@ -15,17 +16,86 @@
     return estado.contextPath + "/" + partes;
   }
 
-  async function buscarJson(rel) {
-    const resp = await fetch(url(rel), { cache: "no-store" });
+  async function buscarApi(caminho) {
+    const resp = await fetch(estado.contextPath + "/api" + caminho, { cache: "no-store" });
     if (!resp.ok) {
-      throw new Error("Recurso não encontrado (" + resp.status + "): " + rel);
+      let detalhe = "";
+      try {
+        const corpo = await resp.json();
+        detalhe = corpo && corpo.erro ? corpo.erro : "";
+      } catch (e) {
+        // resposta sem JSON: mantém a mensagem padrão
+      }
+      throw new Error(detalhe || ("Recurso indisponível (" + resp.status + "): " + caminho));
     }
     return resp.json();
   }
 
-  async function carregarCatalogo() {
-    const cat = await buscarJson("config/moldes.json");
-    return Array.isArray(cat.moldes) ? cat.moldes : [];
+  async function carregarCatalogo(forcarModelos) {
+    const cat = await buscarApi("/config/moldes");
+    const moldes = Array.isArray(cat.moldes) ? cat.moldes : [];
+    const modelos = await carregarModelos3d(forcarModelos);
+    moldes.forEach((molde) => {
+      molde.modelo3d = resolverModelo3d(molde, modelos);
+    });
+    return moldes;
+  }
+
+  async function carregarModelos3d(forcar) {
+    if (forcar) cacheModelos3d = null;
+    if (cacheModelos3d) return cacheModelos3d;
+    let mapa = {};
+    try {
+      const cat = await buscarApi("/config/modelos3d");
+      (cat.modelos || []).forEach((modelo) => {
+        if (modelo && modelo.id) mapa[modelo.id] = modelo;
+      });
+    } catch (e) {
+      console.warn("Catálogo de modelos 3D indisponível (" + e.message + ").");
+    }
+    cacheModelos3d = mapa;
+    return mapa;
+  }
+
+  // Resolve o STL do molde pelo catálogo. Sem 'modelo3dId', mantém a convenção
+  // antiga de arquivo por código (assets/models/molde-<codigo>.stl).
+  function resolverModelo3d(molde, catalogo) {
+    if (molde && molde.modelo3d && typeof molde.modelo3d === "object" && molde.modelo3d.arquivo) {
+      return molde.modelo3d;
+    }
+
+    const mapa = catalogo || cacheModelos3d || {};
+    const codigo = String((molde && molde.codigo) || "").trim().toUpperCase();
+    const entrada = molde && molde.modelo3dId ? mapa[molde.modelo3dId] : null;
+
+    let arquivo = entrada && entrada.arquivo
+      ? String(entrada.arquivo).replace(/^\/+/, "")
+      : "assets/models/molde-" + codigo + ".stl";
+    if (!codigo && !entrada) arquivo = "assets/models/conexao-padrao.stl";
+
+    const nomeArquivo = arquivo.split("/").pop();
+    const nome = (entrada && entrada.nome) || (molde && molde.nomePeca) || ("Molde " + codigo);
+
+    let subtitulo = "Visualização técnica 3D";
+    if (entrada) {
+      const partes = [];
+      if (entrada.revisao) partes.push("REV" + entrada.revisao);
+      if (entrada.codigoTecnico) partes.push(entrada.codigoTecnico);
+      if (partes.length) subtitulo = partes.join(" · ");
+    }
+
+    return {
+      id: (entrada && entrada.id) || null,
+      arquivo: arquivo,
+      nomeArquivo: nomeArquivo,
+      nome: nome,
+      titulo: "Desenho 3D da Peça — " + nome,
+      subtitulo: subtitulo,
+      infoExtra: entrada && entrada.documentoOriginal
+        ? "Arquivo CAD SolidWorks: " + entrada.documentoOriginal
+        : "Arquivo 3D: " + nomeArquivo,
+      fallbackProcedural: !!(entrada && entrada.fallbackProcedural)
+    };
   }
 
   function acharMolde(id) {
@@ -36,12 +106,12 @@
     if (!layoutId) {
       throw new Error("Layout não cadastrado para este molde.");
     }
-    return buscarJson("config/layouts/" + layoutId + ".json");
+    return buscarApi("/config/layouts/" + encodeURIComponent(layoutId));
   }
 
   async function carregarFormas() {
     if (cacheFormas) return cacheFormas;
-    const cat = await buscarJson("config/formas.json");
+    const cat = await buscarApi("/config/formas");
     const mapa = {};
     (cat.formas || []).forEach((f) => { mapa[f.id] = f; });
     cacheFormas = mapa;
@@ -50,7 +120,7 @@
 
   async function carregarDesenhos() {
     if (cacheDesenhos) return cacheDesenhos;
-    const cat = await buscarJson("config/desenhos.json");
+    const cat = await buscarApi("/config/desenhos");
     const mapa = {};
     (cat.desenhos || []).forEach((d) => { mapa[d.id] = d; });
     cacheDesenhos = mapa;
@@ -61,7 +131,7 @@
     if (cacheMaquinas) return cacheMaquinas;
     let lista = [];
     try {
-      const cat = await buscarJson("config/maquinas.json");
+      const cat = await buscarApi("/config/maquinas");
       lista = Array.isArray(cat.maquinas) ? cat.maquinas : [];
     } catch (e) {
       console.warn("Catálogo de máquinas indisponível (" + e.message + ").");
@@ -73,7 +143,7 @@
   async function carregarIndiceHistorico() {
     if (cacheHistorico) return cacheHistorico;
     try {
-      const idx = await buscarJson("config/historico/index.json");
+      const idx = await buscarApi("/config/historico");
       cacheHistorico = (idx && typeof idx === "object") ? idx : {};
     } catch (e) {
       console.warn("Índice de grades históricas indisponível (" + e.message + ").");
@@ -84,7 +154,7 @@
 
   async function carregarGradeHistorica(caminho) {
     if (!caminho) throw new Error("Arquivo histórico não informado.");
-    return buscarJson("config/historico/" + caminho);
+    return buscarApi("/config/historico?arquivo=" + encodeURIComponent(caminho));
   }
 
   // Lista final usada na abertura de grade: catálogo + máquinas citadas nos moldes.
@@ -119,6 +189,7 @@
 
   CF.cfg = {
     carregarCatalogo: carregarCatalogo,
+    carregarMoldes: carregarCatalogo,
     acharMolde: acharMolde,
     carregarLayout: carregarLayout,
     carregarFormas: carregarFormas,
@@ -127,6 +198,8 @@
     listarMaquinas: listarMaquinas,
     carregarIndiceHistorico: carregarIndiceHistorico,
     carregarGradeHistorica: carregarGradeHistorica,
+    carregarModelos3d: carregarModelos3d,
+    resolverModelo3d: resolverModelo3d,
     urlRecurso: urlRecurso
   };
 

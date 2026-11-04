@@ -1365,7 +1365,7 @@
     atualizarStatusModo();
   }
 
-  function carregarModelo(url, nomePeca, infoExtra) {
+  function carregarModelo(url, nomePeca, infoExtra, permitirProcedural) {
     // Evita cache do navegador/reuso de geometria quando o arquivo STL for substituído.
     url = String(url || "");
     if (url.indexOf("?") === -1) {
@@ -1393,17 +1393,36 @@
           }
         },
         function () {
-          console.warn("Arquivo STL não carregado via rede (" + url + "). Usando geometria procedural interna.");
-          modeloCarregadoUrl = "procedural";
-          var geom = criarGeometriaConexaoProcedural();
-          aplicarGeometriaNaCena(geom, "Geometria CAD 3D: Conexão Esferográfica Padrão (REV05)");
+          console.warn("Arquivo STL não carregado via rede (" + url + ").");
+          if (permitirProcedural) {
+            modeloCarregadoUrl = "procedural";
+            var geom = criarGeometriaConexaoProcedural();
+            aplicarGeometriaNaCena(geom, "Geometria CAD 3D: Conexão Esferográfica Padrão (REV05)");
+          } else {
+            modeloCarregadoUrl = null;
+            mostrarModeloIndisponivel(infoExtra || url);
+          }
         }
       );
-    } else {
+    } else if (permitirProcedural) {
       modeloCarregadoUrl = "procedural";
       var geom = criarGeometriaConexaoProcedural();
       aplicarGeometriaNaCena(geom, "Geometria CAD 3D: Conexão Esferográfica Padrão (REV05)");
+    } else {
+      modeloCarregadoUrl = null;
+      mostrarModeloIndisponivel(infoExtra || url);
     }
+  }
+
+  function mostrarModeloIndisponivel(referencia) {
+    var loading = el("m3dLoading");
+    if (loading) {
+      loading.style.display = "flex";
+      loading.textContent = "Modelo 3D indisponível: " + referencia;
+    }
+
+    var infoOrigem = el("m3dInfoOrigem");
+    if (infoOrigem) infoOrigem.textContent = "Modelo 3D indisponível: " + referencia;
   }
 
   function ajustarAoModelo() {
@@ -1517,24 +1536,31 @@
     if (ind) ind.textContent = "Vista: " + texto;
   }
 
-  function obterUrlModeloParaMolde(moldeCodigo) {
-    var cod = String(moldeCodigo || "").trim().toUpperCase();
+  function obterUrlModeloParaMolde(moldeCodigo, molde) {
+    var info = null;
+    if (molde && CF.cfg && typeof CF.cfg.resolverModelo3d === "function") {
+      info = CF.cfg.resolverModelo3d(molde);
+    }
 
-    var moldesConexao = ["168", "200", "98", "167A", "156"];
-    if (moldesConexao.indexOf(cod) !== -1 || !cod) {
-      return {
-        url: resolverUrl("assets/models/conexao-padrao.stl"),
-        titulo: "Visualização 3D da Peça — Conexão Esferográfica",
-        subtitulo: "REV05 · 23.05.01-06 · Moldes 168, 200, 98, 167A e 156",
-        infoExtra: "Arquivo CAD SolidWorks: 23.05.01-06-REV05 - CONEXÃO ESF. PADRÃO (DESENHO).SLDPRT"
+    if (!info || !info.arquivo) {
+      var cod = String(moldeCodigo || "").trim().toUpperCase();
+      var nomeArquivo = cod ? "molde-" + cod + ".stl" : "conexao-padrao.stl";
+      info = {
+        arquivo: "assets/models/" + nomeArquivo,
+        nomeArquivo: nomeArquivo,
+        titulo: "Desenho 3D da Peça — Molde " + cod,
+        subtitulo: "Visualização técnica 3D",
+        infoExtra: "Arquivo 3D: " + nomeArquivo,
+        fallbackProcedural: false
       };
     }
 
     return {
-      url: resolverUrl("assets/models/molde-" + cod + ".stl"),
-      titulo: "Desenho 3D da Peça — Molde " + cod,
-      subtitulo: "Visualização técnica 3D",
-      infoExtra: "Arquivo 3D: molde-" + cod + ".stl"
+      url: resolverUrl(info.arquivo),
+      titulo: info.titulo,
+      subtitulo: info.subtitulo,
+      infoExtra: info.infoExtra,
+      fallbackProcedural: info.fallbackProcedural
     };
   }
 
@@ -1543,7 +1569,7 @@
     var molde = (dados && dados.molde) || (estado && estado.molde);
     var moldeCodigo = (molde && molde.codigo) || (estado && estado.dadosGrade && estado.dadosGrade.moldeNum) || "168";
 
-    var infoModelo = obterUrlModeloParaMolde(moldeCodigo);
+    var infoModelo = obterUrlModeloParaMolde(moldeCodigo, molde);
 
     var tituloEl = el("modalPeca3dTitulo");
     if (tituloEl) tituloEl.textContent = infoModelo.titulo;
@@ -1566,7 +1592,7 @@
 
     setTimeout(function () {
       redimensionar();
-      carregarModelo(infoModelo.url, molde && (molde.nomePeca || molde.codigo), infoModelo.infoExtra);
+      carregarModelo(infoModelo.url, molde && (molde.nomePeca || molde.codigo), infoModelo.infoExtra, infoModelo.fallbackProcedural);
     }, 50);
   }
 

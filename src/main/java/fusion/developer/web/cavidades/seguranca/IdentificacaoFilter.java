@@ -19,8 +19,9 @@ import java.util.Map;
  * Exige usuário identificado em toda chamada /api/*.
  *
  * O usuário NÃO é logado aqui: vem do Fusion Platform (SessaoFusion).
- * Sem usuário -> 401 JSON, exceto em GET /api/usuario-atual, que sempre
- * responde (é o endpoint de detecção do modo do front).
+ * Sem usuário -> 401 JSON, exceto em GET /api/usuario-atual (detecção do
+ * front), /api/config/* e /api/grades/* (catálogo e grades funcionam fora do
+ * Fusion; a publicação no GED continua exigindo usuário identificado).
  */
 @WebFilter(urlPatterns = "/api/*")
 public class IdentificacaoFilter implements Filter {
@@ -38,7 +39,12 @@ public class IdentificacaoFilter implements Filter {
         }
 
         boolean consultaUsuario = r.getRequestURI().endsWith("/api/usuario-atual");
-        if (usuario == null && !consultaUsuario) {
+        String caminho = r.getRequestURI().substring(r.getContextPath().length());
+        boolean acessoLivre = caminho.equals("/api/config")
+                || caminho.startsWith("/api/config/")
+                || caminho.equals("/api/grades")
+                || caminho.startsWith("/api/grades/");
+        if (usuario == null && !consultaUsuario && !acessoLivre) {
             HttpServletResponse s = (HttpServletResponse) resp;
             s.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             s.setContentType("application/json;charset=UTF-8");
