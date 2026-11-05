@@ -54,9 +54,9 @@
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/seguranca/SessaoFusion.java": {
-    "mtime": 1792781261.7832232,
-    "seen": 1793281781.8055372,
-    "ast_hash": "8bcf10839d0d393bd894ab10e6588f0f",
+    "mtime": 1793823341.471073,
+    "seen": 1793879313.52694,
+    "ast_hash": "a20faebee7d331a3c8cba712e85a8379",
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/seguranca/UsuarioAtual.java": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "src/main/webapp/js/app.js": {
-    "mtime": 1793812354.2672975,
-    "seen": 1793812793.6718876,
-    "ast_hash": "c5a63887d26ed1b2be1b5f60b0c7b6dd",
+    "mtime": 1793884896.67564,
+    "seen": 1793885271.1866596,
+    "ast_hash": "708a23e2edbf5814edfdaa01b16814c8",
     "semantic_hash": ""
   },
   "src/main/webapp/js/core/configLoader.js": {
-    "mtime": 1793800926.091263,
-    "seen": 1793801564.447933,
-    "ast_hash": "e214c532bb7c4edbaf74b204114a0252",
+    "mtime": 1793884882.1102786,
+    "seen": 1793885271.186665,
+    "ast_hash": "e1878e2e9a4f470a7570e6b6de3e2f7f",
     "semantic_hash": ""
   },
   "src/main/webapp/js/core/estado.js": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "src/main/webapp/js/core/registros.js": {
-    "mtime": 1792028099.230618,
-    "seen": 1793281781.8099058,
-    "ast_hash": "486b7f1819ea487d01cae9a98b0a4275",
+    "mtime": 1793882150.8326724,
+    "seen": 1793882323.2060928,
+    "ast_hash": "5fae178a8d1433b03027866fae651718",
     "semantic_hash": ""
   },
   "src/main/webapp/js/layouts/generators.js": {
@@ -156,15 +156,15 @@
     "semantic_hash": ""
   },
   "src/main/webapp/js/render/formulario.js": {
-    "mtime": 1792028044.672887,
-    "seen": 1793281781.8099146,
-    "ast_hash": "c9b5b125c95953fba16babda1575a476",
+    "mtime": 1793882193.523825,
+    "seen": 1793882323.207653,
+    "ast_hash": "a37db06a5389bed4a087cdf8525e7d52",
     "semantic_hash": ""
   },
   "src/main/webapp/js/render/impressao.js": {
-    "mtime": 1793286005.3310194,
-    "seen": 1793286113.2506852,
-    "ast_hash": "af43b81c09dffb7a222007c0615ab059",
+    "mtime": 1793882201.3127608,
+    "seen": 1793882323.207657,
+    "ast_hash": "b00c41d38ed6761494c25c35260f8c67",
     "semantic_hash": ""
   },
   "src/main/webapp/js/render/modal.js": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "src/main/webapp/js/render/telaInicial.js": {
-    "mtime": 1793801018.2612455,
-    "seen": 1793801564.4514751,
-    "ast_hash": "834e098ec50ec30f04d3ea17a5d2d179",
+    "mtime": 1793884852.0488656,
+    "seen": 1793885271.1906843,
+    "ast_hash": "b8a4ef47c666b8fd4f83209559561705",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -216,9 +216,9 @@
     "semantic_hash": ""
   },
   "docs/arquitetura-fusion.md": {
-    "mtime": 1793814304.8827956,
-    "seen": 1793814371.0083253,
-    "ast_hash": "5389d5e91e9e8f3b6bd806406e91ca99",
+    "mtime": 1793885062.562583,
+    "seen": 1793885271.1923573,
+    "ast_hash": "31df5aacc8ca80f2b565eddee6fee81b",
     "semantic_hash": ""
   },
   "docs/desenhos-extraidos.md": {
@@ -1056,9 +1056,9 @@
     "semantic_hash": ""
   },
   "scripts/migrar_json_sqlite.py": {
-    "mtime": 1793800656.530275,
-    "seen": 1793801564.4460392,
-    "ast_hash": "7f8b4c01e42445a597fe4b790f450e50",
+    "mtime": 1793885049.9434578,
+    "seen": 1793885271.1797554,
+    "ast_hash": "e0e0b743e5939e276c5b387a00af7273",
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/aps/ApsConfig.java": {
@@ -1116,9 +1116,9 @@
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/repository/CatalogoRepository.java": {
-    "mtime": 1793801507.874594,
-    "seen": 1793801564.4467578,
-    "ast_hash": "246892ccdbe12de62c6f463db4e0978e",
+    "mtime": 1793884948.0632224,
+    "seen": 1793885271.1827657,
+    "ast_hash": "1d158a40ce72d038716f5dc27fb13618",
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/repository/GradeRepository.java": {
@@ -1146,9 +1146,9 @@
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/servlet/ConfigServlet.java": {
-    "mtime": 1793800835.7030623,
-    "seen": 1793801564.447468,
-    "ast_hash": "83a526dc6810a427719493111bfbb624",
+    "mtime": 1793884932.209907,
+    "seen": 1793885271.1854334,
+    "ast_hash": "8a55d3c79ba56da14805fecc64affe12",
     "semantic_hash": ""
   },
   "src/main/java/fusion/developer/web/cavidades/servlet/GradesServlet.java": {
@@ -1179,6 +1179,12 @@
     "mtime": 1793810951.1252759,
     "seen": 1793811195.9067924,
     "ast_hash": "c24203c50f97822ad0d3f5a108b93956",
+    "semantic_hash": ""
+  },
+  "src/main/webapp/assets/icon/icone injetora.png": {
+    "mtime": 1793823900.9108377,
+    "seen": 1793879313.5542145,
+    "ast_hash": "4d1d5237d870b1433dd6f1441df2d540",
     "semantic_hash": ""
   }
 }

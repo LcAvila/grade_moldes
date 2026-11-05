@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cavidades não conformes - Compactor</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/style.css?v=20261030c">
+	href="${pageContext.request.contextPath}/css/style.css?v=20261105f">
 </head>
 
 <body data-context="${pageContext.request.contextPath}">
@@ -162,8 +162,7 @@
 
 
 
-				<button class="btn btn-secondary btn-voltar" id="btnVoltar"
-					type="button">‹ GRADES</button>
+				<button class="btn btn-secondary btn-voltar" id="btnVoltar" type="button" aria-label="Voltar para a lista de grades"><svg class="btn-voltar-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg><span>Voltar às grades</span></button>
 
 
 
@@ -395,25 +394,21 @@
 
 			<div class="form-group">
 
-
-
-				<label>Vedado?</label>
-
-
-
-				<div class="radio-group">
-
-
-
-					<label><input type="radio" name="vedado" value="S">
-
-
-
-						Sim</label> <label><input type="radio" name="vedado" value="N"
-						checked> Não</label>
-
-
-
+				<div class="vedado-panel">
+					<div class="vedado-head">
+						<span class="vedado-title" id="lblVedado">Vedado?</span>
+						<span class="vedado-helper">Bloqueia a cavidade na produção</span>
+					</div>
+					<div class="vedado-segmented" role="radiogroup" aria-labelledby="lblVedado">
+						<label class="vedado-option vedado-option-nao">
+							<input type="radio" name="vedado" value="N" checked>
+							<span>Não</span>
+						</label>
+						<label class="vedado-option vedado-option-sim">
+							<input type="radio" name="vedado" value="S">
+							<span>Sim</span>
+						</label>
+					</div>
 				</div>
 
 
@@ -443,45 +438,14 @@
 
 
 
-			<div class="btn-group">
-
-
-
-				<button class="btn" id="btnSalvar" type="button">SALVAR</button>
-
-
-
-				<button class="btn btn-secondary" id="btnLimpar" type="button">LIMPAR</button>
-
-
-
-				<button class="btn btn-danger" id="btnExcluir" type="button">EXCLUIR
-
-
-
-					REG.</button>
-
-
-
-			</div>
-
-
-
-
-
-
-
-			<div class="btn-group">
-
-
-
+			<div class="btn-group btn-acoes-principais">
+				<button class="btn btn-danger" id="btnExcluir" type="button">EXCLUIR REG.</button>
 				<button class="btn btn-secondary" id="btnImprimir" type="button">IMPRIMIR</button>
-
-				<button class="btn btn-success" id="btnPublicarGrade" type="button">PUBLICAR
-					GRADE</button>
-
-
-
+				<button class="btn btn-success" id="btnPublicarGrade" type="button">PUBLICAR</button>
+			</div>
+			<div class="auto-save-status" id="autoSaveStatus" role="status" aria-live="polite">
+				<span class="auto-save-dot" aria-hidden="true"></span>
+				<span id="autoSaveMensagem">Preencha um desvio/defeito. As alterações serão salvas automaticamente.</span>
 			</div>
 
 
@@ -490,135 +454,59 @@
 
 
 
-			<div class="info-box">
 
 
 
-				<h4>Como usar</h4>
 
 
 
-				<p>Clique em uma cavidade no diagrama ou tabela para
+			<aside class="help-box" aria-label="Como usar o registro de não conformidades">
 
 
 
-					selecioná-la.</p>
+				<div class="help-head">
+					<div class="help-badge" aria-hidden="true">?</div>
+					<div><h4>Como usar</h4><p>Registre não conformidades sem botão de salvar.</p></div>
+					<span class="help-auto">Auto-save ativo</span>
+				</div>
 
 
 
-				<p>
+				<ol class="help-steps">
+					<li><span class="help-step">1</span><div><strong>Selecione a cavidade</strong><small>Clique no diagrama ou na tabela. Use <b>Ctrl/Cmd + clique</b> para várias cavidades; clique no número central da zona para selecionar todas as 16.</small></div></li>
 
 
 
-					<strong>Ctrl (ou Cmd) + clique</strong> em várias cavidades para
+					<li><span class="help-step">2</span><div><strong>Descreva o desvio ou defeito</strong><small>Escolha um item da lista ou digite livremente. Para REB. ou OUTRO, descreva no campo Observação.</small></div></li>
 
 
 
-					selecionar mais de uma ao mesmo tempo.
+					<li><span class="help-step">3</span><div><strong>Defina se está vedado</strong><small>Marque <b>NÃO É VEDADO</b> para registrar defeito ou <b>É VEDADO</b> para bloquear a produção da cavidade.</small></div></li>
 
 
 
-				</p>
+					<li><span class="help-step">4</span><div><strong>Confira e finalize</strong><small>O sistema aplica o registro e salva automaticamente. Use <b>EXCLUIR REGISTRO</b> apenas para apagar uma seleção incorreta. Ao finalizar, imprima ou publique a grade.</small></div></li>
 
 
 
-				<p>
+				</ol>
 
 
 
-					<strong>Clique no número central de uma zona</strong> (1, 2, 3 ou
+				<div class="help-legend">
+					<span class="help-legend-title">Legenda</span>
+					<span><i class="help-dot help-dot-red"></i><b>Vermelho</b> Vedada (S)</span>
+					<span><i class="help-dot help-dot-yellow"></i><b>Amarelo</b> Defeito (N)</span>
+					<span><i class="help-dot help-dot-neutral"></i><b>Cinza</b> Sem registro</span>
+				</div>
 
 
 
-					4) para selecionar as 16 cavidades daquela zona de uma vez — útil
+				<div class="help-foot"><strong>Dica:</strong> clique duas vezes em uma cavidade com registro para ver os detalhes. A impressão gera uma folha A4 única.</div>
 
 
 
-					para <strong>fechar a zona inteira</strong>.
-
-
-
-				</p>
-
-
-
-				<p>
-
-
-
-					Preencha os campos e clique em <strong>SALVAR</strong>: o registro
-
-
-
-					é aplicado a todas as cavidades selecionadas.
-
-
-
-				</p>
-
-
-
-				<p>
-
-
-
-					No campo <strong>Desvio / Defeito</strong>, escolha uma opção da
-
-
-
-					lista ou digite livremente — os dois modos funcionam no mesmo
-
-
-
-					campo.
-
-
-
-				</p>
-
-
-
-				<p>
-
-
-
-					<strong style="color: var(--red)">Vermelho</strong> = Vedado (SIM).
-
-
-
-					<strong style="color: #a66d00">Amarelo</strong> = Defeito (Vedado
-
-
-
-					NÃO). <strong style="color: var(--muted)">Cinza</strong> = Normal.
-
-
-
-				</p>
-
-
-
-				<p>
-
-
-
-					<strong>Dica:</strong> clique duas vezes em uma cavidade com
-
-
-
-					registro para ver detalhes. A impressão usa um layout compacto em
-
-
-
-					folha A4 única.
-
-
-
-				</p>
-
-
-
-			</div>
+			</aside>
 
 
 
@@ -751,22 +639,6 @@
 
 
 						<thead>
-
-
-
-							<tr>
-
-
-
-								<th colspan="5">Esquerda</th>
-
-
-
-								<th colspan="5">Direita</th>
-
-
-
-							</tr>
 
 
 
@@ -951,9 +823,6 @@
 
 
 
-								<span>Clique para girar em 3D</span>
-
-
 
 							</div>
 
@@ -1110,6 +979,14 @@
 
 							<span class="info-label">Máquinas</span><span
 								data-field="maquina"></span>
+						</div>
+
+						<div class="info-linha">
+							<span class="info-label">TOTAL DE CAVIDADES NO MOLDE</span><span data-field="cavidadesTotais"></span>
+						</div>
+
+						<div class="info-linha">
+							<span class="info-label">CAVIDADES ATIVAS</span><span data-field="cavidadesAtivas"></span>
 
 
 
@@ -1580,6 +1457,10 @@
 
 
 						<span>Máquina:</span><strong id="folhaMaquina"></strong>
+					</div>
+
+					<div class="fi-linha">
+						<span>Cavidades (total / ativas):</span><strong id="folhaCavidades"></strong>
 
 
 
@@ -1719,73 +1600,98 @@
 
 
 	<div class="modal-overlay" id="modalAbrirGrade">
-		<div class="modal modal-abrir">
-			<div class="modal-head">
-				<h3>Check-list de Moldes</h3>
-				<div class="hint">Preencha os dados e o check-list de
-					validação antes de liberar a produção.</div>
-			</div>
-
-			<div class="form-grid">
-				<div class="form-group">
-					<label for="selMolde">Qual molde?</label> <select id="selMolde"><option
-							value="">Selecione o molde</option></select>
-					<div class="hint" id="selMoldeHint">
-						Todos os moldes cadastrados no <strong>banco SQLite</strong>.
-					</div>
+		<div class="modal modal-abrir modal-checklist" role="dialog" aria-modal="true" aria-labelledby="modalAbrirTitle">
+			<div class="modal-head modal-head-abrir">
+				<div class="modal-abrir-badge" aria-hidden="true">
+					<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11z"></path>
+						<path d="M8 8h8M8 12h8M8 16h4"></path>
+					</svg>
 				</div>
-
-				<div class="form-group">
-					<label for="selMaquina">Qual máquina?</label> <select
-						id="selMaquina"><option value="">Selecione a
-							máquina</option></select>
-					<div class="hint" id="selMaquinaHint">
-						Máquinas cadastradas no <strong>banco SQLite</strong>.
-					</div>
+				<div class="modal-abrir-headcopy">
+					<div class="modal-kicker">CONTROLE DE QUALIDADE</div>
+					<h3 id="modalAbrirTitle">Check-list de Moldes</h3>
+					<div class="hint">Preencha os dados de entrada e valide o check-list antes de liberar a produção.</div>
 				</div>
-
-				<div class="form-group">
-					<label for="dataAbertura">Data da abertura</label> <input
-						type="date" id="dataAbertura">
-					<div class="hint">
-						Hoje é <strong id="dataAberturaHoje"></strong>. A data vem
-						preenchida e pode ser editada.
-					</div>
-				</div>
-
-				<div class="form-group form-group-historico" id="grpHistorico"
-					style="display: none">
-					<label for="selHistorico">Grade histórica <span
-						class="rotulo-opcional">(opcional)</span></label> <select
-						id="selHistorico"><option value="">Nova grade
-							(sem importar registros)</option></select>
-					<div class="hint" id="selHistoricoHint">Importa os registros
-						já lançados nas planilhas do repositório.</div>
+				<div class="modal-abrir-status">
+					<span class="modal-abrir-status-dot"></span>
+					Pré-liberação
 				</div>
 			</div>
 
-			<div class="cl-secao">
-				<h4>Check-list de validação (Controle de Qualidade)</h4>
-				<div class="hint">Preencha antes de liberar a produção do
-					molde.</div>
+			<div class="modal-bloco">
+				<div class="form-grid form-grid-abrir">
+					<div class="form-group form-span-2">
+						<label for="selMoldeBusca">Qual molde?</label>
+						<div class="combo" id="comboMolde">
+							<div class="combo-control">
+								<input id="selMoldeBusca" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="listaComboMoldes" autocomplete="off" placeholder="Digite para filtrar ou escolher um molde">
+								<button class="combo-toggle" id="toggleComboMolde" type="button" aria-label="Mostrar moldes">
+									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+								</button>
+							</div>
+							<div class="combo-list" id="listaComboMoldes" role="listbox" aria-label="Lista de moldes" hidden></div>
+							<input type="hidden" id="selMolde" value="">
+						</div>
+					</div>
 
-				<div class="form-grid cols-2">
 					<div class="form-group">
-						<label for="clSituacao">Situação da entrada</label> <select
-							id="clSituacao">
+						<label for="selMaquinaBusca">Qual máquina?</label>
+						<div class="combo" id="comboMaquina">
+							<div class="combo-control">
+								<input id="selMaquinaBusca" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="listaComboMaquinas" autocomplete="off" placeholder="Digite para filtrar ou escolher">
+								<button class="combo-toggle" id="toggleComboMaquina" type="button" aria-label="Mostrar máquinas">
+									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+								</button>
+							</div>
+							<div class="combo-list" id="listaComboMaquinas" role="listbox" aria-label="Lista de máquinas" hidden></div>
+							<input type="hidden" id="selMaquina" value="">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="dataAbertura">Data de entrada</label>
+						<input type="date" id="dataAbertura">
+					</div>
+
+					<div class="form-group">
+						<label for="cavidadesTotal">Quantidade total de cavidades no molde</label>
+						<input type="number" id="cavidadesTotal" min="1" step="1" inputmode="numeric" placeholder="Ex.: 64">
+					</div>
+
+					<div class="form-group">
+						<label for="cavidadesAtivas">Quantidade de cavidades ativas</label>
+						<input type="number" id="cavidadesAtivas" min="0" step="1" inputmode="numeric" placeholder="Ex.: 58">
+					</div>
+
+					<div class="form-group form-span-2">
+						<label for="materiaPrima">Matéria-prima</label>
+						<input type="text" id="materiaPrima" autocomplete="off" placeholder="Ex.: POLIPROPILENO (PP), PS, ABS...">
+					</div>
+
+				</div>
+			</div>
+
+			<div class="modal-bloco modal-bloco-checklist">
+
+				<div class="form-grid cols-3 form-grid-checklist">
+					<div class="form-group">
+						<label for="clSituacao">Situação da entrada</label>
+						<select id="clSituacao">
 							<option value="">Selecione</option>
-							<option value="RETORNO PARA PRODUÇÃO">RETORNO PARA
-								PRODUÇÃO</option>
+							<option value="RETORNO PARA PRODUÇÃO">RETORNO PARA PRODUÇÃO</option>
 							<option value="RETORNO PÓS-AJUSTE">RETORNO PÓS-AJUSTE</option>
 							<option value="MOLDE NOVO">MOLDE NOVO</option>
+							<option value="TROCA DE MÁQUINA">TROCA DE MÁQUINA</option>
 						</select>
 					</div>
 					<div class="form-group">
-						<label for="clControlador">Controlador</label> <input type="text"
-							id="clControlador" placeholder="Nome do controlador">
+						<label for="clControlador">Controlador</label>
+						<input type="text" id="clControlador" autocomplete="off" placeholder="Nome do controlador">
 					</div>
 					<div class="form-group">
-						<label for="clStatus">Status</label> <select id="clStatus">
+						<label for="clStatus">Status</label>
+						<select id="clStatus">
 							<option value="">Selecione</option>
 							<option value="LIBERADO">LIBERADO</option>
 							<option value="REPROVADO">REPROVADO</option>
@@ -1797,18 +1703,15 @@
 
 				<div class="form-group">
 					<label for="clObservacoes">Observações</label>
-					<textarea id="clObservacoes" rows="2"
-						placeholder="Observações do controle de qualidade"></textarea>
+					<textarea id="clObservacoes" rows="2" placeholder="Observações do controle de qualidade"></textarea>
 				</div>
 			</div>
 
-			<div class="form-erro" id="abrirGradeErro" style="display: none"></div>
+			<div class="form-erro" id="abrirGradeErro" style="display: none" role="alert"></div>
 
 			<div class="modal-actions">
-				<button class="btn btn-secondary" id="btnCancelarAbrir"
-					type="button">CANCELAR</button>
-				<button class="btn btn-success" id="btnConfirmarAbrir" type="button">ABRIR
-					GRADE</button>
+				<button class="btn btn-secondary" id="btnCancelarAbrir" type="button">CANCELAR</button>
+				<button class="btn btn-success" id="btnConfirmarAbrir" type="button" disabled>ABRIR GRADE</button>
 			</div>
 		</div>
 	</div>
@@ -1891,20 +1794,20 @@
 		src="${pageContext.request.contextPath}/js/layouts/generators.js"></script>
 	<script src="${pageContext.request.contextPath}/js/render/svg.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/js/render/formulario.js"></script>
+		src="${pageContext.request.contextPath}/js/render/formulario.js?v=20261105b"></script>
 	<script
 		src="${pageContext.request.contextPath}/js/render/cabecalho.js?v=20261029f"></script>
 	<script src="${pageContext.request.contextPath}/js/render/tabela.js"></script>
 	<script src="${pageContext.request.contextPath}/js/render/diagrama.js"></script>
 	<script src="${pageContext.request.contextPath}/js/render/resumo.js"></script>
-	<script src="${pageContext.request.contextPath}/js/core/registros.js"></script>
+	<script src="${pageContext.request.contextPath}/js/core/registros.js?v=20261105b"></script>
 	<script src="${pageContext.request.contextPath}/js/render/modal.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/js/render/impressao.js?v=20261029h"></script>
+		src="${pageContext.request.contextPath}/js/render/impressao.js?v=20261105b"></script>
 	<script
 		src="${pageContext.request.contextPath}/js/core/configLoader.js?v=20261104a"></script>
 	<script
-		src="${pageContext.request.contextPath}/js/render/telaInicial.js?v=20261104a"></script>
+		src="${pageContext.request.contextPath}/js/render/telaInicial.js?v=20261105a"></script>
 	<div class="modal-overlay" id="modalPeca3D">
 
 		<div class="modal modal-3d">
@@ -2442,7 +2345,7 @@
 		src="${pageContext.request.contextPath}/js/render/visualizador3dFacade.js?v=20261030c"></script>
 
 
-	<script src="${pageContext.request.contextPath}/js/app.js?v=20261104b"></script>
+	<script src="${pageContext.request.contextPath}/js/app.js?v=20261105b"></script>
 
 
 

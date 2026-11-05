@@ -137,64 +137,6 @@ public class CatalogoRepository {
         }
     }
 
-    // ---- Historico ----------------------------------------------------------
-
-    public Map<String, List<Map<String, Object>>> indiceHistorico() throws Exception {
-        Map<String, List<Map<String, Object>>> indice = new LinkedHashMap<>();
-        String sql = """
-                SELECT molde_id, arquivo, rotulo, ano, defeitos, vedadas, total,
-                       arquivo_origem, maquina, data_entrada, material
-                  FROM historico_grades
-                 ORDER BY molde_id, ordem
-                """;
-        try (Connection c = Database.abrir();
-             PreparedStatement p = c.prepareStatement(sql);
-             ResultSet r = p.executeQuery()) {
-            while (r.next()) {
-                Map<String, Object> entrada = new LinkedHashMap<>();
-                entrada.put("arquivo", r.getString("arquivo"));
-                entrada.put("rotulo", r.getString("rotulo"));
-                entrada.put("ano", r.getString("ano"));
-                entrada.put("defeitos", r.getInt("defeitos"));
-                entrada.put("vedadas", r.getInt("vedadas"));
-                entrada.put("total", r.getInt("total"));
-                entrada.put("arquivoOrigem", r.getString("arquivo_origem"));
-                entrada.put("maquina", r.getString("maquina"));
-                entrada.put("dataEntrada", r.getString("data_entrada"));
-                entrada.put("material", r.getString("material"));
-                indice.computeIfAbsent(r.getString("molde_id"), k -> new ArrayList<>()).add(entrada);
-            }
-        }
-        return indice;
-    }
-
-    public Optional<Map<String, Object>> carregarHistorico(String arquivo) throws Exception {
-        String sql = "SELECT * FROM historico_grades WHERE arquivo = ?";
-        try (Connection c = Database.abrir();
-             PreparedStatement p = c.prepareStatement(sql)) {
-            p.setString(1, arquivo);
-            try (ResultSet r = p.executeQuery()) {
-                if (!r.next()) {
-                    return Optional.empty();
-                }
-                Map<String, Object> pacote = new LinkedHashMap<>();
-                pacote.put("formato", r.getString("formato"));
-                pacote.put("versao", r.getObject("versao"));
-                pacote.put("moldeId", r.getString("molde_id"));
-                pacote.put("codigo", r.getString("codigo"));
-                pacote.put("nomePeca", r.getString("nome_peca"));
-                pacote.put("layoutId", r.getString("layout_id"));
-                pacote.put("origem", r.getString("origem"));
-                pacote.put("arquivoOrigem", r.getString("arquivo_origem"));
-                pacote.put("dataOrigem", r.getString("data_origem"));
-                pacote.put("exportadoEm", r.getString("exportado_em"));
-                pacote.put("dadosCavidades", lerMapa(r.getString("dados_cavidades_json")));
-                pacote.put("dadosGrade", lerMapa(r.getString("dados_grade_json")));
-                return Optional.of(pacote);
-            }
-        }
-    }
-
     // ---- Escritas (cadastro de molde) ---------------------------------------
 
     public String salvarMolde(Map<String, Object> molde) throws Exception {

@@ -7,7 +7,12 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -20,9 +25,8 @@ import java.util.Optional;
  * GET /api/config/formas
  * GET /api/config/maquinas
  * GET /api/config/modelos3d
+ * GET /api/config/modelo3d/existe?caminho=assets/models/molde-117.stl
  * GET /api/config/layouts/{id}
- * GET /api/config/historico
- * GET /api/config/historico?arquivo={caminho}
  */
 @WebServlet("/api/config/*")
 public class ConfigServlet extends HttpServlet {
@@ -43,7 +47,6 @@ public class ConfigServlet extends HttpServlet {
                 indice.put("maquinas", "/api/config/maquinas");
                 indice.put("modelos3d", "/api/config/modelos3d");
                 indice.put("layouts", "/api/config/layouts/{id}");
-                indice.put("historico", "/api/config/historico");
                 responder(resp, 200, indice);
                 return;
             }
@@ -54,6 +57,14 @@ public class ConfigServlet extends HttpServlet {
                 case "formas" -> responder(resp, 200, Map.of("formas", repo.listarFormas()));
                 case "maquinas" -> responder(resp, 200, Map.of("maquinas", repo.listarMaquinas()));
                 case "modelos3d" -> responder(resp, 200, Map.of("modelos", repo.listarModelos3d()));
+                case "modelo3d" -> {
+                    String caminho = req.getParameter("caminho");
+                    if (caminho == null || caminho.isBlank()) {
+                        responder(resp, 200, Map.of("disponivel", true));
+                        return;
+                    }
+                    responder(resp, 200, Map.of("existe", arquivoExiste(req, caminho), "caminho", caminho));
+                }
                 case "layouts" -> {
                     if (partes.length < 2) {
                         erro(resp, 400, "Informe o layout: /api/config/layouts/{id}");
@@ -65,19 +76,6 @@ public class ConfigServlet extends HttpServlet {
                         return;
                     }
                     responder(resp, 200, layout.get());
-                }
-                case "historico" -> {
-                    String arquivo = req.getParameter("arquivo");
-                    if (arquivo != null && !arquivo.isBlank()) {
-                        Optional<Map<String, Object>> pacote = repo.carregarHistorico(arquivo);
-                        if (pacote.isEmpty()) {
-                            erro(resp, 404, "Grade historica nao encontrada: " + arquivo);
-                            return;
-                        }
-                        responder(resp, 200, pacote.get());
-                    } else {
-                        responder(resp, 200, repo.indiceHistorico());
-                    }
                 }
                 default -> erro(resp, 404, "Recurso de configuracao desconhecido: " + partes[0]);
             }
@@ -102,5 +100,20 @@ public class ConfigServlet extends HttpServlet {
 
     private void erro(HttpServletResponse resp, int status, String mensagem) throws IOException {
         responder(resp, status, Map.of("erro", mensagem));
+    }
+
+    private boolean arquivoExiste(HttpServletRequest req, String rel) {
+        String realPath = req.getServletContext().getRealPath("/");
+        if (realPath != null) {
+            Path p = Paths.get(realPath).resolve(rel.replace('/', File.separatorChar)).normalize();
+            if (Files.isRegularFile(p)) {
+                return true;
+            }
+        }
+        try (InputStream is = req.getServletContext().getResourceAsStream("/" + rel.replace(File.separatorChar, '/'))) {
+            return is != null;
+        } catch (Exception ignored) {
+            return false;
+        }
     }
 }

@@ -2,6 +2,7 @@ package fusion.developer.web.cavidades.seguranca;
 
 import fusion.developer.web.cavidades.config.AppConfig;
 
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.http.HttpServletRequest;
 
 import java.lang.reflect.Method;
@@ -44,7 +45,7 @@ public final class SessaoFusion {
         }
 
         // 2) Fusion (PortalUtil via reflexão)
-        ResultadoPortal portal = portalUtil();
+        ResultadoPortal portal = portalUtil(req);
         if (portal.resolvido()) {
             // null aqui = dentro do Fusion sem sessao -> 401, sem cair no fallback dev
             return portal.usuario();
@@ -65,7 +66,18 @@ public final class SessaoFusion {
     /** Resultado da tentativa de uso do PortalUtil: resolvido = a classe foi encontrada. */
     private record ResultadoPortal(UsuarioAtual usuario, boolean resolvido) {}
 
-    private static ResultadoPortal portalUtil() {
+    private static ResultadoPortal portalUtil(HttpServletRequest req) {
+        ClassLoader fusionLoader = null;
+        try {
+            ServletContext self = req.getServletContext();
+            ServletContext fusion = self != null ? self.getContext("/fusion") : null;
+            if (fusion != null) {
+                fusionLoader = fusion.getClassLoader();
+            }
+        } catch (Throwable ignore) {
+            // sem cross-context: segue com o classloader atual
+        }
+
         List<String> candidatos = new ArrayList<>();
         String configurado = AppConfig.get("app.fusion.portal-util-class");
         if (configurado != null && !configurado.isBlank()) {
@@ -75,29 +87,50 @@ public final class SessaoFusion {
             candidatos.add(c);
         }
 
+        boolean classeEncontrada = false;
         for (String nome : candidatos) {
             Class<?> classe;
             try {
-                classe = Class.forName(nome);
+                if (fusionLoader != null) {
+                    classe = Class.forName(nome, true, fusionLoader);
+                } else {
+                    classe = Class.forName(nome);
+                }
             } catch (ClassNotFoundException | NoClassDefFoundError ignore) {
                 continue; // SDK ausente neste classloader (dev local)
             }
-            try {
-                Method m = classe.getMethod("getCurrentUser");
-                Object usuario = m.invoke(null);
-                if (usuario == null) {
-                    // classe existe, mas nao ha login -> resolvido sem usuario
-                    return new ResultadoPortal(null, true);
+            classeEncontrada = true;
+
+            // Tenta variantes conhecidas; algumas versões do PortalUtil recebem a request.
+            String[] metodos = { "getCurrentUser", "getUser", "getCurrentNeoUser" };
+            for (String nomeMetodo : metodos) {
+                for (Method m : classe.getMethods()) {
+                    if (!m.getName().equals(nomeMetodo)) {
+                        continue;
+                    }
+                    Class<?>[] params = m.getParameterTypes();
+                    if (params.length != 0 && !(params.length == 1
+                            && (HttpServletRequest.class.isAssignableFrom(params[0])
+                            || jakarta.servlet.ServletRequest.class.isAssignableFrom(params[0])))) {
+                        continue;
+                    }
+                    try {
+                        Object usuario = params.length == 0
+                                ? m.invoke(null)
+                                : m.invoke(null, req);
+                        if (usuario != null) {
+                            return new ResultadoPortal(extrair(usuario), true);
+                        }
+                    } catch (Throwable ignore) {
+                        // tenta a próxima variante
+                    }
                 }
-                return new ResultadoPortal(extrair(usuario), true);
-            } catch (NoSuchMethodException ignore) {
-                // classe existe mas não tem getCurrentUser -> tenta próximo candidato
-            } catch (Throwable t) {
-                // classe existe mas não pôde ser usada (dependência faltando etc.)
-                // -> tenta próximo candidato; se nenhum funcionar, o fallback dev é inócuo
             }
+
+            // A classe existe, mas não retornou usuário nesta requisição.
+            return new ResultadoPortal(null, true);
         }
-        return new ResultadoPortal(null, false);
+        return new ResultadoPortal(null, classeEncontrada);
     }
 
     private static UsuarioAtual extrair(Object usuario) {

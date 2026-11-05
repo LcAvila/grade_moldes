@@ -1,17 +1,17 @@
-# Graph Report - CustomFusionWeb  (2026-11-04)
+# Graph Report - CustomFusionWeb  (2026-11-05)
 
 ## Corpus Check
-- 64 files · ~132,633 words
+- 64 files · ~133,117 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 22 file(s) not represented in the graph (top: (none) 5, .prefs 5, .xml 2)
+- Unclassified: 23 file(s) not represented in the graph (top: (none) 5, .prefs 5, .xml 3)
 
 ## Summary
-- 2350 nodes · 4722 edges · 135 communities (50 shown, 85 thin omitted)
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 516 edges (avg confidence: 0.85)
+- 2370 nodes · 4774 edges · 133 communities (51 shown, 82 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 514 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3d7aa852`
+- Built from commit: `bc0a0217`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,18 +35,19 @@
 - impressao.js
 - modal.js
 - tabela.js
+- Database.java
 - At
 - resumo.js
 - svg.js
 - desenhos-extraidos.md
 - inventario-moldes.md
 - ApsModeloService
-- fe
+- ht
 - GradeRepository
 - Database
 - com.customfusion:CustomFusionWeb
 - .constructor
-- bl
+- yo
 - yc
 - vt
 - St
@@ -63,74 +64,68 @@
 - ml
 - se
 - dc
-- ht
+- fe
 - ca
 - i
 - Ne
 - yt
 - ls
 - sn
-- parse
+- pl
 - .updateWorldMatrix
 - tn
 - visualizador3d.js
 - bt
-- qc
+- Autodesk Platform Services (APS) — configuração
 - kl
 - jt
 - visualizador3dFacade.js
 - je
-- Na
+- MoldeService.java
 - re
 - SessaoFusion
 - .copy
-- Autodesk Platform Services (APS) — configuração
+- registros.js
 - eh
-- ps
-- GedFusionService.java
-- gt
+- mi
 - ws
 - ia
-- Aa
+- parse
 - _fromTexture
 - ct
 - ec
 - ol
-- ni
+- gt
 - ys
 - Jl
 - parseObject
 - rh
-- Rl
-- .doGet
-- .doPost
+- fl
+- ge
+- jakarta.servlet.http.HttpServletRequest
 - Kn
-- Al
 - .parse
-- el
+- Vs
 - la
-- wo
+- ic
 - ai
-- .copy
+- jn
 - .constructor
 - Ll
-- pl
-- vl
-- .constructor
-- ic
-- Tt
-- fl
-- rt
-- s
-- Wl
-- xs
+- Aa
+- .applyMatrix4
 - Yl
+- .constructor
+- Tt
+- vl
+- Na
+- s
+- uc
+- rc
 - t
-- constructor
 - dl
 - ac
 - ts
-- rc
 - Zc
 - an
 - cn
@@ -141,7 +136,6 @@
 - on
 - pn
 - un
-- .parse
 
 ## God Nodes (most connected - your core abstractions)
 1. `Lt` - 135 edges
@@ -170,23 +164,23 @@
 ## Import Cycles
 - None detected.
 
-## Communities (135 total, 85 thin omitted)
+## Communities (133 total, 82 thin omitted)
 
 ### Community 0 - "extrair_desenhos.py"
 Cohesion: 0.06
 Nodes (31): md5(), md5_bytes(), _blobs_desenho_xls(), _carve(), classificar(), codigo_de(), _e_grade(), _e_logo() (+23 more)
 
 ### Community 1 - "com.fasterxml.jackson.databind.ObjectMapper"
-Cohesion: 0.19
-Nodes (7): AtualizacaoCavidadesRequest, Cavidade, MoldeService, ApsTokenServlet, CavidadesServlet, MoldesServlet, UsuarioAtualServlet
+Cohesion: 0.23
+Nodes (6): MoldeService, ApsModeloServlet, ApsTokenServlet, CavidadesServlet, MoldesServlet, UsuarioAtualServlet
 
 ### Community 3 - "configLoader.js"
 Cohesion: 0.22
-Nodes (13): buscarApi(), carregarCatalogo(), carregarDesenhos(), carregarFormas(), carregarGradeHistorica(), carregarIndiceHistorico(), carregarLayout(), carregarMaquinas() (+5 more)
+Nodes (13): buscarApi(), carregarCatalogo(), carregarDesenhos(), carregarFormas(), carregarLayout(), carregarMaquinas(), carregarModelos3d(), listarMaquinas() (+5 more)
 
 ### Community 5 - "telaInicial.js"
-Cohesion: 0.16
-Nodes (25): abrirModal(), abrirModalCadastro(), atualizarBotaoConfirmar(), atualizarOpcoesHistorico(), cardEl(), carregarIndiceHistorico(), chipEl(), coletarChecklist() (+17 more)
+Cohesion: 0.11
+Nodes (40): abrirCombobox(), abrirModal(), abrirModalCadastro(), acharDocumentoMolde(), acharItemExato(), atualizarBotaoConfirmar(), cardEl(), chipEl() (+32 more)
 
 ### Community 6 - "GedFusionService"
 Cohesion: 0.19
@@ -201,20 +195,20 @@ Cohesion: 0.23
 Nodes (18): acharGrade(), api(), carregarGrade(), criarGrade(), descarregarPendente(), disponivel(), existeLegado(), flush() (+10 more)
 
 ### Community 9 - "app.js"
-Cohesion: 0.05
-Nodes (54): 1. Tema Visual e Atmosfera, 2. Paleta e Papéis Semânticos, 3. Tipografia, 4.10 Modal, 4.1 Botões, 4.2 Campos de formulário, 4.3 Editor inline (`.editable`), 4.4 Cards de resumo (`.resumo-status` / `.resumo-card`) (+46 more)
+Cohesion: 0.06
+Nodes (50): 1. Tema Visual e Atmosfera, 2. Paleta e Papéis Semânticos, 3. Tipografia, 4.10 Modal, 4.1 Botões, 4.2 Campos de formulário, 4.3 Editor inline (`.editable`), 4.4 Cards de resumo (`.resumo-status` / `.resumo-card`) (+42 more)
 
 ### Community 10 - "estado.js"
-Cohesion: 0.13
-Nodes (18): compararId(), normalizarRegistro(), registroVazio(), atualizarTudo(), excluir(), initRegistros(), limpar(), salvar() (+10 more)
+Cohesion: 0.16
+Nodes (14): compararId(), normalizarRegistro(), registroVazio(), atualizarObsField(), atualizarSelecao(), clicarCavidade(), clicarZona(), criarOpcoesCavidades() (+6 more)
 
 ### Community 12 - "three.min.js"
-Cohesion: 0.03
-Nodes (33): as(), bind(), br(), $c(), copy(), er(), getValue(), Hi() (+25 more)
+Cohesion: 0.04
+Nodes (25): bind(), br(), $c(), copy(), er(), getValue(), Hi(), intersectObject() (+17 more)
 
 ### Community 13 - "Lt"
-Cohesion: 0.04
-Nodes (4): jn(), Lt, update(), wh()
+Cohesion: 0.05
+Nodes (4): as(), is(), Lt, os()
 
 ### Community 14 - "diagrama.js"
 Cohesion: 0.53
@@ -240,6 +234,10 @@ Nodes (4): atualizarTabela(), celulasDaCavidade(), montarTabela(), preencherCelu
 Cohesion: 0.08
 Nodes (12): ApsConfig, ApsDerivativeService, Manifesto, ApsHttp, Resposta, ApsModeloService, Registro, Resultado (+4 more)
 
+### Community 26 - "ht"
+Cohesion: 0.20
+Nodes (5): ht(), setFromCartesianCoords(), setFromVector3(), wo, xo
+
 ### Community 28 - "Database"
 Cohesion: 0.08
 Nodes (16): 1. Camadas, 2. Banco SQLite, 3. APIs, 4. Identificação de usuário (sem login próprio), 5. GED do Fusion, 6. Migração e backup, 7. Build e teste local, Arquitetura: SQLite + Fusion GED (+8 more)
@@ -248,45 +246,57 @@ Nodes (16): 1. Camadas, 2. Banco SQLite, 3. APIs, 4. Identificação de usuário
 Cohesion: 0.09
 Nodes (39): MapControls, OrbitControls, dollyIn(), dollyOut(), getZoomScale(), handleKeyDown(), handleMouseDownDolly(), handleMouseDownPan() (+31 more)
 
+### Community 32 - "yo"
+Cohesion: 0.09
+Nodes (9): ds(), F(), G(), k(), V(), z(), jo, qo (+1 more)
+
+### Community 33 - "yc"
+Cohesion: 0.09
+Nodes (3): rt, xs, yc
+
 ### Community 36 - ".setAttribute"
-Cohesion: 0.08
-Nodes (15): ao(), bo, ci, clone(), co(), Da, Ga, gn() (+7 more)
+Cohesion: 0.09
+Nodes (12): ao(), bo, ci, Da, Ga, gn(), o(), mn (+4 more)
 
 ### Community 37 - "nl"
-Cohesion: 0.05
-Nodes (6): n(), il(), nl, qo, yo, zl
+Cohesion: 0.08
+Nodes (5): n(), il(), nl, parseShapes(), zl
 
-### Community 40 - "xc"
-Cohesion: 0.07
-Nodes (8): ds(), F(), G(), k(), V(), z(), jo, xc
+### Community 39 - "jc"
+Cohesion: 0.05
+Nodes (3): jc, qc, setValue()
 
 ### Community 42 - "en"
-Cohesion: 0.09
+Cohesion: 0.11
 Nodes (4): en, Si(), ti, updateMatrixWorld()
 
 ### Community 44 - "Xe"
-Cohesion: 0.08
-Nodes (10): _a, cs, Do, fo(), go, mo(), po, Rs (+2 more)
+Cohesion: 0.07
+Nodes (14): _a, cs, Do, fo(), go, hs, mo(), po (+6 more)
 
 ### Community 45 - "no"
-Cohesion: 0.10
-Nodes (17): Ah, eo(), fa, ho(), io(), ja(), ka(), lo() (+9 more)
+Cohesion: 0.12
+Nodes (14): co(), eo(), ho(), io(), ja(), ka(), no(), oo() (+6 more)
 
-### Community 49 - "ht"
+### Community 46 - "ml"
+Cohesion: 0.08
+Nodes (4): Al, el, ml, Rl
+
+### Community 49 - "fe"
 Cohesion: 0.11
-Nodes (3): hs, so(), w()
+Nodes (17): fe, ps(), B(), F(), G(), H(), I(), J() (+9 more)
 
 ### Community 50 - "ca"
-Cohesion: 0.18
-Nodes (4): ca, fh, Mh, uo()
+Cohesion: 0.11
+Nodes (10): Ah, ca, clone(), fh, hh, lo(), Mh, uh() (+2 more)
 
 ### Community 51 - "i"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (5): cl, i(), load(), c(), vc
 
-### Community 56 - "parse"
-Cohesion: 0.08
-Nodes (15): bindSkeletons(), ei, hl, ii, mc(), parse(), parseAnimations(), parseImages() (+7 more)
+### Community 56 - "pl"
+Cohesion: 0.15
+Nodes (4): hl, pl, ul, o()
 
 ### Community 58 - "tn"
 Cohesion: 0.06
@@ -296,101 +306,89 @@ Nodes (8): dt(), $e(), Ke(), ms(), Qe(), ss(), tn, ut()
 Cohesion: 0.10
 Nodes (68): abrirModal3D(), abrirPeloMenu(), adicionarMarcadorPendente(), adicionarPontoMedicao(), ajustarAoModelo(), alternarCorte(), aplicarGeometriaNaCena(), ativarModoMedicao() (+60 more)
 
-### Community 60 - "bt"
-Cohesion: 0.14
-Nodes (3): bt, li(), Ra
+### Community 61 - "Autodesk Platform Services (APS) — configuração"
+Cohesion: 0.22
+Nodes (8): 1. Criar o aplicativo no APS, 2. Configurar as credenciais, 3. Créditos e custos, 5. Onde ficam os STLs, 6. Validação, 7. Problemas comuns, 8. Segurança e privacidade, Autodesk Platform Services (APS) — configuração
 
 ### Community 64 - "visualizador3dFacade.js"
 Cohesion: 0.42
 Nodes (7): abrirModal3D(), codigoMolde(), getContextPath(), infoModelo(), jsonGet(), urlApi(), verificarAps()
 
-### Community 66 - "Na"
-Cohesion: 0.25
-Nodes (4): Ba, Ko, Na, _o
-
 ### Community 68 - "SessaoFusion"
 Cohesion: 0.31
 Nodes (3): ResultadoPortal, SessaoFusion, UsuarioAtual
 
-### Community 70 - "Autodesk Platform Services (APS) — configuração"
-Cohesion: 0.20
-Nodes (9): 1. Criar o aplicativo no APS, 2. Configurar as credenciais, 3. Créditos e custos, 4. Como o fluxo funciona, 5. Onde ficam os STLs, 6. Validação, 7. Problemas comuns, 8. Segurança e privacidade (+1 more)
+### Community 70 - "registros.js"
+Cohesion: 0.61
+Nodes (8): agendarAutoSalvar(), aplicarAutoSalvar(), atualizarTudo(), cancelarAutoSalvar(), definirStatusAutoSave(), excluir(), flushAutoSalvar(), initRegistros()
 
-### Community 72 - "ps"
-Cohesion: 0.27
-Nodes (16): ps(), B(), F(), G(), H(), I(), J(), K() (+8 more)
-
-### Community 74 - "gt"
-Cohesion: 0.16
-Nodes (11): bi(), fi(), gi(), mi(), f(), h(), m(), x() (+3 more)
+### Community 74 - "mi"
+Cohesion: 0.19
+Nodes (9): v(), y(), mi(), f(), g(), h(), m(), x() (+1 more)
 
 ### Community 75 - "ws"
-Cohesion: 0.17
-Nodes (11): bs, C(), mt(), ws(), At(), Ct(), Dt(), It() (+3 more)
+Cohesion: 0.13
+Nodes (12): bs, Et, C(), mt(), ws(), At(), Ct(), It() (+4 more)
 
-### Community 76 - "ia"
-Cohesion: 0.17
-Nodes (3): ia, parseSkeletons(), ta
+### Community 78 - "parse"
+Cohesion: 0.07
+Nodes (17): bindSkeletons(), ei, ii, mc(), oc, i(), parse(), parseAnimations() (+9 more)
 
 ### Community 79 - "_fromTexture"
-Cohesion: 0.10
-Nodes (24): _allocateTargets(), _applyPMREM(), _blur(), _cleanup(), compileCubemapShader(), compileEquirectangularShader(), _compileMaterial(), fromCubemap() (+16 more)
+Cohesion: 0.09
+Nodes (28): _allocateTargets(), _applyPMREM(), bc, _blur(), _cleanup(), compileCubemapShader(), compileEquirectangularShader(), _compileMaterial() (+20 more)
 
 ### Community 80 - "ct"
 Cohesion: 0.16
 Nodes (3): ct(), es(), ns()
 
-### Community 82 - "ol"
-Cohesion: 0.14
-Nodes (3): ol, setTexturePath(), uc
-
-### Community 83 - "ni"
-Cohesion: 0.20
-Nodes (4): Et, ni, Tt(), yi()
+### Community 83 - "gt"
+Cohesion: 0.09
+Nodes (12): bi(), fi(), gi(), li(), ni, pi(), vi(), wi() (+4 more)
 
 ### Community 86 - "parseObject"
-Cohesion: 0.22
-Nodes (3): $l, parseObject(), tc
+Cohesion: 0.17
+Nodes (4): fa, $l, parseObject(), tc
 
 ### Community 93 - ".parse"
 Cohesion: 0.20
 Nodes (3): STLLoader, isBinary(), matchDataViewAt()
+
+### Community 98 - "jn"
+Cohesion: 0.15
+Nodes (3): jn(), update(), wh()
+
+### Community 110 - "Na"
+Cohesion: 0.25
+Nodes (4): Ba, Ko, Na, _o
 
 ### Community 111 - "s"
 Cohesion: 0.43
 Nodes (6): s(), G(), H(), O(), U(), z()
 
 ### Community 123 - "t"
-Cohesion: 0.47
-Nodes (3): t(), l(), o()
-
-### Community 127 - "constructor"
-Cohesion: 0.11
-Nodes (7): bc, constructor(), d(), u(), ge, setDirection(), setLength()
-
-### Community 154 - ".parse"
-Cohesion: 0.20
-Nodes (5): oc, i(), parseGeometries(), sc, yn()
+Cohesion: 0.28
+Nodes (4): r(), t(), l(), o()
 
 ## Knowledge Gaps
 - **1 isolated node(s):** `com.customfusion:CustomFusionWeb`
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 748 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **85 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 749 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **82 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Lt` connect `Lt` to `app.js`, `three.min.js`, `fe`, `.parse`, `bl`, `yc`, `.setAttribute`, `pt`, `Ce`, `en`, `ml`, `ht`, `Ne`, `yt`, `sn`, `.updateWorldMatrix`, `je`, `re`, `.copy`, `ws`, `.copy`, `ec`, `ys`, `rh`, `wo`, `.constructor`, `.addVectors`, `.constructor`, `.applyMatrix3`, `s`, `xs`, `Yl`, `constructor`?**
-  _High betweenness centrality (0.079) - this node is a cross-community bridge._
+- **Why does `Lt` connect `Lt` to `app.js`, `three.min.js`, `ht`, `yc`, `.setAttribute`, `pt`, `jc`, `Ce`, `en`, `Xe`, `no`, `ml`, `dc`, `fe`, `Ne`, `sn`, `.updateWorldMatrix`, `je`, `re`, `.copy`, `.copy`, `mi`, `ws`, `parse`, `_fromTexture`, `ec`, `ys`, `rh`, `.getCenter`, `ic`, `jn`, `.constructor`, `Yl`, `.set`, `.constructor`, `.applyMatrix3`, `s`, `.copy`?**
+  _High betweenness centrality (0.058) - this node is a cross-community bridge._
 - **What connects `com.customfusion:CustomFusionWeb` to the rest of the system?**
   _1 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `extrair_desenhos.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.0579476861167002 - nodes in this community are weakly interconnected._
-- **Why does `tn` connect `tn` to `yc`, `.setAttribute`, `xc`, `en`, `ws`, `three.min.js`, `Xe`, `fl`, `no`, `dc`, `_fromTexture`, `ca`, `yt`, `parseObject`, `sn`, `.updateWorldMatrix`, `t`, `constructor`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+  _Cohesion score 0.05879917184265011 - nodes in this community are weakly interconnected._
+- **Why does `fr()` connect `app.js` to `three.min.js`?**
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+- **Should `telaInicial.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.10852713178294573 - nodes in this community are weakly interconnected._
 - **Should `visualizador3dAps.js` be split into smaller, more focused modules?**
   _Cohesion score 0.13588850174216027 - nodes in this community are weakly interconnected._
 - **Should `app.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.05376972530683811 - nodes in this community are weakly interconnected._
-- **Should `estado.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.12923076923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06079664570230608 - nodes in this community are weakly interconnected._

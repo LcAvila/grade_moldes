@@ -40,6 +40,28 @@
     return estado.moldes.find((m) => m.id === moldeId) || null;
   }
 
+  function numeroOuNull(valor) {
+    if (valor === null || valor === undefined || valor === "") return null;
+    const n = Number(valor);
+    return Number.isFinite(n) ? n : null;
+  }
+
+  function aplicarConfigNaGrade(dadosGrade, config) {
+    const saida = Object.assign({}, dadosGrade || {});
+    if (!config) return saida;
+
+    if (config.maquina) saida.maquina = String(config.maquina).trim();
+    if (config.dataEntrada) saida.dataEntrada = String(config.dataEntrada).trim();
+    if (config.materiaPrima) saida.material = String(config.materiaPrima).trim();
+
+    const total = numeroOuNull(config.cavidadesTotais);
+    const ativas = numeroOuNull(config.cavidadesAtivas);
+    if (total !== null) saida.cavidadesTotais = total;
+    if (ativas !== null) saida.cavidadesAtivas = ativas;
+    if (config.checklist) saida.checklist = config.checklist;
+    return saida;
+  }
+
   // `molde.padroes` guarda os valores padrão do molde (produto, material,
   // revisão...). Um campo salvo em branco no registro da grade não deve apagar o
   // padrão, então só valores preenchidos sobrescrevem — inclusive para a
@@ -95,6 +117,17 @@
     const dadosGrade = dadosGradeDoMolde(molde, persistido && persistido.dadosGrade);
     dadosGrade.moldeNum = molde.codigo;
 
+    // Grades antigas podem não ter os campos de entrada; o molde fornece o total
+    // e as cavidades ativamente livres dão o fallback para ativas.
+    const totalCavidades = Array.isArray(molde.cavidades) ? molde.cavidades.length : 0;
+    if (dadosGrade.cavidadesTotais === undefined || dadosGrade.cavidadesTotais === null || dadosGrade.cavidadesTotais === "") {
+      dadosGrade.cavidadesTotais = totalCavidades;
+    }
+    if (dadosGrade.cavidadesAtivas === undefined || dadosGrade.cavidadesAtivas === null || dadosGrade.cavidadesAtivas === "") {
+      const vedadas = Object.values(dadosCavidades).filter((registro) => registro && registro.vedado === "S").length;
+      dadosGrade.cavidadesAtivas = Math.max(0, totalCavidades - vedadas);
+    }
+
     // Máquina e data de entrada são escolhidas no modal de abertura da grade e
     // não são editáveis na tela: o valor da grade manda sobre molde/registro.
     if (grade) {
@@ -136,6 +169,7 @@
   }
 
   async function voltarParaInicial() {
+    if (CF.registros && CF.registros.flushAutoSalvar) CF.registros.flushAutoSalvar();
     if (temEdicaoNaoSalva() && !confirm("Há alterações não salvas no formulário. Voltar para as grades?")) {
       return;
     }
@@ -151,21 +185,9 @@
     try {
       const grade = await persistencia.criarGrade(moldeId, config);
 
-      // Grade histórica importada: semeia os registros já lançados no Excel.
-      if (config && config.historico) {
-        const h = config.historico;
-        const dadosGrade = Object.assign({}, h.dadosGrade || {});
-        if (config.maquina) dadosGrade.maquina = config.maquina;
-        if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
-        if (config.checklist) dadosGrade.checklist = config.checklist;
-        await persistencia.salvarGrade(grade.id, grade.moldeId,
-          h.dadosCavidades || {}, dadosGrade);
-      } else if (config && config.checklist) {
+      if (config) {
         const atual = await persistencia.carregarGrade(grade.id) || {};
-        const dadosGrade = Object.assign({}, atual.dadosGrade || {});
-        if (config.maquina) dadosGrade.maquina = config.maquina;
-        if (config.dataEntrada) dadosGrade.dataEntrada = config.dataEntrada;
-        dadosGrade.checklist = config.checklist;
+        const dadosGrade = aplicarConfigNaGrade(atual.dadosGrade, config);
         await persistencia.salvarGrade(grade.id, grade.moldeId, {}, dadosGrade);
       }
 
@@ -245,6 +267,7 @@
       alert("Nenhuma grade aberta.");
       return;
     }
+    if (CF.registros && CF.registros.flushAutoSalvar) CF.registros.flushAutoSalvar();
     await persistencia.flush();
     const codigo = estado.molde.codigo;
     // monta a folha de impressao (A4) antes de capturar o HTML

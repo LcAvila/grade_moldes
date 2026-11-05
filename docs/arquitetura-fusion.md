@@ -9,7 +9,7 @@
 
 | Camada | Tecnologia | O que mora ali |
 |---|---|---|
-| Catálogo / configuração | **SQLite** | moldes, cavidades, desenhos, formas, máquinas, layouts, modelos 3D e histórico |
+| Catálogo / configuração | **SQLite** | moldes, cavidades, desenhos, formas, máquinas, layouts e modelos 3D |
 | Dados operacionais | **SQLite** | grades, cavidades da grade, registros por molde e checklist |
 | Documentos oficiais | **GED do Fusion** via API | relatórios/folhas do molde (arquivo + metadados + `neoId`) |
 | Identificação | Sessão do Fusion / contêiner | login e nome do controlador |
@@ -39,7 +39,6 @@
 | `desenhos` / `formas` / `maquinas` | catálogo auxiliar |
 | `layouts` | layout estático ou parametrizado em `dados_json` |
 | `modelos3d` | catálogo de modelos STL/GLB e arquivo |
-| `historico_grades` | índice e pacotes de grades históricas importadas do Excel |
 | `grades` | grade operacional (molde, máquina, data, status, `dados_json`) |
 | `grade_cavidades` | desvio, data, vedado, observação e controlador por cavidade |
 | `registros_molde` | espelho por molde/cavidade usado pelo fluxo legado de Moldes/Cavidades |
@@ -54,8 +53,6 @@
 | GET | `/api/config/maquinas` | catálogo de máquinas |
 | GET | `/api/config/modelos3d` | catálogo de modelos 3D |
 | GET | `/api/config/layouts/{id}` | layout do molde |
-| GET | `/api/config/historico` | índice de grades históricas por molde |
-| GET | `/api/config/historico?arquivo=...` | pacote de uma grade histórica |
 | GET | `/api/grades` | lista de grades com contagens |
 | POST | `/api/grades` | cria grade |
 | GET | `/api/grades/{id}` | carrega grade + cavidades |
@@ -110,7 +107,7 @@ Configuração em `application.properties` (ou variável de ambiente equivalente
 - `scripts/migrar_json_sqlite.py` gera o seed a partir dos JSONs legados
   (`src/main/webapp/config/`), valida contagens e chaves estrangeiras.
 - Contagens atuais do seed: 73 moldes, 2671 cavidades, 133 desenhos, 4 formas,
-  40 máquinas, 75 layouts, 1 modelo 3D e 1849 grades históricas.
+  40 máquinas, 75 layouts e 1 modelo 3D.
 - O front migra automaticamente as grades antigas do `localStorage` na primeira
   carga, usando a chave `customfusion.sqlite.migrado.v1`.
 - Backup: copiar o arquivo `.db` com a aplicação parada (ou usar `.backup` do

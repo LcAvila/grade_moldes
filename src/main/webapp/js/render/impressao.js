@@ -6,6 +6,7 @@
   const { coletarGrade } = CF.cabecalho;
 
   function montarFolhaImpressao() {
+    if (CF.registros && CF.registros.flushAutoSalvar) CF.registros.flushAutoSalvar();
     coletarGrade();
 
     // Altura das linhas da tabela no papel: 4,5mm por padrão; moldes com muitas
@@ -33,6 +34,13 @@
     definir("folhaMoldeMod", estado.dadosGrade.moldeMod || "");
     definir("folhaMaterial", estado.dadosGrade.material || "");
     definir("folhaMaquina", estado.dadosGrade.maquina || "");
+    const cavidadesTotal = estado.dadosGrade.cavidadesTotais;
+    const cavidadesAtivas = estado.dadosGrade.cavidadesAtivas;
+    const cavidadesTexto = (cavidadesTotal !== undefined && cavidadesTotal !== null && cavidadesTotal !== "" &&
+        cavidadesAtivas !== undefined && cavidadesAtivas !== null && cavidadesAtivas !== "")
+      ? cavidadesTotal + " / " + cavidadesAtivas
+      : String(cavidadesTotal || cavidadesAtivas || "");
+    definir("folhaCavidades", cavidadesTexto);
     definir("folhaControladorAbertura", estado.dadosGrade.controladorAbertura || "");
     definir("folhaDataEntrada", estado.dadosGrade.dataEntrada || "");
     definir("folhaDataAtualizacao", estado.dadosGrade.dataAtualizacao || "");

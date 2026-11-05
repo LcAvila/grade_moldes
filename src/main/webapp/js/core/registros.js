@@ -10,26 +10,34 @@
   const { sincronizarFormulario, atualizarSelecao, limparFormulario, lerFormulario } = CF.formulario;
   const { coletarGrade } = CF.cabecalho;
 
+  const AUTO_SAVE_ATRASO_MS = 350;
+  let timerAutoSalvar = null;
+  let pacoteAutoSalvar = null;
+
   function atualizarTudo() {
     atualizarTabela();
     atualizarDiagrama();
     atualizarResumo();
   }
 
-  function salvar() {
-    if (estado.selecionadas.length === 0) {
-      alert("Selecione ao menos uma cavidade.");
-      return;
+  function definirStatusAutoSave(tipo, mensagem) {
+    const status = document.getElementById("autoSaveStatus");
+    const texto = document.getElementById("autoSaveMensagem");
+    if (status) {
+      status.classList.remove("is-saving", "is-ok", "is-waiting", "is-error");
+      if (tipo) status.classList.add("is-" + tipo);
     }
-    const reg = lerFormulario();
-    if (!reg.desvio) {
-      alert("Selecione ou digite um desvio/defeito.");
-      return;
-    }
-    const alvo = estado.selecionadas.slice();
-    if (alvo.length > 1 && !confirm("Aplicar este registro às " + alvo.length + " cavidades selecionadas (" + alvo.slice().sort(compararId).join(", ") + ")?")) {
-      return;
-    }
+    if (texto && mensagem) texto.textContent = mensagem;
+  }
+
+  function cancelarAutoSalvar() {
+    if (timerAutoSalvar) window.clearTimeout(timerAutoSalvar);
+    timerAutoSalvar = null;
+    pacoteAutoSalvar = null;
+  }
+
+  function aplicarAutoSalvar(alvo, reg) {
+    cancelarAutoSalvar();
     alvo.forEach((id) => {
       estado.dadosCavidades[id] = {
         desvio: reg.desvio,
@@ -43,16 +51,42 @@
     persistirAtual();
     atualizarTudo();
     sincronizarFormulario();
+    atualizarSelecao();
+    const agora = new Date();
+    const hora = String(agora.getHours()).padStart(2, "0") + ":" + String(agora.getMinutes()).padStart(2, "0");
+    definirStatusAutoSave("ok", "Alterações salvas automaticamente · " + hora);
   }
 
-  function limpar() {
-    estado.selecionadas = [];
-    limparFormulario();
-    sincronizarFormulario();
-    atualizarSelecao();
+  function agendarAutoSalvar() {
+    const alvo = estado.selecionadas.slice();
+    if (!alvo.length) {
+      cancelarAutoSalvar();
+      definirStatusAutoSave("waiting", "Selecione uma ou mais cavidades.");
+      return;
+    }
+    const reg = lerFormulario();
+    if (!reg.desvio) {
+      cancelarAutoSalvar();
+      definirStatusAutoSave("waiting", "Digite um desvio/defeito para salvar automaticamente.");
+      return;
+    }
+    pacoteAutoSalvar = { alvo: alvo, reg: Object.assign({}, reg) };
+    if (timerAutoSalvar) window.clearTimeout(timerAutoSalvar);
+    definirStatusAutoSave("saving", "Salvando alterações automaticamente...");
+    timerAutoSalvar = window.setTimeout(() => {
+      if (!pacoteAutoSalvar) return;
+      aplicarAutoSalvar(pacoteAutoSalvar.alvo, pacoteAutoSalvar.reg);
+    }, AUTO_SAVE_ATRASO_MS);
+  }
+
+  function flushAutoSalvar() {
+    if (!timerAutoSalvar || !pacoteAutoSalvar) return;
+    const pacote = pacoteAutoSalvar;
+    aplicarAutoSalvar(pacote.alvo, pacote.reg);
   }
 
   function excluir() {
+    cancelarAutoSalvar();
     if (estado.selecionadas.length === 0) {
       alert("Selecione ao menos uma cavidade.");
       return;
@@ -67,19 +101,44 @@
       estado.dadosCavidades[id] = { desvio: "", data: "", vedado: "N", observacao: "", controlador: "" };
     });
     persistirAtual();
-    limpar();
+    estado.selecionadas = [];
+    limparFormulario();
+    sincronizarFormulario();
+    atualizarSelecao();
     atualizarTudo();
+    definirStatusAutoSave("waiting", "Registro apagado. Selecione cavidades para preencher.");
   }
 
   function initRegistros() {
-    document.getElementById("btnSalvar").addEventListener("click", salvar);
-    document.getElementById("btnLimpar").addEventListener("click", limpar);
-    document.getElementById("btnExcluir").addEventListener("click", excluir);
+    const btnExcluir = document.getElementById("btnExcluir");
+    if (btnExcluir) btnExcluir.addEventListener("click", excluir);
+
+    const autoSaveTriggers = [
+      "desvio",
+      "observacao",
+      "data",
+      "controlador"
+    ];
+    autoSaveTriggers.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener("input", agendarAutoSalvar);
+        el.addEventListener("change", agendarAutoSalvar);
+        el.addEventListener("blur", flushAutoSalvar);
+      }
+    });
+
+    document.querySelectorAll('input[name="vedado"]').forEach((radio) => {
+      radio.addEventListener("change", agendarAutoSalvar);
+    });
+
+    definirStatusAutoSave("waiting", "Selecione uma ou mais cavidades.");
   }
 
   CF.registros = {
-    salvar: salvar,
-    limpar: limpar,
+    agendarAutoSalvar: agendarAutoSalvar,
+    flushAutoSalvar: flushAutoSalvar,
+    cancelarAutoSalvar: cancelarAutoSalvar,
     excluir: excluir,
     initRegistros: initRegistros
   };

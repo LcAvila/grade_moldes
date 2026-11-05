@@ -7,7 +7,6 @@
   let cacheFormas = null;
   let cacheDesenhos = null;
   let cacheMaquinas = null;
-  let cacheHistorico = null;
   let cacheModelos3d = null;
 
   function url(rel) {
@@ -98,6 +97,20 @@
     };
   }
 
+  // Recarrega o catálogo depois de um cadastro e publica no estado global.
+  async function recarregarCatalogo() {
+    const moldes = await carregarCatalogo(true);
+    estado.moldes = moldes;
+    return moldes;
+  }
+
+  async function recarregarMaquinas() {
+    cacheMaquinas = null;
+    const maquinas = await carregarMaquinas();
+    estado.maquinas = maquinas;
+    return maquinas;
+  }
+
   function acharMolde(id) {
     return estado.moldes.find((m) => m.id === id) || null;
   }
@@ -140,23 +153,6 @@
     return lista;
   }
 
-  async function carregarIndiceHistorico() {
-    if (cacheHistorico) return cacheHistorico;
-    try {
-      const idx = await buscarApi("/config/historico");
-      cacheHistorico = (idx && typeof idx === "object") ? idx : {};
-    } catch (e) {
-      console.warn("Índice de grades históricas indisponível (" + e.message + ").");
-      cacheHistorico = {};
-    }
-    return cacheHistorico;
-  }
-
-  async function carregarGradeHistorica(caminho) {
-    if (!caminho) throw new Error("Arquivo histórico não informado.");
-    return buscarApi("/config/historico?arquivo=" + encodeURIComponent(caminho));
-  }
-
   // Lista final usada na abertura de grade: catálogo + máquinas citadas nos moldes.
   function listarMaquinas() {
     const saida = [];
@@ -182,6 +178,16 @@
     return saida;
   }
 
+  async function verificarArquivoModelo3d(caminho) {
+    if (!caminho) return false;
+    try {
+      const resp = await buscarApi("/api/config/modelo3d/existe?caminho=" + encodeURIComponent(caminho));
+      return resp && resp.existe === true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   function urlRecurso(rel) {
     if (!rel) return "";
     return url(rel);
@@ -189,15 +195,16 @@
 
   CF.cfg = {
     carregarCatalogo: carregarCatalogo,
+    recarregarCatalogo: recarregarCatalogo,
     carregarMoldes: carregarCatalogo,
+    recarregarMaquinas: recarregarMaquinas,
     acharMolde: acharMolde,
     carregarLayout: carregarLayout,
     carregarFormas: carregarFormas,
     carregarDesenhos: carregarDesenhos,
+    verificarArquivoModelo3d: verificarArquivoModelo3d,
     carregarMaquinas: carregarMaquinas,
     listarMaquinas: listarMaquinas,
-    carregarIndiceHistorico: carregarIndiceHistorico,
-    carregarGradeHistorica: carregarGradeHistorica,
     carregarModelos3d: carregarModelos3d,
     resolverModelo3d: resolverModelo3d,
     urlRecurso: urlRecurso

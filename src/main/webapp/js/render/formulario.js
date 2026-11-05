@@ -32,7 +32,13 @@
     return true;
   }
 
-  function clicarCavidade(id, ev) {
+  function flushRegistroPendente() {
+    if (CF.registros && CF.registros.flushAutoSalvar) CF.registros.flushAutoSalvar();
+  }
+
+  async function clicarCavidade(id, ev) {
+    await preencherControladorLogado();
+    flushRegistroPendente();
     id = String(id);
     const aditivo = ev && (ev.ctrlKey || ev.metaKey);
     if (aditivo) {
@@ -46,7 +52,9 @@
     atualizarSelecao();
   }
 
-  function clicarZona(hub, ev) {
+  async function clicarZona(hub, ev) {
+    await preencherControladorLogado();
+    flushRegistroPendente();
     const ids = (hub.cavidades || []).map(String);
     const aditivo = ev && (ev.ctrlKey || ev.metaKey);
     if (aditivo) {
@@ -100,7 +108,7 @@
       const strong = document.createElement("strong");
       strong.textContent = lista.length + " cavidades selecionadas";
       info.appendChild(strong);
-      info.appendChild(document.createTextNode(" (" + lista.join(", ") + "). Preencha os campos e clique em SALVAR para aplicar a todas."));
+      info.appendChild(document.createTextNode(" (" + lista.join(", ") + "). O registro será aplicado a todas as selecionadas e salvo automaticamente."));
     }
   }
 
@@ -141,6 +149,7 @@
     const select = document.getElementById("cavidade");
     if (select) {
       select.addEventListener("change", function () {
+        flushRegistroPendente();
         estado.selecionadas = this.value ? [String(this.value)] : [];
         sincronizarFormulario();
         atualizarSelecao();
@@ -148,6 +157,22 @@
     }
     const desvio = document.getElementById("desvio");
     if (desvio) desvio.addEventListener("input", atualizarObsField);
+  }
+
+  async function preencherControladorLogado() {
+    try {
+      const ctx = (document.body && document.body.dataset && document.body.dataset.context) || "/CustomFusionWeb";
+      const resp = await fetch(ctx + "/api/usuario-atual");
+      const dados = await resp.json().catch(() => ({}));
+      const campo = document.getElementById("controlador");
+      if (!campo) return;
+      const nome = dados && dados.nome ? String(dados.nome) : (dados && dados.login ? String(dados.login) : "");
+      if (nome) {
+        campo.value = nome;
+      }
+    } catch (e) {
+      // Silencioso: se não houver backend, o campo continua editável manualmente
+    }
   }
 
   CF.formulario = {

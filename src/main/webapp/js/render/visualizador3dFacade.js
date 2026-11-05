@@ -113,8 +113,21 @@
     return verificacao;
   }
 
-  function abrirModal3D(dados) {
+  async function abrirModal3D(dados) {
     var info = infoModelo(dados);
+
+    // Prioriza o STL local quando o arquivo existe na pasta do projeto.
+    // Basta colocar, por exemplo, src/main/webapp/assets/models/molde-117.stl.
+    if (info.arquivo && CF.cfg && typeof CF.cfg.verificarArquivoModelo3d === "function") {
+      try {
+        if (await CF.cfg.verificarArquivoModelo3d(info.arquivo)) {
+          CF.visualizador3dLocal.abrirModal3D(dados);
+          return;
+        }
+      } catch (e) {
+        // Ignora falha de verificação e tenta o APS/local abaixo.
+      }
+    }
 
     verificarAps(false).then(function (configurado) {
       if (configurado && CF.visualizador3dAps) {

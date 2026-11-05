@@ -77,33 +77,7 @@ CREATE TABLE IF NOT EXISTS modelos3d (
     dados_json TEXT NOT NULL DEFAULT '{}'
 );
 
--- Histórico de grades importadas: dadosCavidades/dadosGrade ficam em JSON
--- porque o formato é de arquivo e não precisa de consultas por cavidade.
-CREATE TABLE IF NOT EXISTS historico_grades (
-    arquivo TEXT PRIMARY KEY,
-    molde_id TEXT,
-    ordem INTEGER NOT NULL DEFAULT 0,
-    rotulo TEXT,
-    ano TEXT,
-    maquina TEXT,
-    material TEXT,
-    data_entrada TEXT,
-    defeitos INTEGER NOT NULL DEFAULT 0,
-    vedadas INTEGER NOT NULL DEFAULT 0,
-    total INTEGER NOT NULL DEFAULT 0,
-    arquivo_origem TEXT,
-    codigo TEXT,
-    nome_peca TEXT,
-    layout_id TEXT,
-    data_origem TEXT,
-    exportado_em TEXT,
-    formato TEXT,
-    origem TEXT,
-    versao INTEGER,
-    dados_grade_json TEXT NOT NULL DEFAULT '{}',
-    dados_cavidades_json TEXT NOT NULL DEFAULT '{}'
-);
-CREATE INDEX IF NOT EXISTS idx_historico_molde ON historico_grades(molde_id, ordem);
+DROP TABLE IF EXISTS historico_grades;
 
 CREATE TABLE IF NOT EXISTS grades (
     id TEXT PRIMARY KEY,

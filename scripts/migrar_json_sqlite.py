@@ -199,58 +199,6 @@ def main() -> int:
             )
             modelos3d += 1
 
-    indice_path = CONFIG / "historico" / "index.json"
-    indice = ler_json(indice_path) if indice_path.is_file() else {}
-    historico = 0
-    ausentes: list[str] = []
-    for molde_chave, entradas in indice.items():
-        for ordem, entrada in enumerate(entradas or []):
-            arquivo = texto(entrada.get("arquivo"))
-            if not arquivo:
-                continue
-            pacote_path = CONFIG / "historico" / arquivo
-            if not pacote_path.is_file():
-                ausentes.append(arquivo)
-                continue
-            pacote = ler_json(pacote_path)
-            dados_grade = pacote.get("dadosGrade") or {}
-            db.execute(
-                """
-                INSERT INTO historico_grades
-                    (arquivo, molde_id, ordem, rotulo, ano, maquina, material,
-                     data_entrada, defeitos, vedadas, total, arquivo_origem,
-                     codigo, nome_peca, layout_id, data_origem, exportado_em,
-                     formato, origem, versao, dados_grade_json,
-                     dados_cavidades_json)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """,
-                (
-                    arquivo,
-                    str(pacote.get("moldeId") or molde_chave),
-                    ordem,
-                    texto(entrada.get("rotulo")) or texto(pacote.get("nomePeca")) or arquivo,
-                    texto(entrada.get("ano")),
-                    texto(entrada.get("maquina")) or texto(dados_grade.get("maquina")),
-                    texto(entrada.get("material")) or texto(dados_grade.get("material")),
-                    texto(entrada.get("dataEntrada")),
-                    inteiro(entrada.get("defeitos")),
-                    inteiro(entrada.get("vedadas")),
-                    inteiro(entrada.get("total")),
-                    texto(entrada.get("arquivoOrigem")),
-                    texto(pacote.get("codigo")),
-                    texto(pacote.get("nomePeca")),
-                    texto(pacote.get("layoutId")),
-                    texto(pacote.get("dataOrigem")),
-                    texto(pacote.get("exportadoEm")),
-                    texto(pacote.get("formato")),
-                    texto(pacote.get("origem")),
-                    inteiro(pacote.get("versao")) if pacote.get("versao") is not None else None,
-                    compact(dados_grade),
-                    compact(pacote.get("dadosCavidades") or {}),
-                ),
-            )
-            historico += 1
-
     contagens = {
         "moldes": len(moldes),
         "molde_cavidades": sum(len(m.get("cavidades") or []) for m in moldes),
@@ -259,7 +207,6 @@ def main() -> int:
         "maquinas": len(maquinas),
         "layouts": layouts,
         "modelos3d": modelos3d,
-        "historico_grades": historico,
     }
     agora = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     db.executemany(
@@ -268,7 +215,6 @@ def main() -> int:
             ("schema_version", "1"),
             ("seed_gerado_em", agora),
             ("seed_contagens", compact(contagens)),
-            ("seed_ausentes", compact(ausentes)),
         ],
     )
     db.commit()
@@ -281,8 +227,6 @@ def main() -> int:
     fks = db.execute("PRAGMA foreign_key_check").fetchall()
     if fks:
         problemas.append(f"foreign_key_check retornou {len(fks)} problema(s)")
-    if ausentes:
-        problemas.append(f"{len(ausentes)} arquivo(s) de historico ausente(s)")
     db.close()
 
     tamanho_mb = SEED.stat().st_size / (1024 * 1024)
